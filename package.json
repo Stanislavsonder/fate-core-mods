@@ -1,0 +1,37 @@
+{
+	"name": "fate-core-mods",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"license": "MIT",
+	"description": "The public, curated mod registry for FATE: Core — see docs/SUBMITTING.md to publish a mod, docs/REVIEW_CHECKLIST.md for the reviewer process.",
+	"engines": {
+		"node": ">=24.14.0"
+	},
+	"packageManager": "pnpm@11.17.0",
+	"scripts": {
+		"lint": "eslint .",
+		"ci:validate": "node --experimental-transform-types scripts/ci/validate.ts",
+		"ci:smoke-load": "node --experimental-transform-types scripts/ci/smoke-load.ts",
+		"ci:publish": "node --experimental-transform-types scripts/ci/publish.ts"
+	},
+	"devDependencies": {
+		"@eslint/js": "10.0.1",
+		"@fate-core/mod-build": "^0.1.0",
+		"@fate-core/mod-types": "^0.1.0",
+		"@types/node": "26.1.1",
+		"@types/semver": "7.7.1",
+		"@vue/test-utils": "2.4.11",
+		"ajv": "8.17.1",
+		"ajv-formats": "3.0.1",
+		"eslint": "10.7.0",
+		"eslint-config-prettier": "10.1.8",
+		"eslint-plugin-vue": "10.10.0",
+		"globals": "17.7.0",
+		"semver": "7.8.5",
+		"typescript": "6.0.3",
+		"typescript-eslint": "8.65.0",
+		"vue": "3.5.40",
+		"vue-i18n": "11.4.7"
+	}
+}

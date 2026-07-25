@@ -1,0 +1,102 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'mods/**'
+      - 'blocklist.json'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install PNPM
+        run: npm install -g pnpm
+
+      - name: Install repo tooling dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Same folder-detection logic as validate-pr.yml, but against the push
+      # diff (github.event.before -> github.sha) instead of a PR diff.
+      - name: Detect changed mod / blocklist-only
+        id: detect
+        run: |
+          CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
+          echo "$CHANGED"
+          MOD_DIR=$(echo "$CHANGED" | grep -oE '^mods/[^/]+' | head -n1 || true)
+          if [ -n "$MOD_DIR" ]; then
+            echo "mod-dir=$MOD_DIR" >> "$GITHUB_OUTPUT"
+          elif echo "$CHANGED" | grep -q '^blocklist.json$'; then
+            echo "blocklist-only=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install mod dependencies
+        if: steps.detect.outputs.mod-dir
+        working-directory: ${{ steps.detect.outputs.mod-dir }}
+        run: pnpm install --frozen-lockfile
+
+      - name: Build mod
+        if: steps.detect.outputs.mod-dir
+        working-directory: ${{ steps.detect.outputs.mod-dir }}
+        run: pnpm run build
+
+      - name: Checkout gh-pages
+        if: steps.detect.outputs.mod-dir || steps.detect.outputs.blocklist-only == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+          fetch-depth: 0
+        continue-on-error: true # first-ever publish: the branch doesn't exist yet
+
+      - name: Initialize gh-pages if this is the first publish
+        if: steps.detect.outputs.mod-dir || steps.detect.outputs.blocklist-only == 'true'
+        run: |
+          if [ ! -d gh-pages/.git ]; then
+            rm -rf gh-pages
+            mkdir -p gh-pages
+            cd gh-pages
+            git init -b gh-pages
+            git config user.name "fate-core-mods-bot"
+            git config user.email "actions@github.com"
+            echo '{"schemaVersion":1,"generatedAt":"","blocklist":{},"mods":[]}' > registry.json
+            git add registry.json
+            git commit -m "chore: initialize gh-pages"
+          fi
+
+      - name: Publish mod
+        if: steps.detect.outputs.mod-dir
+        run: pnpm ci:publish ${{ steps.detect.outputs.mod-dir }} gh-pages
+
+      - name: Publish blocklist-only update
+        if: steps.detect.outputs.blocklist-only == 'true'
+        run: pnpm ci:publish --blocklist-only gh-pages
+
+      - name: Commit and push gh-pages
+        if: steps.detect.outputs.mod-dir || steps.detect.outputs.blocklist-only == 'true'
+        working-directory: gh-pages
+        run: |
+          git config user.name "fate-core-mods-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to publish."
+          else
+            git commit -m "publish: ${{ steps.detect.outputs.mod-dir || 'blocklist update' }} (${{ github.sha }})"
+            git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+            git push origin gh-pages
+          fi

@@ -1,0 +1,74 @@
+name: Validate PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'mods/**'
+      - 'owners.json'
+      - 'blocklist.json'
+      - 'registry.schema.json'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install PNPM
+        run: npm install -g pnpm
+
+      - name: Install repo tooling dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Checks 1-4 (README.md Step 2): scope, ownership, schema, version.
+      # Posts/updates a single PR comment on failure and writes mod-id/mod-dir
+      # to $GITHUB_OUTPUT on success so the remaining steps know what to build.
+      - name: Validate scope, ownership, schema, version
+        id: validate
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpm ci:validate
+
+      # Check 5: reproducible build with the pinned toolchain, frozen lockfile.
+      # manifestChecks.ts (part of @fate-core/mod-build) enforces the 1MB
+      # soft / 3MB hard bundle size limits as part of this build.
+      - name: Install mod dependencies
+        if: steps.validate.outputs.mod-dir
+        working-directory: ${{ steps.validate.outputs.mod-dir }}
+        run: pnpm install --frozen-lockfile
+
+      - name: Build mod
+        if: steps.validate.outputs.mod-dir
+        working-directory: ${{ steps.validate.outputs.mod-dir }}
+        run: pnpm run build
+
+      # Check 6: security lint (eslint.config.js's mods/*/src scoped rules —
+      # hard errors auto-reject, warnings need a human sign-off in review).
+      - name: Security lint
+        if: steps.validate.outputs.mod-dir
+        run: pnpm exec eslint ${{ steps.validate.outputs.mod-dir }}
+
+      # Check 7: import the built bundle in Node + stub FateSDK, validate its
+      # shape, mount every declared component — catches render-time crashes
+      # before a human reviewer ever runs the mod.
+      - name: Smoke-load
+        if: steps.validate.outputs.mod-dir
+        run: pnpm ci:smoke-load ${{ steps.validate.outputs.mod-dir }}
