@@ -1,0 +1,14 @@
+# No `packages:` glob — this repo deliberately isn't a pnpm workspace (see
+# mods/README.md: each mod folder is self-contained with its own lockfile, so
+# unrelated mods' PRs never touch a shared one). This file exists solely to
+# set minimumReleaseAge, which pnpm only reads from pnpm-workspace.yaml, never
+# from .npmrc.
+#
+# 0 disables pnpm's default "wait ~24h before trusting a freshly published
+# version" policy. Real protection value for a --frozen-lockfile CI install is
+# already low (resolution happened at PR-review time, not install time); the
+# actual risk this repo cares about is community mod *source* review (see
+# docs/REVIEW_CHECKLIST.md), not this repo's own small, maintainer-controlled
+# tooling dependency chain (@fate-core/mod-build, @fate-core/mod-types, and a
+# handful of well-known devDependencies).
+minimumReleaseAge: 0
