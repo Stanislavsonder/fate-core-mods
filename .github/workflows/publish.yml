@@ -65,16 +65,26 @@ jobs:
           fetch-depth: 0
         continue-on-error: true # first-ever publish: the branch doesn't exist yet
 
-      - name: Initialize gh-pages if this is the first publish
+      - name: Ensure gh-pages branch exists locally
         if: steps.detect.outputs.mod-dir || steps.detect.outputs.blocklist-only == 'true'
+        working-directory: gh-pages
         run: |
-          if [ ! -d gh-pages/.git ]; then
-            rm -rf gh-pages
-            mkdir -p gh-pages
-            cd gh-pages
-            git init -b gh-pages
-            git config user.name "fate-core-mods-bot"
-            git config user.email "actions@github.com"
+          git config user.name "fate-core-mods-bot"
+          git config user.email "actions@github.com"
+          # A *failed* checkout of a not-yet-existing "gh-pages" ref still
+          # leaves behind a git-initialized directory on the runner's default
+          # branch name (observed: "master", not "gh-pages") with zero
+          # commits — checking `[ -d gh-pages/.git ]` alone can't tell that
+          # apart from a real prior publish, and skips re-creating the
+          # correctly-named branch. Renaming whatever branch we're currently
+          # on works whether it's a real fetched "gh-pages" (no-op rename) or
+          # the failed-checkout's stray default branch (even with zero
+          # commits — `git branch -m` works on an unborn branch too).
+          current_branch=$(git symbolic-ref --short -q HEAD || echo "")
+          if [ "$current_branch" != "gh-pages" ]; then
+            git branch -m gh-pages
+          fi
+          if [ ! -f registry.json ]; then
             echo '{"schemaVersion":1,"generatedAt":"","blocklist":{},"mods":[]}' > registry.json
             git add registry.json
             git commit -m "chore: initialize gh-pages"
