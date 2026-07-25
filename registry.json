@@ -1,1 +1,90 @@
-{"schemaVersion":1,"generatedAt":"","blocklist":{},"mods":[]}
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-25T17:40:31.226Z",
+  "blocklist": {},
+  "mods": [
+    {
+      "appVersion": ">=2.0.0",
+      "author": {
+        "email": "stanislavsonder@gmail.com",
+        "github": "Stanislavsonder",
+        "name": "Stanislav Sonder"
+      },
+      "capabilities": [
+        "sheetComponents"
+      ],
+      "config": {
+        "groups": [],
+        "options": [
+          {
+            "default": 200,
+            "id": "max-note-length",
+            "limits": {
+              "max": 1000,
+              "min": 10,
+              "step": 10
+            },
+            "name": "t.config.maxNoteLength.name",
+            "tooltip": "t.config.maxNoteLength.tooltip",
+            "type": "number"
+          }
+        ]
+      },
+      "description": {
+        "full": "t.description.full",
+        "short": "t.description.short"
+      },
+      "entry": "bundle.mjs",
+      "id": "sonder@example",
+      "languages": [
+        "en"
+      ],
+      "loadPriority": 100,
+      "name": "t.name",
+      "sdk": "^1.0.0",
+      "tags": [
+        "example"
+      ],
+      "version": "1.0.0",
+      "latestVersion": "1.0.0",
+      "publishedAt": "2026-07-25T17:40:31.226Z",
+      "files": {
+        "bundle.mjs": {
+          "url": "mods/sonder@example/1.0.0/bundle.mjs",
+          "sha256": "a767746d87582c4d5e312fd34c909a55e1b44d9d9b16a096d724103938f1b2bf",
+          "size": 8156
+        },
+        "manifest.json": {
+          "url": "mods/sonder@example/1.0.0/manifest.json",
+          "sha256": "c27792bde9c22fde73cb56170663b7681376abbd572b93b906eddc6d75fb570f",
+          "size": 722
+        },
+        "translations/en.json": {
+          "url": "mods/sonder@example/1.0.0/translations/en.json",
+          "sha256": "6ffe0c9a539e36f6e833425d208ea107aa5c1ccc8bbdb9cd675e2cfcc953ef93",
+          "size": 524
+        },
+        "README.md": {
+          "url": "mods/sonder@example/1.0.0/README.md",
+          "sha256": "b526497647a7780ee386f37795219264b7e3743ff42c358316ed2eb2138346a3",
+          "size": 803
+        },
+        "CHANGELOG.md": {
+          "url": "mods/sonder@example/1.0.0/CHANGELOG.md",
+          "sha256": "d6fba28f08ec3411e84f102bac895a080cab1d57dc153f674baa429e8a69a84c",
+          "size": 159
+        }
+      },
+      "readmeUrl": "mods/sonder@example/1.0.0/README.md",
+      "versions": [
+        "1.0.0"
+      ],
+      "strings": {
+        "en": {
+          "name": "Example Mod",
+          "short": "A worked example demonstrating the external mod bundle format."
+        }
+      }
+    }
+  ]
+}
