@@ -1,11 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-25T23:29:55.392Z",
-  "blocklist": {
-    "sonder@example": [
-      ">=1.0.0 <2.0.0"
-    ]
-  },
+  "generatedAt": "2026-07-25T23:46:07.423Z",
+  "blocklist": {},
   "mods": [
     {
       "appVersion": ">=2.0.0",
