@@ -14,3 +14,7 @@ for the full mod API this demonstrates.
 
 This was the first mod published through the real `validate-pr.yml` /
 `publish.yml` pipeline — see `docs/SUBMITTING.md` if you'd like to add your own.
+
+## Versions
+
+See `CHANGELOG.md` for release notes.
