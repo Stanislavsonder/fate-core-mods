@@ -39,7 +39,7 @@ mods/<author>@<name>/
 	"type": "module",
 	"scripts": {
 		"build": "vite build",
-		"dev": "fate-mod-build-dev"
+		"dev": "node node_modules/@fate-core/mod-build/dist/devCli.js"
 	},
 	"dependencies": {
 		"@fate-core/mod-types": "^0.1.0"

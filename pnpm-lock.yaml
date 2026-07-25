@@ -13,7 +13,7 @@ importers:
         version: 10.0.1(eslint@10.7.0)
       '@fate-core/mod-build':
         specifier: ^0.1.0
-        version: 0.1.4(@vitejs/plugin-vue@6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3)))(@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.40)(@vue/server-renderer@3.5.40)(vue@3.5.40(typescript@6.0.3)))(jsdom@29.1.1)(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))
+        version: 0.1.5(@vitejs/plugin-vue@6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3)))(@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.40)(@vue/server-renderer@3.5.40)(vue@3.5.40(typescript@6.0.3)))(jsdom@29.1.1)(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))
       '@fate-core/mod-types':
         specifier: ^0.1.0
         version: 0.1.2(vue@3.5.40(typescript@6.0.3))
@@ -194,8 +194,8 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@fate-core/mod-build@0.1.4':
-    resolution: {integrity: sha512-p0o/4hY9GNLIbFu8yDgTtwColLrZCAPNIaPwMSiUwDIBMdd6K/1X6+IG9ezJq7WpXQDz+5C5JlPEijSRfjr7hA==}
+  '@fate-core/mod-build@0.1.5':
+    resolution: {integrity: sha512-wzVkBmEWSTFF3qd+w5U45H7rRfPqWwZtM6fP4sjWuTsDChTTGibjOMi9quYgwmuP7NHVqq3cvor5yqq71K8ZTg==}
     peerDependencies:
       '@vitejs/plugin-vue': ^6.0.0
       '@vue/test-utils': ^2.4.0
@@ -1354,7 +1354,7 @@ snapshots:
 
   '@exodus/bytes@1.15.1': {}
 
-  '@fate-core/mod-build@0.1.4(@vitejs/plugin-vue@6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3)))(@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.40)(@vue/server-renderer@3.5.40)(vue@3.5.40(typescript@6.0.3)))(jsdom@29.1.1)(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))':
+  '@fate-core/mod-build@0.1.5(@vitejs/plugin-vue@6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3)))(@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.40)(@vue/server-renderer@3.5.40)(vue@3.5.40(typescript@6.0.3)))(jsdom@29.1.1)(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))':
     dependencies:
       '@fate-core/mod-types': 0.1.2(vue@3.5.40(typescript@6.0.3))
       '@vitejs/plugin-vue': 6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))

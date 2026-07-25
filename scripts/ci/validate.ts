@@ -26,6 +26,7 @@ import { getPullRequestLabels, upsertValidationComment } from './lib/github.ts'
 
 const root = process.cwd()
 const errors: string[] = []
+const warnings: string[] = []
 
 function requireEnv(name: string): string {
 	const value = process.env[name]
@@ -117,7 +118,11 @@ async function main(): Promise<void> {
 			errors.push(`New mod: manifest.author.github ("${authorGithub}") must match the PR author ("${prAuthor}").`)
 		}
 		if (idAuthorPrefix && authorGithub && idAuthorPrefix.toLowerCase() !== authorGithub.toLowerCase()) {
-			errors.push(`New mod: id prefix "${idAuthorPrefix}" should match manifest.author.github ("${authorGithub}") unless this is an approved org alias — flag for maintainer review if intentional.`)
+			// Soft signal, not a blocker: a mismatch is common for an established
+			// author alias (e.g. id prefix "sonder" vs GitHub handle
+			// "Stanislavsonder") — the human reviewer decides, doesn't get
+			// auto-blocked by CI.
+			warnings.push(`New mod: id prefix "${idAuthorPrefix}" doesn't match manifest.author.github ("${authorGithub}") — fine for an established author alias, otherwise worth a second look in review.`)
 		}
 		// A maintainer (or bot) adds the entry to owners.json on merge — not this script's job.
 	}
@@ -179,7 +184,7 @@ async function finish(repo: string, prNumber: string): Promise<void> {
 		return
 	}
 
-	const body = '### ✅ validate-pr checks passed (scope, ownership, schema, version)'
+	const body = ['### ✅ validate-pr checks passed (scope, ownership, schema, version)', ...(warnings.length > 0 ? ['', '**Worth a look in review:**', ...warnings.map(w => `- ${w}`)] : [])].join('\n')
 	console.log(body)
 	await upsertValidationComment(repo, prNumber, body)
 }
