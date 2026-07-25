@@ -89,6 +89,17 @@ jobs:
             git add registry.json
             git commit -m "chore: initialize gh-pages"
           fi
+          if [ ! -f .nojekyll ]; then
+            # GitHub Pages runs Jekyll by default, which ignores
+            # underscore-prefixed paths and can otherwise mangle a plain
+            # static-file site — .nojekyll disables that processing entirely.
+            # Checked independent of registry.json's existence so it still
+            # gets added to a gh-pages branch that already has content but
+            # predates this fix.
+            touch .nojekyll
+            git add .nojekyll
+            git commit -m "chore: add .nojekyll"
+          fi
 
       - name: Publish mod
         if: steps.detect.outputs.mod-dir
