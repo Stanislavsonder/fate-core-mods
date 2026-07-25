@@ -37,7 +37,9 @@ jobs:
         run: |
           CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
           echo "$CHANGED"
-          MOD_DIR=$(echo "$CHANGED" | grep -oE '^mods/[^/]+' | head -n1 || true)
+          # Trailing slash is required: mods/<id>/... is a mod folder, but a
+          # file directly under mods/ (e.g. mods/README.md) is not.
+          MOD_DIR=$(echo "$CHANGED" | grep -oE '^mods/[^/]+/' | sed 's:/$::' | head -n1 || true)
           if [ -n "$MOD_DIR" ]; then
             echo "mod-dir=$MOD_DIR" >> "$GITHUB_OUTPUT"
           elif echo "$CHANGED" | grep -q '^blocklist.json$'; then
