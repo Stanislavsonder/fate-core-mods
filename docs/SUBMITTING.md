@@ -13,7 +13,17 @@ folder layout, local development, and the PR checklist.
 
 ## 1. Scaffold
 
-Create `mods/<author>@<name>/` (use your GitHub handle as `<author>`) with:
+The fastest path is the official scaffolder — it asks for your mod id,
+capabilities, and languages, and emits a ready-to-build project:
+
+```bash
+pnpm create fate-mod
+```
+
+Generate it directly into `mods/<author>@<name>/` in your fork (use your
+GitHub handle as `<author>`), or generate elsewhere and copy the folder in.
+
+Whether scaffolded or hand-written, the folder must contain:
 
 ```
 mods/<author>@<name>/
@@ -38,14 +48,14 @@ mods/<author>@<name>/
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "vite build",
-		"dev": "node node_modules/@fate-core/mod-build/dist/devCli.js"
+		"build": "fate-mod-build build",
+		"dev": "fate-mod-build dev"
 	},
 	"dependencies": {
-		"@fate-core/mod-types": "^0.1.0"
+		"@fate-core/mod-types": "^1.1.0"
 	},
 	"devDependencies": {
-		"@fate-core/mod-build": "^0.1.0",
+		"@fate-core/mod-build": "^1.1.0",
 		"@vitejs/plugin-vue": "^6.0.0",
 		"vite": "^8.0.0",
 		"vue": "^3.5.0"

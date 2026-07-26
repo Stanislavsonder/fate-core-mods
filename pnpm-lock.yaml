@@ -12,11 +12,11 @@ importers:
         specifier: 10.0.1
         version: 10.0.1(eslint@10.7.0)
       '@fate-core/mod-build':
-        specifier: ^0.1.0
-        version: 0.1.5(@vitejs/plugin-vue@6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3)))(@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.40)(@vue/server-renderer@3.5.40)(vue@3.5.40(typescript@6.0.3)))(jsdom@29.1.1)(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))
+        specifier: ^1.1.0
+        version: 1.1.0(@vitejs/plugin-vue@6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3)))(@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.40)(@vue/server-renderer@3.5.40)(vue@3.5.40(typescript@6.0.3)))(jsdom@29.1.1)(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))
       '@fate-core/mod-types':
-        specifier: ^0.1.0
-        version: 0.1.2(vue@3.5.40(typescript@6.0.3))
+        specifier: ^1.1.0
+        version: 1.1.0(vue@3.5.40(typescript@6.0.3))
       '@types/node':
         specifier: 26.1.1
         version: 26.1.1
@@ -194,24 +194,38 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@fate-core/mod-build@0.1.5':
-    resolution: {integrity: sha512-wzVkBmEWSTFF3qd+w5U45H7rRfPqWwZtM6fP4sjWuTsDChTTGibjOMi9quYgwmuP7NHVqq3cvor5yqq71K8ZTg==}
+  '@fate-core/mod-build@1.1.0':
+    resolution: {integrity: sha512-f+K8ju/j/Qp5GfJ61dWAQ1YcwestW774qWG6l9pmWF/vwrBANbnPQwbt5jrHtEL9vE7OLmZCaQ2RT/AV/OkpRw==}
+    hasBin: true
     peerDependencies:
       '@vitejs/plugin-vue': ^6.0.0
       '@vue/test-utils': ^2.4.0
+      cannon-es: ^0.20.0
       jsdom: ^25.0.0 || ^26.0.0 || ^27.0.0 || ^28.0.0 || ^29.0.0
+      three: ^0.185.0
       vite: ^8.0.0
       vue: ^3.5.0
     peerDependenciesMeta:
       '@vue/test-utils':
         optional: true
+      cannon-es:
+        optional: true
       jsdom:
         optional: true
+      three:
+        optional: true
 
-  '@fate-core/mod-types@0.1.2':
-    resolution: {integrity: sha512-+bDnXO5zvnF7EaaXT4A0P8b+AOxSmvw+tySqnGREZ5JuQad3kERfar/9059XNKMXj6nffS3hwuIKnF4nP64uoA==}
+  '@fate-core/mod-types@1.1.0':
+    resolution: {integrity: sha512-fHjdvuS8MsWek5qNijY5hP8sk3y+9pZtGJasLuT1D72hJFg00LOzVmua/h0sCAMK6ZxNsHAr2QuOdgf+Pg/i/w==}
     peerDependencies:
+      cannon-es: ^0.20.0
+      three: ^0.185.0
       vue: ^3.5.0
+    peerDependenciesMeta:
+      cannon-es:
+        optional: true
+      three:
+        optional: true
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -1354,9 +1368,9 @@ snapshots:
 
   '@exodus/bytes@1.15.1': {}
 
-  '@fate-core/mod-build@0.1.5(@vitejs/plugin-vue@6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3)))(@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.40)(@vue/server-renderer@3.5.40)(vue@3.5.40(typescript@6.0.3)))(jsdom@29.1.1)(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))':
+  '@fate-core/mod-build@1.1.0(@vitejs/plugin-vue@6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3)))(@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.40)(@vue/server-renderer@3.5.40)(vue@3.5.40(typescript@6.0.3)))(jsdom@29.1.1)(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))':
     dependencies:
-      '@fate-core/mod-types': 0.1.2(vue@3.5.40(typescript@6.0.3))
+      '@fate-core/mod-types': 1.1.0(vue@3.5.40(typescript@6.0.3))
       '@vitejs/plugin-vue': 6.0.8(vite@8.1.5(@types/node@26.1.1))(vue@3.5.40(typescript@6.0.3))
       vite: 8.1.5(@types/node@26.1.1)
       vite-plugin-css-injected-by-js: 3.5.2(vite@8.1.5(@types/node@26.1.1))
@@ -1365,7 +1379,7 @@ snapshots:
       '@vue/test-utils': 2.4.11(@vue/compiler-dom@3.5.40)(@vue/server-renderer@3.5.40)(vue@3.5.40(typescript@6.0.3))
       jsdom: 29.1.1
 
-  '@fate-core/mod-types@0.1.2(vue@3.5.40(typescript@6.0.3))':
+  '@fate-core/mod-types@1.1.0(vue@3.5.40(typescript@6.0.3))':
     dependencies:
       vue: 3.5.40(typescript@6.0.3)
 

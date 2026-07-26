@@ -71,6 +71,14 @@ async function main(): Promise<void> {
 	}
 
 	if (modIds.size === 0) {
+		if (scopeBypass) {
+			// Label-gated infra PR (schema/CI/docs only) — there's no mod to
+			// validate, and that's fine; the remaining workflow steps are all
+			// conditional on mod-dir and simply skip.
+			console.log('Infra-only PR — no mods/<id>/ folder touched, skipping mod validation.')
+			await finish(repo, prNumber)
+			return
+		}
 		errors.push('No mods/<id>/ folder was touched by this PR — nothing to validate.')
 		await finish(repo, prNumber)
 		return
