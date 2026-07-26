@@ -17,8 +17,8 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "10.0.1",
-		"@fate-core/mod-build": "^0.1.0",
-		"@fate-core/mod-types": "^0.1.0",
+		"@fate-core/mod-build": "^1.1.0",
+		"@fate-core/mod-types": "^1.1.0",
 		"@types/node": "26.1.1",
 		"@types/semver": "7.7.1",
 		"@vue/test-utils": "2.4.11",
