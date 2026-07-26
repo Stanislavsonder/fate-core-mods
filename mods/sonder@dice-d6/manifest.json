@@ -1,0 +1,27 @@
+{
+	"id": "sonder@dice-d6",
+	"version": "1.0.0",
+	"name": "t.name",
+	"author": {
+		"name": "Stanislav Sonder",
+		"github": "Stanislavsonder"
+	},
+	"description": {
+		"short": "t.description.short",
+		"full": "t.description.full"
+	},
+	"languages": [
+		"en"
+	],
+	"tags": ["dice", "d6"],
+	"loadPriority": 100,
+	"sdk": "^1.1.0",
+	"entry": "bundle.mjs",
+	"capabilities": [
+		"dice"
+	],
+	"config": {
+		"groups": [],
+		"options": []
+	}
+}
