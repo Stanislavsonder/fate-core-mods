@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-25T23:46:07.423Z",
+  "generatedAt": "2026-07-26T12:32:26.035Z",
   "blocklist": {},
   "mods": [
     {
@@ -84,6 +84,75 @@
         "en": {
           "name": "Example Mod",
           "short": "A worked example demonstrating the external mod bundle format."
+        }
+      }
+    },
+    {
+      "id": "sonder@dice-d6",
+      "version": "1.0.0",
+      "name": "t.name",
+      "author": {
+        "name": "Stanislav Sonder",
+        "github": "Stanislavsonder"
+      },
+      "description": {
+        "short": "t.description.short",
+        "full": "t.description.full"
+      },
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "dice",
+        "d6"
+      ],
+      "loadPriority": 100,
+      "sdk": "^1.1.0",
+      "entry": "bundle.mjs",
+      "capabilities": [
+        "dice"
+      ],
+      "config": {
+        "groups": [],
+        "options": []
+      },
+      "latestVersion": "1.0.0",
+      "publishedAt": "2026-07-26T12:32:26.034Z",
+      "files": {
+        "bundle.mjs": {
+          "url": "mods/sonder@dice-d6/1.0.0/bundle.mjs",
+          "sha256": "42fba03436298843ea180a06164e8578556300c2e6009f8df9c561402db3f9cc",
+          "size": 13670
+        },
+        "manifest.json": {
+          "url": "mods/sonder@dice-d6/1.0.0/manifest.json",
+          "sha256": "45e6421e5cf988550a7ed904cb8f3337d6f708ec811b088cb40e01e1da37c1d2",
+          "size": 429
+        },
+        "translations/en.json": {
+          "url": "mods/sonder@dice-d6/1.0.0/translations/en.json",
+          "sha256": "01cb9d36487536eb87667f35989fe1d917208e95d64c7a4500fd2e2c47146301",
+          "size": 367
+        },
+        "README.md": {
+          "url": "mods/sonder@dice-d6/1.0.0/README.md",
+          "sha256": "bc8d197fc9131246965b151929c6f3a15612031034d54ccfcfb45a94d95f835d",
+          "size": 818
+        },
+        "CHANGELOG.md": {
+          "url": "mods/sonder@dice-d6/1.0.0/CHANGELOG.md",
+          "sha256": "60976c0ce2ff7a08aacf29c9134dda1192604a0def0228950c061c25b3773c26",
+          "size": 40
+        }
+      },
+      "readmeUrl": "mods/sonder@dice-d6/1.0.0/README.md",
+      "versions": [
+        "1.0.0"
+      ],
+      "strings": {
+        "en": {
+          "name": "D6 Dice",
+          "short": "A standard six-sided die and a gold material for the 3D dice roller."
         }
       }
     }
