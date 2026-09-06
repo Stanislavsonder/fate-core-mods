@@ -31,33 +31,47 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       # Same folder-detection logic as validate-pr.yml, but against the push
-      # diff (github.event.before -> github.sha) instead of a PR diff.
-      - name: Detect changed mod / blocklist-only
+      # diff (github.event.before -> github.sha) instead of a PR diff, and
+      # against *every* changed mod folder — a push can legitimately touch
+      # more than one (see 809f046, which published dice-d6 and silently
+      # skipped example under the old head -n1 logic).
+      - name: Detect changed mods / blocklist-only
         id: detect
         run: |
           CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
           echo "$CHANGED"
           # Trailing slash is required: mods/<id>/... is a mod folder, but a
           # file directly under mods/ (e.g. mods/README.md) is not.
-          MOD_DIR=$(echo "$CHANGED" | grep -oE '^mods/[^/]+/' | sed 's:/$::' | head -n1 || true)
-          if [ -n "$MOD_DIR" ]; then
-            echo "mod-dir=$MOD_DIR" >> "$GITHUB_OUTPUT"
+          MOD_DIRS=$(echo "$CHANGED" | grep -oE '^mods/[^/]+/' | sed 's:/$::' | sort -u)
+          if [ -n "$MOD_DIRS" ]; then
+            {
+              echo "mod-dirs<<PUBLISH_MOD_DIRS_EOF"
+              echo "$MOD_DIRS"
+              echo "PUBLISH_MOD_DIRS_EOF"
+            } >> "$GITHUB_OUTPUT"
+            echo "mod-dirs-csv=$(echo "$MOD_DIRS" | paste -sd, -)" >> "$GITHUB_OUTPUT"
           elif echo "$CHANGED" | grep -q '^blocklist.json$'; then
             echo "blocklist-only=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Install mod dependencies
-        if: steps.detect.outputs.mod-dir
-        working-directory: ${{ steps.detect.outputs.mod-dir }}
-        run: pnpm install --frozen-lockfile
+        if: steps.detect.outputs.mod-dirs
+        run: |
+          while IFS= read -r dir; do
+            [ -n "$dir" ] || continue
+            (cd "$dir" && pnpm install --frozen-lockfile)
+          done <<< "${{ steps.detect.outputs.mod-dirs }}"
 
       - name: Build mod
-        if: steps.detect.outputs.mod-dir
-        working-directory: ${{ steps.detect.outputs.mod-dir }}
-        run: pnpm run build
+        if: steps.detect.outputs.mod-dirs
+        run: |
+          while IFS= read -r dir; do
+            [ -n "$dir" ] || continue
+            (cd "$dir" && pnpm run build)
+          done <<< "${{ steps.detect.outputs.mod-dirs }}"
 
       - name: Checkout gh-pages
-        if: steps.detect.outputs.mod-dir || steps.detect.outputs.blocklist-only == 'true'
+        if: steps.detect.outputs.mod-dirs || steps.detect.outputs.blocklist-only == 'true'
         uses: actions/checkout@v4
         with:
           ref: gh-pages
@@ -66,7 +80,7 @@ jobs:
         continue-on-error: true # first-ever publish: the branch doesn't exist yet
 
       - name: Ensure gh-pages branch exists locally
-        if: steps.detect.outputs.mod-dir || steps.detect.outputs.blocklist-only == 'true'
+        if: steps.detect.outputs.mod-dirs || steps.detect.outputs.blocklist-only == 'true'
         working-directory: gh-pages
         run: |
           git config user.name "fate-mods-bot"
@@ -102,15 +116,19 @@ jobs:
           fi
 
       - name: Publish mod
-        if: steps.detect.outputs.mod-dir
-        run: pnpm ci:publish ${{ steps.detect.outputs.mod-dir }} gh-pages
+        if: steps.detect.outputs.mod-dirs
+        run: |
+          while IFS= read -r dir; do
+            [ -n "$dir" ] || continue
+            pnpm ci:publish "$dir" gh-pages
+          done <<< "${{ steps.detect.outputs.mod-dirs }}"
 
       - name: Publish blocklist-only update
         if: steps.detect.outputs.blocklist-only == 'true'
         run: pnpm ci:publish --blocklist-only gh-pages
 
       - name: Commit and push gh-pages
-        if: steps.detect.outputs.mod-dir || steps.detect.outputs.blocklist-only == 'true'
+        if: steps.detect.outputs.mod-dirs || steps.detect.outputs.blocklist-only == 'true'
         working-directory: gh-pages
         run: |
           git config user.name "fate-mods-bot"
@@ -119,7 +137,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing to publish."
           else
-            git commit -m "publish: ${{ steps.detect.outputs.mod-dir || 'blocklist update' }} (${{ github.sha }})"
+            git commit -m "publish: ${{ steps.detect.outputs.mod-dirs-csv || 'blocklist update' }} (${{ github.sha }})"
             git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
             git push origin gh-pages
           fi
