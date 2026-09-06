@@ -3,7 +3,7 @@
 The complete path from "I have an idea" to "users can install it from the
 Mod Store", assuming only Node ≥ 24 and pnpm. Skim
 [SUBMITTING.md](./SUBMITTING.md) for the registry rules and the app repo's
-[MOD_API.md](https://github.com/Stanislavsonder/fate-core/blob/main/docs/MOD_API.md)
+[MOD_API.md](https://github.com/Stanislavsonder/fate/blob/main/docs/MOD_API.md)
 for the full API contract — this guide is the walkthrough that ties them
 together.
 
@@ -26,7 +26,7 @@ Answer the prompts:
 - **languages** — every language you'll ship a `translations/<lang>.json` for.
 
 You get a self-contained project: `manifest.json`, `bundle.ts`, `src/`,
-`translations/`, a `vite.config.ts` using `@fate-core/mod-build`'s preset,
+`translations/`, a `vite.config.ts` using `@fate-app/mod-build`'s preset,
 and `pnpm dev`/`pnpm build` scripts.
 
 ## 2. Develop with live reload
@@ -36,7 +36,7 @@ pnpm install
 pnpm dev        # serves manifest/bundle with rebuild-on-change
 ```
 
-In the app (any running FATE: Core instance — the web version works):
+In the app (any running Assistant for Fate instance — the web version works):
 Settings → Developer Mode → enable → **Connect dev mod** → paste the URL
 `pnpm dev` prints. The mod hot-reloads in the app on every save. Details and
 caveats: MOD_API.md §"Testing locally".
@@ -48,7 +48,7 @@ Things the API guarantees that first-time authors most often trip on:
   dice mods `three`/`cannon-es` — are not bundled; they resolve to the
   host app's own instances through `FateSDK`. Write normal imports; the
   build preset handles it.
-- Dice mods: extend `Dice` / use `DiceMaterial` from `@fate-core/mod-types`
+- Dice mods: extend `Dice` / use `DiceMaterial` from `@fate-app/mod-types`
   (real exports, bundled into your mod). Your shapes/materials register in
   the app under `<your-mod-id>:<Name>` keys, so they can't collide with
   anyone else's.

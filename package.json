@@ -1,10 +1,10 @@
 {
-	"name": "fate-core-mods",
+	"name": "fate-mods",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"license": "MIT",
-	"description": "The public, curated mod registry for FATE: Core — see docs/SUBMITTING.md to publish a mod, docs/REVIEW_CHECKLIST.md for the reviewer process.",
+	"description": "The public, curated mod registry for Assistant for Fate — see docs/SUBMITTING.md to publish a mod, docs/REVIEW_CHECKLIST.md for the reviewer process.",
 	"engines": {
 		"node": ">=24.14.0"
 	},
@@ -17,8 +17,8 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "10.0.1",
-		"@fate-core/mod-build": "^1.1.0",
-		"@fate-core/mod-types": "^1.1.0",
+		"@fate-app/mod-build": "^2.0.0",
+		"@fate-app/mod-types": "^2.0.0",
 		"@types/node": "26.1.1",
 		"@types/semver": "7.7.1",
 		"@vue/test-utils": "2.4.11",

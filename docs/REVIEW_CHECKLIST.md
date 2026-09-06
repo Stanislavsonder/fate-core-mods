@@ -31,7 +31,7 @@ for it.
   Review every version bump with the same scrutiny as a new submission.
 - **Run it.** Scaffold locally if needed, or use the author's own dev-mode
   setup: `fate-mod-build dev` in the mod's folder, connect from a running
-  FATE: Core instance (Settings → Developer Mode → Connect dev mod), and
+  Assistant for Fate instance (Settings → Developer Mode → Connect dev mod), and
   actually use the mod's UI — a smoke-load pass in CI only proves it mounts
   without throwing, not that it behaves correctly.
 - **Translations.** Spot-check languages you can read for anything abusive

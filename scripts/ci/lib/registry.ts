@@ -31,7 +31,7 @@ export interface RegistryIndex {
 	mods: RegistryModEntry[]
 }
 
-export const REPO = 'Stanislavsonder/fate-core-mods'
+export const REPO = 'Stanislavsonder/fate-mods'
 export const GH_PAGES_RAW_BASE = `https://raw.githubusercontent.com/${REPO}/gh-pages`
 
 /** Returns null (not an error) when nothing has been published yet — every

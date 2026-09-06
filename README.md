@@ -1,7 +1,7 @@
-# fate-core-mods
+# fate-mods
 
 The public, curated mod registry for
-[FATE: Core](https://github.com/Stanislavsonder/fate-core) — the digital
+[Assistant for Fate](https://github.com/Stanislavsonder/fate) — the digital
 character sheet for the FATE Core RPG system. Mods merged here are built by
 CI, hash-pinned into `registry.json`, and served via GitHub Pages straight
 into the app's Mod Store.
@@ -10,7 +10,7 @@ into the app's Mod Store.
   (zero-to-published walkthrough), then [docs/SUBMITTING.md](./docs/SUBMITTING.md)
   for the registry rules.
 - **API contract:** the app repo's
-  [docs/MOD_API.md](https://github.com/Stanislavsonder/fate-core/blob/main/docs/MOD_API.md).
+  [docs/MOD_API.md](https://github.com/Stanislavsonder/fate/blob/main/docs/MOD_API.md).
 - **Review process:** [docs/REVIEW_CHECKLIST.md](./docs/REVIEW_CHECKLIST.md).
   There is no code sandbox — **the PR review is the trust boundary**, and a
   merged mod runs with full app privileges on users' devices.
@@ -31,7 +31,7 @@ into the app's Mod Store.
 
 ## Maintenance policy
 
-- The SDK packages (`@fate-core/mod-types`, `@fate-core/mod-build`) version
+- The SDK packages (`@fate-app/mod-types`, `@fate-app/mod-build`) version
   in lockstep with the app's `SDK_VERSION` (same major.minor). Mods declare
   the range they need via `"sdk"` and the app refuses to load a mod outside
   its range — see MOD_API.md's compatibility section.

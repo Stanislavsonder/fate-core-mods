@@ -4,7 +4,7 @@
  * validate-pr.yml's smoke-load step (README.md Step 2, check 7): imports the
  * freshly built bundle.mjs in plain Node and runs it through the exact same
  * shape validation the app's real loader uses, then mounts every declared
- * sheet component. Reuses @fate-core/mod-build/testing's smokeLoad() so this
+ * sheet component. Reuses @fate-app/mod-build/testing's smokeLoad() so this
  * check can never drift from the app's real gate — see
  * planning/modules-2-0/phase-3-registry-store.md, Decision 4.
  *
@@ -13,7 +13,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
-import { smokeLoad } from '@fate-core/mod-build/testing'
+import { smokeLoad } from '@fate-app/mod-build/testing'
 
 async function main(): Promise<void> {
 	const modDir = process.argv[2]

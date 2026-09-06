@@ -25,7 +25,7 @@ export async function upsertValidationComment(repo: string, prNumber: string, bo
 	const headers = authHeaders()
 	if (!headers.Authorization) return // no token available (e.g. local run) — skip silently
 
-	const marker = '<!-- fate-core-mods:validate-pr -->'
+	const marker = '<!-- fate-mods:validate-pr -->'
 	const taggedBody = `${marker}\n${body}`
 
 	const listRes = await fetch(`${API_BASE}/repos/${repo}/issues/${prNumber}/comments?per_page=100`, { headers })

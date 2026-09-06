@@ -7,7 +7,7 @@ to understand what a reviewer will look for before you open a PR.
 
 The mod API contract itself (what's on `window.FateSDK`, the manifest fields,
 the bundle shape, lifecycle guarantees) lives in the app repo, not here:
-**[FATE: Core's `docs/MOD_API.md`](https://github.com/Stanislavsonder/fate-core/blob/main/docs/MOD_API.md)**
+**[Assistant for Fate's `docs/MOD_API.md`](https://github.com/Stanislavsonder/fate/blob/main/docs/MOD_API.md)**
 — read that first. This document only covers the registry-specific parts:
 folder layout, local development, and the PR checklist.
 
@@ -52,10 +52,10 @@ mods/<author>@<name>/
 		"dev": "fate-mod-build dev"
 	},
 	"dependencies": {
-		"@fate-core/mod-types": "^1.1.0"
+		"@fate-app/mod-types": "^1.1.0"
 	},
 	"devDependencies": {
-		"@fate-core/mod-build": "^1.1.0",
+		"@fate-app/mod-build": "^1.1.0",
 		"@vitejs/plugin-vue": "^6.0.0",
 		"vite": "^8.0.0",
 		"vue": "^3.5.0"
@@ -66,7 +66,7 @@ mods/<author>@<name>/
 `vite.config.ts`:
 
 ```ts
-import { defineModConfig } from '@fate-core/mod-build'
+import { defineModConfig } from '@fate-app/mod-build'
 export default defineModConfig()
 ```
 
@@ -87,7 +87,7 @@ pnpm install
 pnpm run build          # emits dist/bundle.mjs
 ```
 
-For live reload against a running FATE: Core instance, see `docs/MOD_API.md`
+For live reload against a running Assistant for Fate instance, see `docs/MOD_API.md`
 §5 ("Testing locally") in the app repo — Developer Mode → Connect dev mod.
 
 ## 3. Before opening a PR

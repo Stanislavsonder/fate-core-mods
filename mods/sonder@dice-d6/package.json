@@ -7,10 +7,10 @@
 		"build": "fate-mod-build build"
 	},
 	"dependencies": {
-		"@fate-core/mod-types": "^1.1.0"
+		"@fate-app/mod-types": "^2.0.0"
 	},
 	"devDependencies": {
-		"@fate-core/mod-build": "^1.1.0",
+		"@fate-app/mod-build": "^2.0.0",
 		"@ionic/vue": "8.8.15",
 		"@types/three": "0.185.1",
 		"@vitejs/plugin-vue": "6.0.8",

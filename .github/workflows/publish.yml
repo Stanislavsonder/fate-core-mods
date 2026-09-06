@@ -69,7 +69,7 @@ jobs:
         if: steps.detect.outputs.mod-dir || steps.detect.outputs.blocklist-only == 'true'
         working-directory: gh-pages
         run: |
-          git config user.name "fate-core-mods-bot"
+          git config user.name "fate-mods-bot"
           git config user.email "actions@github.com"
           # A *failed* checkout of a not-yet-existing "gh-pages" ref still
           # leaves behind a git-initialized directory on the runner's default
@@ -113,7 +113,7 @@ jobs:
         if: steps.detect.outputs.mod-dir || steps.detect.outputs.blocklist-only == 'true'
         working-directory: gh-pages
         run: |
-          git config user.name "fate-core-mods-bot"
+          git config user.name "fate-mods-bot"
           git config user.email "actions@github.com"
           git add -A
           if git diff --cached --quiet; then

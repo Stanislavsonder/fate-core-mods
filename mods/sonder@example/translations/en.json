@@ -6,7 +6,7 @@
 		}
 	},
 	"description": {
-		"full": "Ships one sheet section with its own character-data field, a config option, and scoped CSS - the reference mod for FATE: Core's Modules 2.0 SDK.",
+		"full": "Ships one sheet section with its own character-data field, a config option, and scoped CSS - the reference mod for Assistant for Fate's Modules 2.0 SDK.",
 		"short": "A worked example demonstrating the external mod bundle format."
 	},
 	"maxLengthNote": "Up to {value} characters",

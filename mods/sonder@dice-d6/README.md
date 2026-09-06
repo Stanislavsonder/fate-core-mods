@@ -1,6 +1,6 @@
 # D6 Dice
 
-A FATE: Core mod (`sonder@dice-d6`), scaffolded by `create-fate-mod`.
+An Assistant for Fate mod (`sonder@dice-d6`), scaffolded by `create-fate-mod`.
 
 ## Developing
 
@@ -14,13 +14,13 @@ Then, in the app: Settings → Developer Mode → enable it → connect to
 
 ## Publishing
 
-See [`fate-core-mods`](https://github.com/Stanislavsonder/fate-core-mods)'s
+See [`fate-mods`](https://github.com/Stanislavsonder/fate-mods)'s
 `SUBMITTING.md` for how to submit this mod to the public registry once it's
 ready. In short: `npm run build`, then open a pull request against that repo
 adding this folder under `mods/sonder@dice-d6/`.
 
 ## API reference
 
-See [`docs/MOD_API.md`](https://github.com/Stanislavsonder/fate-core/blob/main/docs/MOD_API.md)
+See [`docs/MOD_API.md`](https://github.com/Stanislavsonder/fate/blob/main/docs/MOD_API.md)
 in the app repo for the full contract this mod is built against (manifest
 shape, `window.FateSDK`, capabilities, lifecycle hooks).

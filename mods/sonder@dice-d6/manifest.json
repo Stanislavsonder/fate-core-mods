@@ -1,6 +1,6 @@
 {
 	"id": "sonder@dice-d6",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"name": "t.name",
 	"author": {
 		"name": "Stanislav Sonder",
@@ -15,7 +15,7 @@
 	],
 	"tags": ["dice", "d6"],
 	"loadPriority": 100,
-	"sdk": "^1.1.0",
+	"sdk": "^2.0.0",
 	"entry": "bundle.mjs",
 	"capabilities": [
 		"dice"

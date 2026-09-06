@@ -48,7 +48,7 @@ jobs:
         run: pnpm ci:validate
 
       # Check 5: reproducible build with the pinned toolchain, frozen lockfile.
-      # manifestChecks.ts (part of @fate-core/mod-build) enforces the 1MB
+      # manifestChecks.ts (part of @fate-app/mod-build) enforces the 1MB
       # soft / 3MB hard bundle size limits as part of this build.
       - name: Install mod dependencies
         if: steps.validate.outputs.mod-dir
