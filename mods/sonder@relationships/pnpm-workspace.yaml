@@ -1,0 +1,8 @@
+# Without this file, `pnpm install` run from inside this folder walks up to
+# the repo-root pnpm-workspace.yaml and treats THIS mod as part of that
+# (non-)workspace instead of installing its own isolated node_modules/lockfile
+# - see sonder@dice-d20 for the same fix. minimumReleaseAge: 0 for the same
+# reason as the repo-root file (this mod's own small, review-gated dependency
+# chain doesn't need pnpm's default ~24h "wait before trusting a fresh
+# version" policy).
+minimumReleaseAge: 0

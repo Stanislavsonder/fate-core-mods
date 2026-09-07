@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Añadir",
+		"remove": "Eliminar",
+		"save": "Guardar"
+	},
+	"add": "Añadir relación",
+	"confirmRemove": "¿Seguro que quieres eliminar \"{value}\"?",
+	"description": {
+		"full": "Registra las relaciones de tu personaje: quiénes son y qué los conecta.",
+		"short": "Registra las relaciones de tu personaje"
+	},
+	"edit": "Editar relación",
+	"empty": "Aún no se han añadido relaciones",
+	"errors": {
+		"nameRequired": "El nombre de la relación es obligatorio.",
+		"whatRequired": "La descripción de la relación es obligatoria."
+	},
+	"form": {
+		"name": {
+			"label": "Nombre",
+			"placeholder": "¿Quién es?"
+		},
+		"what": {
+			"label": "Qué",
+			"placeholder": "¿Cómo se relaciona con tu personaje?"
+		}
+	},
+	"label": "Relaciones",
+	"name": "Relaciones",
+	"relation": "relación"
+}

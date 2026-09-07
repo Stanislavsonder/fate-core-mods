@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "添加",
+		"remove": "移除",
+		"save": "保存"
+	},
+	"add": "添加关系",
+	"confirmRemove": "确定要移除\"{value}\"吗？",
+	"description": {
+		"full": "记录你角色的人际关系：他们是谁，以及是什么将他们联系在一起。",
+		"short": "记录你角色的人际关系"
+	},
+	"edit": "编辑关系",
+	"empty": "尚未添加任何关系",
+	"errors": {
+		"nameRequired": "姓名为必填项。",
+		"whatRequired": "关系描述为必填项。"
+	},
+	"form": {
+		"name": {
+			"label": "姓名",
+			"placeholder": "这是谁？"
+		},
+		"what": {
+			"label": "关系",
+			"placeholder": "此人与你的角色有什么关系？"
+		}
+	},
+	"label": "人际关系",
+	"name": "人际关系",
+	"relation": "关系"
+}

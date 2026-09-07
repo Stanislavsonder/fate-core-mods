@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Adaugă",
+		"remove": "Elimină",
+		"save": "Salvează"
+	},
+	"add": "Adaugă relație",
+	"confirmRemove": "Sigur dorești să elimini „{value}”?",
+	"description": {
+		"full": "Urmărește relațiile personajului tău: cine sunt acestea și ce le leagă.",
+		"short": "Urmărește relațiile personajului tău"
+	},
+	"edit": "Editează relația",
+	"empty": "Nu a fost adăugată nicio relație încă",
+	"errors": {
+		"nameRequired": "Numele relației este obligatoriu.",
+		"whatRequired": "Descrierea relației este obligatorie."
+	},
+	"form": {
+		"name": {
+			"label": "Nume",
+			"placeholder": "Cine este?"
+		},
+		"what": {
+			"label": "Legătură",
+			"placeholder": "Cum este legată această persoană de personajul tău?"
+		}
+	},
+	"label": "Relații",
+	"name": "Relații",
+	"relation": "relație"
+}
