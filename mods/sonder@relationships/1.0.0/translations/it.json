@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Aggiungi",
+		"remove": "Rimuovi",
+		"save": "Salva"
+	},
+	"add": "Aggiungi relazione",
+	"confirmRemove": "Vuoi davvero rimuovere \"{value}\"?",
+	"description": {
+		"full": "Tieni traccia delle relazioni del tuo personaggio: chi sono e cosa li collega.",
+		"short": "Tieni traccia delle relazioni del tuo personaggio"
+	},
+	"edit": "Modifica relazione",
+	"empty": "Nessuna relazione aggiunta finora",
+	"errors": {
+		"nameRequired": "Il nome della relazione è obbligatorio.",
+		"whatRequired": "La descrizione della relazione è obbligatoria."
+	},
+	"form": {
+		"name": {
+			"label": "Nome",
+			"placeholder": "Chi è?"
+		},
+		"what": {
+			"label": "Cosa",
+			"placeholder": "Come è legato al tuo personaggio?"
+		}
+	},
+	"label": "Relazioni",
+	"name": "Relazioni",
+	"relation": "relazione"
+}

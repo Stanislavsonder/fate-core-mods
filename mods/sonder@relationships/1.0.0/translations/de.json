@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Hinzufügen",
+		"remove": "Entfernen",
+		"save": "Speichern"
+	},
+	"add": "Beziehung hinzufügen",
+	"confirmRemove": "Möchtest du \"{value}\" wirklich entfernen?",
+	"description": {
+		"full": "Verfolge die Beziehungen deines Charakters: wer sie sind und was sie verbindet.",
+		"short": "Verfolge die Beziehungen deines Charakters"
+	},
+	"edit": "Beziehung bearbeiten",
+	"empty": "Noch keine Beziehungen hinzugefügt",
+	"errors": {
+		"nameRequired": "Der Name der Beziehung ist erforderlich.",
+		"whatRequired": "Die Beschreibung der Beziehung ist erforderlich."
+	},
+	"form": {
+		"name": {
+			"label": "Name",
+			"placeholder": "Wer ist das?"
+		},
+		"what": {
+			"label": "Was",
+			"placeholder": "Wie steht diese Person zu deinem Charakter?"
+		}
+	},
+	"label": "Beziehungen",
+	"name": "Beziehungen",
+	"relation": "Beziehung"
+}

@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Add",
+		"remove": "Remove",
+		"save": "Save"
+	},
+	"add": "Add relation",
+	"confirmRemove": "Are you sure you want to remove \"{value}\"?",
+	"description": {
+		"full": "Track your character's relationships: who they are, and what connects them.",
+		"short": "Track your character's relationships"
+	},
+	"edit": "Edit relation",
+	"empty": "No relations added yet",
+	"errors": {
+		"nameRequired": "Relation name is required.",
+		"whatRequired": "Relation description is required."
+	},
+	"form": {
+		"name": {
+			"label": "Name",
+			"placeholder": "Who is this?"
+		},
+		"what": {
+			"label": "What",
+			"placeholder": "How are they connected to your character?"
+		}
+	},
+	"label": "Relations",
+	"name": "Relationships",
+	"relation": "relation"
+}

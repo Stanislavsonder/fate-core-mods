@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Přidat",
+		"remove": "Odebrat",
+		"save": "Uložit"
+	},
+	"add": "Přidat vztah",
+	"confirmRemove": "Opravdu chcete odebrat „{value}“?",
+	"description": {
+		"full": "Sledujte vztahy své postavy: kdo tito lidé jsou a co je spojuje.",
+		"short": "Sledujte vztahy své postavy"
+	},
+	"edit": "Upravit vztah",
+	"empty": "Zatím nebyly přidány žádné vztahy",
+	"errors": {
+		"nameRequired": "Je vyžadováno jméno.",
+		"whatRequired": "Je vyžadován popis vztahu."
+	},
+	"form": {
+		"name": {
+			"label": "Jméno",
+			"placeholder": "Kdo to je?"
+		},
+		"what": {
+			"label": "Vztah",
+			"placeholder": "Jak tato osoba souvisí s vaší postavou?"
+		}
+	},
+	"label": "Vztahy",
+	"name": "Vztahy",
+	"relation": "vztah"
+}

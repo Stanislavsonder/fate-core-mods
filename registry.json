@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-07T00:40:41.414Z",
+  "generatedAt": "2026-09-07T21:03:03.077Z",
   "blocklist": {},
   "mods": [
     {
@@ -422,6 +422,575 @@
           "name": "D20 Dice",
           "short": "A standard twenty-sided die for the 3D dice roller.",
           "full": "Adds a standard twenty-sided die to the 3D dice roller. Results are summed across multiple dice, with natural twenties and natural ones highlighted."
+        }
+      }
+    },
+    {
+      "appVersion": ">=2.0.0",
+      "author": {
+        "email": "stanislavsonder@gmail.com",
+        "github": "Stanislavsonder",
+        "name": "Stanislav Sonder"
+      },
+      "capabilities": [
+        "sheetComponents"
+      ],
+      "config": {
+        "groups": [],
+        "options": []
+      },
+      "description": {
+        "full": "t.description.full",
+        "short": "t.description.short"
+      },
+      "entry": "bundle.mjs",
+      "id": "sonder@relationships",
+      "languages": [
+        "en",
+        "fr",
+        "es",
+        "pt",
+        "it",
+        "de",
+        "nl",
+        "sv",
+        "no",
+        "da",
+        "fi",
+        "ru",
+        "be",
+        "uk",
+        "pl",
+        "cs",
+        "ro",
+        "el",
+        "tr",
+        "he",
+        "ar",
+        "fa",
+        "sw",
+        "zh",
+        "hi",
+        "bn",
+        "ja",
+        "ko",
+        "id",
+        "th"
+      ],
+      "loadPriority": 100,
+      "name": "t.name",
+      "sdk": "^2.1.0",
+      "tags": [
+        "character-sheet"
+      ],
+      "version": "1.0.0",
+      "latestVersion": "1.0.0",
+      "publishedAt": "2026-09-07T21:03:03.074Z",
+      "files": {
+        "bundle.mjs": {
+          "url": "mods/sonder@relationships/1.0.0/bundle.mjs",
+          "sha256": "2b0f07a83aa35863a516bc8bafb5653392a1dbed560f346a214547ec6d276d65",
+          "size": 38233
+        },
+        "manifest.json": {
+          "url": "mods/sonder@relationships/1.0.0/manifest.json",
+          "sha256": "e8f8b6c883b24621db4631c286500603f8f10c5855027e37b923e01b673e643d",
+          "size": 744
+        },
+        "translations/ar.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/ar.json",
+          "sha256": "a9c1189376d58dd1ec20413b7c0fcd4fad423db7026f1ee619c20aaf12a6ad06",
+          "size": 888
+        },
+        "translations/be.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/be.json",
+          "sha256": "fc4265207fb88f748724e8a8cf95004f120595a55f64f6d04b3f817cf95c906f",
+          "size": 1058
+        },
+        "translations/bn.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/bn.json",
+          "sha256": "60ee60095c881ffb10d016fab68c4bb453e6762ce68bf02e6c3b9841b57f0235",
+          "size": 1413
+        },
+        "translations/cs.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/cs.json",
+          "sha256": "b71696cb38a0174de73d58f136068794206e1a2c32c02503c077cb9a1554be15",
+          "size": 748
+        },
+        "translations/da.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/da.json",
+          "sha256": "360b480c38893d29e3c97b33943a1f000393dfce011209cbbf5202b50b3c6970",
+          "size": 813
+        },
+        "translations/de.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/de.json",
+          "sha256": "3cd621fc434baa5b4d9c1e192d73acf7d1d181b20e772a6c14b300abfd76e8e1",
+          "size": 851
+        },
+        "translations/el.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/el.json",
+          "sha256": "2854f5177c1fb31ec9942690d4b8131c094e95f4456062a461d3a42b54795012",
+          "size": 1113
+        },
+        "translations/en.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/en.json",
+          "sha256": "47b91ba56c9983a48852c86f93bfdba881f501284e20dc5da180e7a0f758b586",
+          "size": 765
+        },
+        "translations/es.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/es.json",
+          "sha256": "f50a2247870beec021c67fc965c3c1dddab6ac407fe997a01c3067c260321aa3",
+          "size": 820
+        },
+        "translations/fa.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/fa.json",
+          "sha256": "42ea7cb9ac46b8066db083224092ef9db7ed2e81d54814386930fff904f5ca63",
+          "size": 1025
+        },
+        "translations/fi.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/fi.json",
+          "sha256": "44ec11f4d0f050c2b30d9b7e6db0cee7e2ec2914416b30fd199107f54f030933",
+          "size": 748
+        },
+        "translations/fr.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/fr.json",
+          "sha256": "a41cb3a4fbb4d73a4e9ea487a36def99f383aea2743cc6b11358bc12574673b4",
+          "size": 837
+        },
+        "translations/he.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/he.json",
+          "sha256": "3f5f95afd6f8b59d6714605144090a2e517ae834e9bc9bd8d4fba56921fe5fb8",
+          "size": 864
+        },
+        "translations/hi.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/hi.json",
+          "sha256": "91ebbe4964c9f108e6dbf3af2b8234b4488bc9af3091f39329044e768203e6f9",
+          "size": 1291
+        },
+        "translations/id.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/id.json",
+          "sha256": "55e1ecef6f98b91de7bfa3a2ace6ec4e2e5ca457660a348105204de01f4c7bda",
+          "size": 776
+        },
+        "translations/it.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/it.json",
+          "sha256": "f980e01678dc60eb074eaaeaa60ff6e99b3be822f1e6c94170826e4e82ca7a26",
+          "size": 814
+        },
+        "translations/ja.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/ja.json",
+          "sha256": "c39da676a41862010b8371987b60d796a76a4732484c00ba8df077f36a358e55",
+          "size": 935
+        },
+        "translations/ko.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/ko.json",
+          "sha256": "db4990877902cd50abf0f743a377095c7d3a4c8acd93effeecf85175eb40bc90",
+          "size": 879
+        },
+        "translations/nl.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/nl.json",
+          "sha256": "359db5c547e6cff0dc6cddbc8ed6efce89e97a9857f2f8967b884da342bdea7b",
+          "size": 801
+        },
+        "translations/no.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/no.json",
+          "sha256": "da46fcf6a3b6528cc447495ae8c5a935138d1f5b65addbae813809c6fcddf6e7",
+          "size": 822
+        },
+        "translations/pl.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/pl.json",
+          "sha256": "7025730cfa045ebc0d2610c698d8c48a54ae1ee94249a4758976e77fd47e392f",
+          "size": 782
+        },
+        "translations/pt.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/pt.json",
+          "sha256": "40c857616c1f399ee429cfd091c896c4d800df7dffa05d3a9eb579368cda89e5",
+          "size": 820
+        },
+        "translations/ro.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/ro.json",
+          "sha256": "37a695f732e3f65280de43191701e6b112aa63846629058535b8ce6596708013",
+          "size": 833
+        },
+        "translations/ru.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/ru.json",
+          "sha256": "92dc7db5c0e7441392d0065ba9fbec246bffb94d710e72c29720ad770810eb11",
+          "size": 1088
+        },
+        "translations/sv.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/sv.json",
+          "sha256": "7c0ac55aba8fac2128f5e03ddf91ebd2c322de32b2b76cec7ff37d029fe34f6b",
+          "size": 802
+        },
+        "translations/sw.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/sw.json",
+          "sha256": "f981e6d67b149111ab05e5c31a3db9288ded1f8514361708e44da639e4d28ab3",
+          "size": 761
+        },
+        "translations/th.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/th.json",
+          "sha256": "ebf66b19289c38ce2c8a7b8b0a842c876951c20967ce0d2009a1fe7cfe506548",
+          "size": 1464
+        },
+        "translations/tr.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/tr.json",
+          "sha256": "861546dc23d43b80b806fd2dc7ce032485392ff628dc36ce654e5b97d0c9ecdb",
+          "size": 814
+        },
+        "translations/uk.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/uk.json",
+          "sha256": "488b5203b39277c6cadc2920b2bfe8abfa8ea41e2e355602671e3c98fa5b0f86",
+          "size": 1069
+        },
+        "translations/zh.json": {
+          "url": "mods/sonder@relationships/1.0.0/translations/zh.json",
+          "sha256": "80e9a7c0fba84c3a2b4e52e485f3c3befc07742f7875445b64c8565d371121a3",
+          "size": 759
+        },
+        "README.md": {
+          "url": "mods/sonder@relationships/1.0.0/README.md",
+          "sha256": "3eefd033ec4212cfaf5afdec7377a5099e05faabc8e84a8ff683ee216cb973ac",
+          "size": 1071
+        },
+        "CHANGELOG.md": {
+          "url": "mods/sonder@relationships/1.0.0/CHANGELOG.md",
+          "sha256": "8cbfbc95b64244fe473939c856e491bd007db4d6617911decbe83424cfe66d07",
+          "size": 39
+        }
+      },
+      "readmeUrl": "mods/sonder@relationships/1.0.0/README.md",
+      "versions": [
+        "1.0.0"
+      ],
+      "releases": {
+        "1.0.0": {
+          "version": "1.0.0",
+          "appVersion": ">=2.0.0",
+          "sdk": "^2.1.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@relationships/1.0.0/CHANGELOG.md",
+              "sha256": "8cbfbc95b64244fe473939c856e491bd007db4d6617911decbe83424cfe66d07",
+              "size": 39
+            },
+            "README.md": {
+              "url": "mods/sonder@relationships/1.0.0/README.md",
+              "sha256": "3eefd033ec4212cfaf5afdec7377a5099e05faabc8e84a8ff683ee216cb973ac",
+              "size": 1071
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@relationships/1.0.0/bundle.mjs",
+              "sha256": "2b0f07a83aa35863a516bc8bafb5653392a1dbed560f346a214547ec6d276d65",
+              "size": 38233
+            },
+            "manifest.json": {
+              "url": "mods/sonder@relationships/1.0.0/manifest.json",
+              "sha256": "e8f8b6c883b24621db4631c286500603f8f10c5855027e37b923e01b673e643d",
+              "size": 744
+            },
+            "translations/ar.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/ar.json",
+              "sha256": "a9c1189376d58dd1ec20413b7c0fcd4fad423db7026f1ee619c20aaf12a6ad06",
+              "size": 888
+            },
+            "translations/be.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/be.json",
+              "sha256": "fc4265207fb88f748724e8a8cf95004f120595a55f64f6d04b3f817cf95c906f",
+              "size": 1058
+            },
+            "translations/bn.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/bn.json",
+              "sha256": "60ee60095c881ffb10d016fab68c4bb453e6762ce68bf02e6c3b9841b57f0235",
+              "size": 1413
+            },
+            "translations/cs.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/cs.json",
+              "sha256": "b71696cb38a0174de73d58f136068794206e1a2c32c02503c077cb9a1554be15",
+              "size": 748
+            },
+            "translations/da.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/da.json",
+              "sha256": "360b480c38893d29e3c97b33943a1f000393dfce011209cbbf5202b50b3c6970",
+              "size": 813
+            },
+            "translations/de.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/de.json",
+              "sha256": "3cd621fc434baa5b4d9c1e192d73acf7d1d181b20e772a6c14b300abfd76e8e1",
+              "size": 851
+            },
+            "translations/el.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/el.json",
+              "sha256": "2854f5177c1fb31ec9942690d4b8131c094e95f4456062a461d3a42b54795012",
+              "size": 1113
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/en.json",
+              "sha256": "47b91ba56c9983a48852c86f93bfdba881f501284e20dc5da180e7a0f758b586",
+              "size": 765
+            },
+            "translations/es.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/es.json",
+              "sha256": "f50a2247870beec021c67fc965c3c1dddab6ac407fe997a01c3067c260321aa3",
+              "size": 820
+            },
+            "translations/fa.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/fa.json",
+              "sha256": "42ea7cb9ac46b8066db083224092ef9db7ed2e81d54814386930fff904f5ca63",
+              "size": 1025
+            },
+            "translations/fi.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/fi.json",
+              "sha256": "44ec11f4d0f050c2b30d9b7e6db0cee7e2ec2914416b30fd199107f54f030933",
+              "size": 748
+            },
+            "translations/fr.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/fr.json",
+              "sha256": "a41cb3a4fbb4d73a4e9ea487a36def99f383aea2743cc6b11358bc12574673b4",
+              "size": 837
+            },
+            "translations/he.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/he.json",
+              "sha256": "3f5f95afd6f8b59d6714605144090a2e517ae834e9bc9bd8d4fba56921fe5fb8",
+              "size": 864
+            },
+            "translations/hi.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/hi.json",
+              "sha256": "91ebbe4964c9f108e6dbf3af2b8234b4488bc9af3091f39329044e768203e6f9",
+              "size": 1291
+            },
+            "translations/id.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/id.json",
+              "sha256": "55e1ecef6f98b91de7bfa3a2ace6ec4e2e5ca457660a348105204de01f4c7bda",
+              "size": 776
+            },
+            "translations/it.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/it.json",
+              "sha256": "f980e01678dc60eb074eaaeaa60ff6e99b3be822f1e6c94170826e4e82ca7a26",
+              "size": 814
+            },
+            "translations/ja.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/ja.json",
+              "sha256": "c39da676a41862010b8371987b60d796a76a4732484c00ba8df077f36a358e55",
+              "size": 935
+            },
+            "translations/ko.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/ko.json",
+              "sha256": "db4990877902cd50abf0f743a377095c7d3a4c8acd93effeecf85175eb40bc90",
+              "size": 879
+            },
+            "translations/nl.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/nl.json",
+              "sha256": "359db5c547e6cff0dc6cddbc8ed6efce89e97a9857f2f8967b884da342bdea7b",
+              "size": 801
+            },
+            "translations/no.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/no.json",
+              "sha256": "da46fcf6a3b6528cc447495ae8c5a935138d1f5b65addbae813809c6fcddf6e7",
+              "size": 822
+            },
+            "translations/pl.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/pl.json",
+              "sha256": "7025730cfa045ebc0d2610c698d8c48a54ae1ee94249a4758976e77fd47e392f",
+              "size": 782
+            },
+            "translations/pt.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/pt.json",
+              "sha256": "40c857616c1f399ee429cfd091c896c4d800df7dffa05d3a9eb579368cda89e5",
+              "size": 820
+            },
+            "translations/ro.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/ro.json",
+              "sha256": "37a695f732e3f65280de43191701e6b112aa63846629058535b8ce6596708013",
+              "size": 833
+            },
+            "translations/ru.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/ru.json",
+              "sha256": "92dc7db5c0e7441392d0065ba9fbec246bffb94d710e72c29720ad770810eb11",
+              "size": 1088
+            },
+            "translations/sv.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/sv.json",
+              "sha256": "7c0ac55aba8fac2128f5e03ddf91ebd2c322de32b2b76cec7ff37d029fe34f6b",
+              "size": 802
+            },
+            "translations/sw.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/sw.json",
+              "sha256": "f981e6d67b149111ab05e5c31a3db9288ded1f8514361708e44da639e4d28ab3",
+              "size": 761
+            },
+            "translations/th.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/th.json",
+              "sha256": "ebf66b19289c38ce2c8a7b8b0a842c876951c20967ce0d2009a1fe7cfe506548",
+              "size": 1464
+            },
+            "translations/tr.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/tr.json",
+              "sha256": "861546dc23d43b80b806fd2dc7ce032485392ff628dc36ce654e5b97d0c9ecdb",
+              "size": 814
+            },
+            "translations/uk.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/uk.json",
+              "sha256": "488b5203b39277c6cadc2920b2bfe8abfa8ea41e2e355602671e3c98fa5b0f86",
+              "size": 1069
+            },
+            "translations/zh.json": {
+              "url": "mods/sonder@relationships/1.0.0/translations/zh.json",
+              "sha256": "80e9a7c0fba84c3a2b4e52e485f3c3befc07742f7875445b64c8565d371121a3",
+              "size": 759
+            }
+          }
+        }
+      },
+      "strings": {
+        "ar": {
+          "name": "العلاقات",
+          "short": "تتبّع علاقات شخصيتك",
+          "full": "تتبّع علاقات شخصيتك: من هم وما الذي يربطهم بها."
+        },
+        "be": {
+          "name": "Адносіны",
+          "short": "Адсочвайце адносіны вашага персанажа",
+          "full": "Адсочвайце адносіны вашага персанажа: хто гэтыя людзі і што іх звязвае."
+        },
+        "bn": {
+          "name": "সম্পর্কসমূহ",
+          "short": "আপনার চরিত্রের সম্পর্কগুলি ট্র্যাক করুন",
+          "full": "আপনার চরিত্রের সম্পর্কগুলি ট্র্যাক করুন: তারা কে এবং তাদের সংযুক্ত করে কী।"
+        },
+        "cs": {
+          "name": "Vztahy",
+          "short": "Sledujte vztahy své postavy",
+          "full": "Sledujte vztahy své postavy: kdo tito lidé jsou a co je spojuje."
+        },
+        "da": {
+          "name": "Relationer",
+          "short": "Hold styr på din karakters relationer",
+          "full": "Hold styr på din karakters relationer: hvem de er, og hvad der forbinder dem."
+        },
+        "de": {
+          "name": "Beziehungen",
+          "short": "Verfolge die Beziehungen deines Charakters",
+          "full": "Verfolge die Beziehungen deines Charakters: wer sie sind und was sie verbindet."
+        },
+        "el": {
+          "name": "Σχέσεις",
+          "short": "Παρακολουθήστε τις σχέσεις του χαρακτήρα σας",
+          "full": "Παρακολουθήστε τις σχέσεις του χαρακτήρα σας: ποιοι είναι και τι τους συνδέει."
+        },
+        "en": {
+          "name": "Relationships",
+          "short": "Track your character's relationships",
+          "full": "Track your character's relationships: who they are, and what connects them."
+        },
+        "es": {
+          "name": "Relaciones",
+          "short": "Registra las relaciones de tu personaje",
+          "full": "Registra las relaciones de tu personaje: quiénes son y qué los conecta."
+        },
+        "fa": {
+          "name": "روابط",
+          "short": "روابط شخصیت خود را دنبال کنید",
+          "full": "روابط شخصیت خود را دنبال کنید: چه کسانی هستند و چه چیزی آن‌ها را به هم پیوند می‌دهد."
+        },
+        "fi": {
+          "name": "Suhteet",
+          "short": "Seuraa hahmosi suhteita",
+          "full": "Seuraa hahmosi suhteita: keitä he ovat ja mikä yhdistää heidät."
+        },
+        "fr": {
+          "name": "Relations",
+          "short": "Suivez les relations de votre personnage",
+          "full": "Suivez les relations de votre personnage : qui elles sont et ce qui les relie."
+        },
+        "he": {
+          "name": "קשרים",
+          "short": "עקוב אחר הקשרים של הדמות שלך",
+          "full": "עקוב אחר הקשרים של הדמות שלך: מי הם ומה מחבר ביניהם."
+        },
+        "hi": {
+          "name": "संबंध",
+          "short": "अपने पात्र के संबंधों को ट्रैक करें",
+          "full": "अपने पात्र के संबंधों को ट्रैक करें: वे कौन हैं और उन्हें क्या जोड़ता है।"
+        },
+        "id": {
+          "name": "Hubungan",
+          "short": "Lacak hubungan karakter Anda",
+          "full": "Lacak hubungan karakter Anda: siapa mereka dan apa yang menghubungkan mereka."
+        },
+        "it": {
+          "name": "Relazioni",
+          "short": "Tieni traccia delle relazioni del tuo personaggio",
+          "full": "Tieni traccia delle relazioni del tuo personaggio: chi sono e cosa li collega."
+        },
+        "ja": {
+          "name": "人間関係",
+          "short": "キャラクターの人間関係を記録します",
+          "full": "キャラクターの人間関係を記録しましょう。相手が誰で、どうつながっているかを管理できます。"
+        },
+        "ko": {
+          "name": "인간관계",
+          "short": "캐릭터의 인간관계를 기록하세요",
+          "full": "캐릭터의 인간관계를 기록하세요: 그들이 누구인지, 그리고 무엇이 그들을 연결하는지."
+        },
+        "nl": {
+          "name": "Relaties",
+          "short": "Houd de relaties van je personage bij",
+          "full": "Houd de relaties van je personage bij: wie ze zijn en wat hen verbindt."
+        },
+        "no": {
+          "name": "Relasjoner",
+          "short": "Hold oversikt over karakterens relasjoner",
+          "full": "Hold oversikt over karakterens relasjoner: hvem de er og hva som knytter dem sammen."
+        },
+        "pl": {
+          "name": "Relacje",
+          "short": "Śledź relacje swojej postaci",
+          "full": "Śledź relacje swojej postaci: kim są te osoby i co je łączy."
+        },
+        "pt": {
+          "name": "Relações",
+          "short": "Acompanhe as relações da sua personagem",
+          "full": "Acompanhe as relações da sua personagem: quem são e o que as liga."
+        },
+        "ro": {
+          "name": "Relații",
+          "short": "Urmărește relațiile personajului tău",
+          "full": "Urmărește relațiile personajului tău: cine sunt acestea și ce le leagă."
+        },
+        "ru": {
+          "name": "Отношения",
+          "short": "Отслеживайте отношения вашего персонажа",
+          "full": "Отслеживайте отношения вашего персонажа: кто эти люди и что их связывает."
+        },
+        "sv": {
+          "name": "Relationer",
+          "short": "Håll koll på din karaktärs relationer",
+          "full": "Håll koll på din karaktärs relationer: vilka de är och vad som förenar dem."
+        },
+        "sw": {
+          "name": "Uhusiano",
+          "short": "Fuatilia uhusiano wa mhusika wako",
+          "full": "Fuatilia uhusiano wa mhusika wako: walio nao na kinachowaunganisha."
+        },
+        "th": {
+          "name": "ความสัมพันธ์",
+          "short": "บันทึกความสัมพันธ์ของตัวละครของคุณ",
+          "full": "บันทึกความสัมพันธ์ของตัวละครของคุณ: พวกเขาคือใครและอะไรที่เชื่อมโยงพวกเขา"
+        },
+        "tr": {
+          "name": "İlişkiler",
+          "short": "Karakterinizin ilişkilerini takip edin",
+          "full": "Karakterinizin ilişkilerini takip edin: kim oldukları ve onları neyin bağladığı."
+        },
+        "uk": {
+          "name": "Стосунки",
+          "short": "Відстежуйте стосунки вашого персонажа",
+          "full": "Відстежуйте стосунки вашого персонажа: хто ці люди і що їх пов'язує."
+        },
+        "zh": {
+          "name": "人际关系",
+          "short": "记录你角色的人际关系",
+          "full": "记录你角色的人际关系：他们是谁，以及是什么将他们联系在一起。"
         }
       }
     }

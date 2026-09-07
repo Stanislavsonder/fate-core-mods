@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "추가",
+		"remove": "삭제",
+		"save": "저장"
+	},
+	"add": "관계 추가",
+	"confirmRemove": "\"{value}\"을(를) 삭제하시겠습니까?",
+	"description": {
+		"full": "캐릭터의 인간관계를 기록하세요: 그들이 누구인지, 그리고 무엇이 그들을 연결하는지.",
+		"short": "캐릭터의 인간관계를 기록하세요"
+	},
+	"edit": "관계 편집",
+	"empty": "아직 추가된 관계가 없습니다",
+	"errors": {
+		"nameRequired": "이름을 입력해야 합니다.",
+		"whatRequired": "관계 설명을 입력해야 합니다."
+	},
+	"form": {
+		"name": {
+			"label": "이름",
+			"placeholder": "누구인가요?"
+		},
+		"what": {
+			"label": "관계",
+			"placeholder": "이 사람은 당신의 캐릭터와 어떤 관계인가요?"
+		}
+	},
+	"label": "인간관계",
+	"name": "인간관계",
+	"relation": "관계"
+}
