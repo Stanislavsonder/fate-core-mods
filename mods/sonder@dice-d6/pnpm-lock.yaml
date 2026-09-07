@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fate-app/mod-types':
-        specifier: ^2.0.0
-        version: 2.0.0(cannon-es@0.20.0)(three@0.185.1)(vue@3.5.40)
+        specifier: ^2.1.0
+        version: 2.1.0(cannon-es@0.20.0)(three@0.185.1)(vue@3.5.40)
     devDependencies:
       '@fate-app/mod-build':
         specifier: ^2.0.0
@@ -95,8 +95,8 @@ packages:
       three:
         optional: true
 
-  '@fate-app/mod-types@2.0.0':
-    resolution: {integrity: sha512-+1toeDwXvIFa2kdWIGFLSQMS4N80k0VVGC+1D8rxY6bTWn+iTpQCVHqTi0Oq+cdw9eR2jwO52HTsyfuAj89GQg==}
+  '@fate-app/mod-types@2.1.0':
+    resolution: {integrity: sha512-Si+T2LSkEE+0tbbvCq6dpYvZ0Q/TTTDiGBqI65DxcuvqIZd36A/lL3UZRJzZVX73/00LmmCh2J/NVGQnEnH0hQ==}
     peerDependencies:
       cannon-es: ^0.20.0
       three: ^0.185.0
@@ -602,7 +602,7 @@ snapshots:
 
   '@fate-app/mod-build@2.0.0(@vitejs/plugin-vue@6.0.8(vite@8.1.5)(vue@3.5.40))(cannon-es@0.20.0)(three@0.185.1)(vite@8.1.5)(vue@3.5.40)':
     dependencies:
-      '@fate-app/mod-types': 2.0.0(cannon-es@0.20.0)(three@0.185.1)(vue@3.5.40)
+      '@fate-app/mod-types': 2.1.0(cannon-es@0.20.0)(three@0.185.1)(vue@3.5.40)
       '@vitejs/plugin-vue': 6.0.8(vite@8.1.5)(vue@3.5.40)
       vite: 8.1.5
       vite-plugin-css-injected-by-js: 3.5.2(vite@8.1.5)
@@ -611,7 +611,7 @@ snapshots:
       cannon-es: 0.20.0
       three: 0.185.1
 
-  '@fate-app/mod-types@2.0.0(cannon-es@0.20.0)(three@0.185.1)(vue@3.5.40)':
+  '@fate-app/mod-types@2.1.0(cannon-es@0.20.0)(three@0.185.1)(vue@3.5.40)':
     dependencies:
       vue: 3.5.40
     optionalDependencies:

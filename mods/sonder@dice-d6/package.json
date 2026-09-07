@@ -7,7 +7,7 @@
 		"build": "fate-mod-build build"
 	},
 	"dependencies": {
-		"@fate-app/mod-types": "^2.0.0"
+		"@fate-app/mod-types": "^2.1.0"
 	},
 	"devDependencies": {
 		"@fate-app/mod-build": "^2.0.0",

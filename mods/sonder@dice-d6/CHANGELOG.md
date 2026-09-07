@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.1
+Updated cover image
+
 ## 1.3.0
 
 Render classic pip dots on each face instead of numerals, with slightly rounded corners.
