@@ -3,6 +3,7 @@ import { Dice, type DiceMaterial, type DiceCollisionEvent, type DiceResult } fro
 // globalThis.FateSDK.dice.* — the host app's own three/cannon-es instances.
 import * as THREE from 'three'
 import * as CANNON from 'cannon-es'
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js'
 
 /** Face layout of a standard D6 — opposite faces sum to 7. */
 const FACES: { value: number; normal: [number, number, number] }[] = [
@@ -14,49 +15,114 @@ const FACES: { value: number; normal: [number, number, number] }[] = [
 	{ value: 4, normal: [0, 0, -1] }
 ]
 
-function createNumberMesh(value: number, material: DiceMaterial): THREE.Mesh | null {
-	const canvas = document.createElement('canvas')
-	// Headless environments (the registry's jsdom-based smoke-load) have no 2D
-	// canvas — degrade to a numberless die instead of failing to construct.
-	const ctx = canvas.getContext('2d')
-	if (!ctx) {
-		return null
-	}
-
-	const size = 128
-	canvas.width = size
-	canvas.height = size
-	ctx.font = 'bold 80px Arial'
-	ctx.fillStyle = 'white'
-	ctx.textAlign = 'center'
-	ctx.textBaseline = 'middle'
-	ctx.fillText(value.toString(), size / 2, size / 2)
-
-	const texture = new THREE.CanvasTexture(canvas)
-	const numberMaterial = material.symbolMaterial.clone() as THREE.MeshStandardMaterial
-	numberMaterial.map = texture
-	numberMaterial.transparent = true
-
-	return new THREE.Mesh(new THREE.PlaneGeometry(0.5, 0.5), numberMaterial)
+/** Classic Western pip layout on a 3x3 grid, in face-local XY in [-1, 1]. */
+const PIP_LAYOUTS: Record<number, [number, number][]> = {
+	1: [[0, 0]],
+	2: [
+		[-1, 1],
+		[1, -1]
+	],
+	3: [
+		[-1, 1],
+		[0, 0],
+		[1, -1]
+	],
+	4: [
+		[-1, 1],
+		[1, 1],
+		[-1, -1],
+		[1, -1]
+	],
+	5: [
+		[-1, 1],
+		[1, 1],
+		[0, 0],
+		[-1, -1],
+		[1, -1]
+	],
+	6: [
+		[-1, 1],
+		[1, 1],
+		[-1, 0],
+		[1, 0],
+		[-1, -1],
+		[1, -1]
+	]
 }
 
-function createDiceMesh(material: DiceMaterial, size: number): THREE.Group {
+function createPipFace(value: number, pipGeometry: THREE.BufferGeometry, material: DiceMaterial, dieSize: number): THREE.Group {
+	const face = new THREE.Group()
+	const spread = dieSize * 0.26
+
+	for (const [x, y] of PIP_LAYOUTS[value] ?? []) {
+		const pip = new THREE.Mesh(pipGeometry, material.symbolMaterial)
+		pip.position.set(x * spread, y * spread, 0)
+		face.add(pip)
+	}
+
+	return face
+}
+
+function createRoundedBoxGeometry(size: number, segments: number, edgeRadius: number): THREE.BufferGeometry {
+	let geometry: THREE.BufferGeometry = new THREE.BoxGeometry(size, size, size, segments, segments, segments)
+	const positionAttr = geometry.attributes.position
+	const half = size / 2
+	const inner = half - edgeRadius
+
+	for (let i = 0; i < positionAttr.count; i++) {
+		let position = new THREE.Vector3().fromBufferAttribute(positionAttr, i)
+		const innerCorner = new THREE.Vector3(Math.sign(position.x), Math.sign(position.y), Math.sign(position.z)).multiplyScalar(inner)
+		const offset = new THREE.Vector3().subVectors(position, innerCorner)
+
+		if (Math.abs(position.x) > inner && Math.abs(position.y) > inner && Math.abs(position.z) > inner) {
+			offset.normalize().multiplyScalar(edgeRadius)
+			position = innerCorner.add(offset)
+		} else if (Math.abs(position.x) > inner && Math.abs(position.y) > inner) {
+			offset.z = 0
+			offset.normalize().multiplyScalar(edgeRadius)
+			position.x = innerCorner.x + offset.x
+			position.y = innerCorner.y + offset.y
+		} else if (Math.abs(position.x) > inner && Math.abs(position.z) > inner) {
+			offset.y = 0
+			offset.normalize().multiplyScalar(edgeRadius)
+			position.x = innerCorner.x + offset.x
+			position.z = innerCorner.z + offset.z
+		} else if (Math.abs(position.y) > inner && Math.abs(position.z) > inner) {
+			offset.x = 0
+			offset.normalize().multiplyScalar(edgeRadius)
+			position.y = innerCorner.y + offset.y
+			position.z = innerCorner.z + offset.z
+		}
+
+		positionAttr.setXYZ(i, position.x, position.y, position.z)
+	}
+
+	geometry.deleteAttribute('normal')
+	geometry.deleteAttribute('uv')
+	geometry = mergeVertices(geometry)
+	geometry.computeVertexNormals()
+	return geometry
+}
+
+function createDiceMesh(material: DiceMaterial, size: number, quality: number): THREE.Group {
 	const diceGroup = new THREE.Group()
 
-	const outerMesh = new THREE.Mesh(new THREE.BoxGeometry(size, size, size), material.faceMaterial)
+	const outerMesh = new THREE.Mesh(createRoundedBoxGeometry(size, quality, size / 16), material.faceMaterial)
 	outerMesh.castShadow = true
 	outerMesh.receiveShadow = true
 	diceGroup.add(outerMesh)
 
+	const pipGeometry = new THREE.CircleGeometry(size * 0.075, 24)
+
 	for (const face of FACES) {
 		const normal = new THREE.Vector3(...face.normal)
-		const numberMesh = createNumberMesh(face.value, material)
-		if (!numberMesh) {
-			continue
+		const pipFace = createPipFace(face.value, pipGeometry, material, size)
+		pipFace.position.copy(normal).multiplyScalar(size / 2 + 0.002)
+		if (Math.abs(normal.y) > 0.9) {
+			pipFace.up.set(0, 0, normal.y > 0 ? -1 : 1)
 		}
-		numberMesh.position.copy(normal).multiplyScalar(size / 2 + 0.001)
-		numberMesh.lookAt(normal.clone().multiplyScalar(size))
-		diceGroup.add(numberMesh)
+		pipFace.lookAt(normal.clone().multiplyScalar(size))
+		diceGroup.add(pipFace)
 	}
 
 	return diceGroup
@@ -134,7 +200,7 @@ export default class D6Dice extends Dice {
 	}
 
 	protected createMesh(): THREE.Group {
-		return createDiceMesh(this.material, this.size)
+		return createDiceMesh(this.material, this.size, this.quality)
 	}
 
 	protected createBody(world: CANNON.World, onCollide: (event: DiceCollisionEvent) => void): CANNON.Body {
