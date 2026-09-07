@@ -23,6 +23,7 @@ import addFormats from 'ajv-formats'
 import semver from 'semver'
 import { fetchPublishedIndex } from './lib/registry.ts'
 import { getPullRequestLabels, upsertValidationComment } from './lib/github.ts'
+import { validateModImage } from './lib/image.ts'
 
 const root = process.cwd()
 const errors: string[] = []
@@ -162,8 +163,9 @@ async function main(): Promise<void> {
 	if (!fs.existsSync(path.join(root, modDir, 'LICENSE'))) {
 		errors.push(`${modDir}/LICENSE is missing.`)
 	}
-	if (typeof manifest.image === 'string' && !fs.existsSync(path.join(root, modDir, manifest.image))) {
-		errors.push(`${modDir}/${manifest.image} is declared by manifest.image but does not exist.`)
+	if (typeof manifest.image === 'string') {
+		const imageError = validateModImage(path.join(root, modDir, manifest.image), manifest.image)
+		if (imageError) errors.push(`${modDir}/${imageError}`)
 	}
 
 	// --- 4. Version ---

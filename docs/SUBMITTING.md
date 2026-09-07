@@ -29,6 +29,7 @@ Whether scaffolded or hand-written, the folder must contain:
 mods/<author>@<name>/
   manifest.json
   bundle.ts
+  cover.png               # optional — see image rules below
   src/
     components/...
   translations/
@@ -93,6 +94,7 @@ For live reload against a running Assistant for Fate instance, see `docs/MOD_API
 ## 3. Before opening a PR
 
 - [ ] `manifest.json` validates against [`../registry.schema.json`](../registry.schema.json)
+- [ ] If you set `manifest.image`, the file lives in the mod folder (filename only, no path), is **png / jpg / jpeg / webp**, **square**, and **at most 512×512**
 - [ ] `published` is `true` (or omitted) when you want the mod listed in the app's Mod Store; set `false` to ship artifacts for dev-mode / install-from-URL without indexing the mod
 - [ ] `manifest.version` is a valid semver, strictly greater than any
       previously published version of this mod (`1.0.0`+ if this is new)

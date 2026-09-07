@@ -15,6 +15,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import semver from 'semver'
 import { sha256, type RegistryFileEntry, type RegistryIndex, type RegistryModEntry, type RegistryReleaseEntry } from './lib/registry.ts'
+import { validateModImage } from './lib/image.ts'
 
 /** "t.foo.bar" -> translations.foo.bar; anything not "t."-prefixed is returned as-is. */
 function resolveI18nString(value: string, translations: Record<string, unknown>): string {
@@ -143,8 +144,9 @@ async function publishMod(modDir: string, ghPagesDir: string): Promise<void> {
 
 	if (typeof manifest.image === 'string') {
 		const imagePath = path.join(process.cwd(), modDir, manifest.image)
-		if (!fs.existsSync(imagePath)) {
-			throw new Error(`${imagePath} is declared by manifest.image but does not exist.`)
+		const imageError = validateModImage(imagePath, manifest.image)
+		if (imageError) {
+			throw new Error(`${modDir}/${imageError}`)
 		}
 		publishFile(imagePath, manifest.image)
 	}
