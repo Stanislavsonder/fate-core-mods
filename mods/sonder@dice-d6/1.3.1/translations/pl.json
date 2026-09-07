@@ -1,0 +1,7 @@
+{
+	"name": "Kość D6",
+	"description": {
+		"full": "Dodaje standardową sześcienną kość do 3D-rzutnika, a także złoty materiał działający z dowolną formą kości. Przeciwległe ściany dają w sumie siedem, wyniki są sumowane z wielu kości, a rzuty samych szóstek lub samych jedynek są wyróżniane.",
+		"short": "Standardowa sześcienna kość i złoty materiał do 3D-rzutnika."
+	}
+}

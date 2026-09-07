@@ -1,0 +1,7 @@
+{
+	"name": "Dado D6",
+	"description": {
+		"full": "Añade un dado de seis caras estándar al tirador de dados 3D, además de un material dorado utilizable con cualquier forma de dado. Las caras opuestas suman siete, los resultados se suman entre varios dados, y las tiradas de todos seises o todos unos se resaltan.",
+		"short": "Un dado de seis caras estándar y un material dorado para el tirador de dados 3D."
+	}
+}

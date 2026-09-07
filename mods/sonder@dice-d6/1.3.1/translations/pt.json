@@ -1,0 +1,7 @@
+{
+	"name": "Dado D6",
+	"description": {
+		"full": "Adiciona um dado de seis faces padrão ao rolador de dados 3D, além de um material dourado utilizável com qualquer forma de dado. Faces opostas somam sete, os resultados são somados entre vários dados, e rolagens de todos os seis ou todos os uns são destacadas.",
+		"short": "Um dado de seis faces padrão e um material dourado para o rolador de dados 3D."
+	}
+}
