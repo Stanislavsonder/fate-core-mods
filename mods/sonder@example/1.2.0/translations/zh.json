@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "备注最大长度",
+			"tooltip": "备注字段允许的最大字符数。"
+		}
+	},
+	"description": {
+		"full": "提供一个带有独立角色数据字段、配置选项和作用域 CSS 的角色表区块——Assistant for Fate Modules 2.0 SDK 的参考模组。",
+		"short": "外部模组包格式的完整示例。"
+	},
+	"maxLengthNote": "最多 {value} 个字符",
+	"name": "示例模组",
+	"noteLabel": "备注",
+	"title": "示例区块"
+}

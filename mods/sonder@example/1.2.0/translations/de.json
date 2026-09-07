@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Maximale Notizlänge",
+			"tooltip": "Maximale Anzahl von Zeichen im Notizfeld."
+		}
+	},
+	"description": {
+		"full": "Enthält einen Blattabschnitt mit eigenem Charakterdatenfeld, einer Konfigurationsoption und begrenztem CSS — das Referenzmod für das Modules-2.0-SDK von Assistant for Fate.",
+		"short": "Ein vollständiges Beispiel für das externe Mod-Bundle-Format."
+	},
+	"maxLengthNote": "Bis zu {value} Zeichen",
+	"name": "Beispielmod",
+	"noteLabel": "Notiz",
+	"title": "Beispielabschnitt"
+}

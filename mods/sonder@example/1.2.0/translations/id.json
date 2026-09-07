@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Panjang catatan maks.",
+			"tooltip": "Jumlah karakter maksimum yang diizinkan di kolom catatan."
+		}
+	},
+	"description": {
+		"full": "Menyediakan satu bagian lembar dengan bidang data karakter sendiri, opsi konfigurasi, dan CSS berskop — mod referensi untuk SDK Modules 2.0 Assistant for Fate.",
+		"short": "Contoh lengkap format bundel mod eksternal."
+	},
+	"maxLengthNote": "Hingga {value} karakter",
+	"name": "Mod contoh",
+	"noteLabel": "Catatan",
+	"title": "Bagian contoh"
+}

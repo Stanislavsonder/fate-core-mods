@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "メモの最大長",
+			"tooltip": "メモ欄に入力できる最大文字数。"
+		}
+	},
+	"description": {
+		"full": "独自のキャラクターデータ欄、設定オプション、スコープ付き CSS を備えたシートセクションを提供します。Assistant for Fate Modules 2.0 SDK のリファレンス用モッドです。",
+		"short": "外部モッドバンドル形式の完成例。"
+	},
+	"maxLengthNote": "最大 {value} 文字",
+	"name": "サンプルモッド",
+	"noteLabel": "メモ",
+	"title": "サンプルセクション"
+}
