@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Ongeza",
+		"remove": "Ondoa",
+		"save": "Hifadhi"
+	},
+	"add": "Ongeza uhusiano",
+	"confirmRemove": "Una uhakika unataka kuondoa \"{value}\"?",
+	"description": {
+		"full": "Fuatilia uhusiano wa mhusika wako: walio nao na kinachowaunganisha.",
+		"short": "Fuatilia uhusiano wa mhusika wako"
+	},
+	"edit": "Hariri uhusiano",
+	"empty": "Bado hakuna uhusiano ulioongezwa",
+	"errors": {
+		"nameRequired": "Jina linahitajika.",
+		"whatRequired": "Maelezo ya uhusiano yanahitajika."
+	},
+	"form": {
+		"name": {
+			"label": "Jina",
+			"placeholder": "Huyu ni nani?"
+		},
+		"what": {
+			"label": "Uhusiano",
+			"placeholder": "Mtu huyu anahusiana vipi na mhusika wako?"
+		}
+	},
+	"label": "Uhusiano",
+	"name": "Uhusiano",
+	"relation": "uhusiano"
+}

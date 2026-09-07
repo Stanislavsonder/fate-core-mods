@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Max. notitielengte",
+			"tooltip": "Maximaal aantal tekens in het notitieveld."
+		}
+	},
+	"description": {
+		"full": "Bevat één bladsectie met een eigen karakterdataveld, een configuratieoptie en scoped CSS — de referentiemod voor de Modules 2.0 SDK van Assistant for Fate.",
+		"short": "Een uitgewerkt voorbeeld van het externe mod-bundleformaat."
+	},
+	"maxLengthNote": "Tot {value} tekens",
+	"name": "Voorbeeldmod",
+	"noteLabel": "Notitie",
+	"title": "Voorbeeldsectie"
+}

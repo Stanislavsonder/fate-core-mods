@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Muistiinpanon enimmäispituus",
+			"tooltip": "Muistiinpanokentän sallittu merkkimäärä."
+		}
+	},
+	"description": {
+		"full": "Sisältää yhden hahmoarkin osion omalla hahmodatakentällä, asetusvaihtoehdolla ja rajatulla CSS:llä — Assistant for Faten Modules 2.0 SDK:n referenssimodi.",
+		"short": "Täydellinen esimerkki ulkoisen mod-paketin formaatista."
+	},
+	"maxLengthNote": "Enintään {value} merkkiä",
+	"name": "Esimerkkimodi",
+	"noteLabel": "Muistiinpano",
+	"title": "Esimerkkiosio"
+}

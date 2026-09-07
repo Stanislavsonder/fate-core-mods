@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Lägg till",
+		"remove": "Ta bort",
+		"save": "Spara"
+	},
+	"add": "Lägg till relation",
+	"confirmRemove": "Är du säker på att du vill ta bort \"{value}\"?",
+	"description": {
+		"full": "Håll koll på din karaktärs relationer: vilka de är och vad som förenar dem.",
+		"short": "Håll koll på din karaktärs relationer"
+	},
+	"edit": "Redigera relation",
+	"empty": "Inga relationer tillagda än",
+	"errors": {
+		"nameRequired": "Relationens namn krävs.",
+		"whatRequired": "Relationens beskrivning krävs."
+	},
+	"form": {
+		"name": {
+			"label": "Namn",
+			"placeholder": "Vem är det?"
+		},
+		"what": {
+			"label": "Vad",
+			"placeholder": "Hur är personen kopplad till din karaktär?"
+		}
+	},
+	"label": "Relationer",
+	"name": "Relationer",
+	"relation": "relation"
+}

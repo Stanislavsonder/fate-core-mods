@@ -1,0 +1,7 @@
+{
+	"name": "D20-terning",
+	"description": {
+		"full": "Legger til en standard tjuekantet terning til 3D-terningkasteren. Resultater summeres over flere terninger, med naturlige tjuere og ener fremhevet.",
+		"short": "En standard tjuekantet terning for 3D-terningkasteren."
+	}
+}

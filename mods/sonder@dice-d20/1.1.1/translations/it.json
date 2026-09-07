@@ -1,0 +1,7 @@
+{
+	"name": "Dado D20",
+	"description": {
+		"full": "Aggiunge un dado a venti facce standard al lanciatore di dadi 3D. I risultati vengono sommati su più dadi, con i venti naturali e gli uno naturali evidenziati.",
+		"short": "Un dado a venti facce standard per il lanciatore di dadi 3D."
+	}
+}

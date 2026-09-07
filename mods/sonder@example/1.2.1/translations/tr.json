@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Maks. not uzunluğu",
+			"tooltip": "Not alanında izin verilen en fazla karakter sayısı."
+		}
+	},
+	"description": {
+		"full": "Kendi karakter veri alanı, bir yapılandırma seçeneği ve kapsamlı CSS ile bir sayfa bölümü sunar — Assistant for Fate Modules 2.0 SDK için referans mod.",
+		"short": "Harici mod paketi formatının tam bir örneği."
+	},
+	"maxLengthNote": "En fazla {value} karakter",
+	"name": "Örnek mod",
+	"noteLabel": "Not",
+	"title": "Örnek bölüm"
+}

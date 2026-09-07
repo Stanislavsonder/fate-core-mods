@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Lisää",
+		"remove": "Poista",
+		"save": "Tallenna"
+	},
+	"add": "Lisää suhde",
+	"confirmRemove": "Haluatko varmasti poistaa kohteen \"{value}\"?",
+	"description": {
+		"full": "Seuraa hahmosi suhteita: keitä he ovat ja mikä yhdistää heidät.",
+		"short": "Seuraa hahmosi suhteita"
+	},
+	"edit": "Muokkaa suhdetta",
+	"empty": "Suhteita ei ole vielä lisätty",
+	"errors": {
+		"nameRequired": "Suhteen nimi vaaditaan.",
+		"whatRequired": "Suhteen kuvaus vaaditaan."
+	},
+	"form": {
+		"name": {
+			"label": "Nimi",
+			"placeholder": "Kuka tämä on?"
+		},
+		"what": {
+			"label": "Mikä",
+			"placeholder": "Miten tämä henkilö liittyy hahmoosi?"
+		}
+	},
+	"label": "Suhteet",
+	"name": "Suhteet",
+	"relation": "suhde"
+}

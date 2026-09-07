@@ -1,0 +1,7 @@
+{
+	"name": "D6-dobbelsteen",
+	"description": {
+		"full": "Voegt een standaard zeszijdige dobbelsteen toe aan de 3D-dobbelsteenroller, plus een gouden dobbelsteenmateriaal dat met elke dobbelsteenvorm werkt. Tegenoverliggende zijden tellen op tot zeven, resultaten worden opgeteld over meerdere dobbelstenen, en worpen met alle zessen of alle enen worden gemarkeerd.",
+		"short": "Een standaard zeszijdige dobbelsteen en een gouden materiaal voor de 3D-dobbelsteenroller."
+	}
+}

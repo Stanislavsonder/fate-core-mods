@@ -1,0 +1,7 @@
+{
+	"name": "Dadu D20",
+	"description": {
+		"full": "Menambahkan dadu dua puluh sisi standar ke penggulir dadu 3D. Hasil dijumlahkan dari beberapa dadu, dengan dua puluh alami dan satu alami disorot.",
+		"short": "Dadu dua puluh sisi standar untuk penggulir dadu 3D."
+	}
+}

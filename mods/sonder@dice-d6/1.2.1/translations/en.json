@@ -1,0 +1,7 @@
+{
+	"name": "D6 Dice",
+	"description": {
+		"full": "Adds a standard six-sided die to the 3D dice roller, plus a gold dice material usable with any die shape. Opposite faces sum to seven, results are summed across multiple dice, and rolls of all sixes or all ones are highlighted.",
+		"short": "A standard six-sided die and a gold material for the 3D dice roller."
+	}
+}

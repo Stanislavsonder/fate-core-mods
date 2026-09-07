@@ -1,0 +1,57 @@
+{
+	"appVersion": ">=2.0.0",
+	"author": {
+		"email": "stanislavsonder@gmail.com",
+		"github": "Stanislavsonder",
+		"name": "Stanislav Sonder"
+	},
+	"capabilities": ["sheetComponents"],
+	"config": {
+		"groups": [],
+		"options": []
+	},
+	"description": {
+		"full": "t.description.full",
+		"short": "t.description.short"
+	},
+	"image": "cover.jpg",
+	"entry": "bundle.mjs",
+	"id": "sonder@relationships",
+	"languages": [
+		"en",
+		"fr",
+		"es",
+		"pt",
+		"it",
+		"de",
+		"nl",
+		"sv",
+		"no",
+		"da",
+		"fi",
+		"ru",
+		"be",
+		"uk",
+		"pl",
+		"cs",
+		"ro",
+		"el",
+		"tr",
+		"he",
+		"ar",
+		"fa",
+		"sw",
+		"zh",
+		"hi",
+		"bn",
+		"ja",
+		"ko",
+		"id",
+		"th"
+	],
+	"loadPriority": 100,
+	"name": "t.name",
+	"sdk": "^2.1.0",
+	"tags": ["character-sheet"],
+	"version": "1.0.1"
+}

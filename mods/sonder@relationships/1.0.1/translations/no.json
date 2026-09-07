@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Legg til",
+		"remove": "Fjern",
+		"save": "Lagre"
+	},
+	"add": "Legg til relasjon",
+	"confirmRemove": "Er du sikker på at du vil fjerne «{value}»?",
+	"description": {
+		"full": "Hold oversikt over karakterens relasjoner: hvem de er og hva som knytter dem sammen.",
+		"short": "Hold oversikt over karakterens relasjoner"
+	},
+	"edit": "Rediger relasjon",
+	"empty": "Ingen relasjoner lagt til ennå",
+	"errors": {
+		"nameRequired": "Navn på relasjonen er påkrevd.",
+		"whatRequired": "Beskrivelse av relasjonen er påkrevd."
+	},
+	"form": {
+		"name": {
+			"label": "Navn",
+			"placeholder": "Hvem er dette?"
+		},
+		"what": {
+			"label": "Hva",
+			"placeholder": "Hvordan henger personen sammen med karakteren din?"
+		}
+	},
+	"label": "Relasjoner",
+	"name": "Relasjoner",
+	"relation": "relasjon"
+}

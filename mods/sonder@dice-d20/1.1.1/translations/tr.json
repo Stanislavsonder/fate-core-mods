@@ -1,0 +1,7 @@
+{
+	"name": "D20 zarı",
+	"description": {
+		"full": "3D zar atıcısına standart yirmi yüzlü bir zar ekler. Sonuçlar birden fazla zar üzerinden toplanır; doğal yirmiler ve doğal birler vurgulanır.",
+		"short": "3D zar atıcısı için standart yirmi yüzlü bir zar."
+	}
+}

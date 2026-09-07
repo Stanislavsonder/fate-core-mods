@@ -1,0 +1,7 @@
+{
+	"name": "W20-Würfel",
+	"description": {
+		"full": "Fügt einen standardmäßigen zwanzigseitigen Würfel zum 3D-Würfelroller hinzu. Ergebnisse werden über mehrere Würfel summiert, mit hervorgehobenen natürlichen Zwanzigern und Einsen.",
+		"short": "Ein standardmäßiger zwanzigseitiger Würfel für den 3D-Würfelroller."
+	}
+}

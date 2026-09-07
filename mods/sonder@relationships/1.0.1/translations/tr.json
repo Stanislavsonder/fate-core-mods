@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Ekle",
+		"remove": "Kaldır",
+		"save": "Kaydet"
+	},
+	"add": "İlişki ekle",
+	"confirmRemove": "\"{value}\" öğesini kaldırmak istediğinizden emin misiniz?",
+	"description": {
+		"full": "Karakterinizin ilişkilerini takip edin: kim oldukları ve onları neyin bağladığı.",
+		"short": "Karakterinizin ilişkilerini takip edin"
+	},
+	"edit": "İlişkiyi düzenle",
+	"empty": "Henüz ilişki eklenmedi",
+	"errors": {
+		"nameRequired": "İlişki adı gereklidir.",
+		"whatRequired": "İlişki açıklaması gereklidir."
+	},
+	"form": {
+		"name": {
+			"label": "İsim",
+			"placeholder": "Bu kim?"
+		},
+		"what": {
+			"label": "İlişki",
+			"placeholder": "Bu kişi karakterinizle nasıl bağlantılı?"
+		}
+	},
+	"label": "İlişkiler",
+	"name": "İlişkiler",
+	"relation": "ilişki"
+}

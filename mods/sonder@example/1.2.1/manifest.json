@@ -1,0 +1,67 @@
+{
+	"appVersion": ">=2.0.0",
+	"author": {
+		"email": "stanislavsonder@gmail.com",
+		"github": "Stanislavsonder",
+		"name": "Stanislav Sonder"
+	},
+	"capabilities": ["sheetComponents"],
+	"config": {
+		"groups": [],
+		"options": [
+			{
+				"default": 200,
+				"id": "max-note-length",
+				"limits": { "max": 1000, "min": 10, "step": 10 },
+				"name": "t.config.maxNoteLength.name",
+				"tooltip": "t.config.maxNoteLength.tooltip",
+				"type": "number"
+			}
+		]
+	},
+	"description": {
+		"full": "t.description.full",
+		"short": "t.description.short"
+	},
+	"image": "cover.png",
+	"entry": "bundle.mjs",
+	"id": "sonder@example",
+	"languages": [
+		"en",
+		"fr",
+		"es",
+		"pt",
+		"it",
+		"de",
+		"nl",
+		"sv",
+		"no",
+		"da",
+		"fi",
+		"ru",
+		"be",
+		"uk",
+		"pl",
+		"cs",
+		"ro",
+		"el",
+		"tr",
+		"he",
+		"ar",
+		"fa",
+		"sw",
+		"zh",
+		"hi",
+		"bn",
+		"ja",
+		"ko",
+		"id",
+		"th"
+	],
+	"loadPriority": 100,
+	"name": "t.name",
+	"published": false,
+	"sdk": "^2.1.0",
+	"tags": ["example"],
+	"version": "1.2.1"
+}

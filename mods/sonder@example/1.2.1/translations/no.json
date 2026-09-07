@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Maks notatlengde",
+			"tooltip": "Maksimalt antall tegn i notatfeltet."
+		}
+	},
+	"description": {
+		"full": "Leverer ett arkavsnitt med eget karakterdatafelt, et konfigurasjonsvalg og scoped CSS — referansemodden for Assistant for Fates Modules 2.0 SDK.",
+		"short": "Et gjennomarbeidet eksempel på det eksterne mod-bundleformatet."
+	},
+	"maxLengthNote": "Opptil {value} tegn",
+	"name": "Eksempelmod",
+	"noteLabel": "Notat",
+	"title": "Eksempelavsnitt"
+}

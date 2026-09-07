@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Maks. długość notatki",
+			"tooltip": "Maksymalna liczba znaków w polu notatki."
+		}
+	},
+	"description": {
+		"full": "Zawiera sekcję karty z własnym polem danych postaci, opcją konfiguracji i ograniczonym CSS — mod referencyjny dla SDK Modules 2.0 Assistant for Fate.",
+		"short": "Pełny przykład formatu zewnętrznego pakietu moda."
+	},
+	"maxLengthNote": "Do {value} znaków",
+	"name": "Mod przykładowy",
+	"noteLabel": "Notatka",
+	"title": "Sekcja przykładowa"
+}

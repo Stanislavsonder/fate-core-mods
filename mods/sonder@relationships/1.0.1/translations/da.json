@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Tilføj",
+		"remove": "Fjern",
+		"save": "Gem"
+	},
+	"add": "Tilføj relation",
+	"confirmRemove": "Er du sikker på, at du vil fjerne \"{value}\"?",
+	"description": {
+		"full": "Hold styr på din karakters relationer: hvem de er, og hvad der forbinder dem.",
+		"short": "Hold styr på din karakters relationer"
+	},
+	"edit": "Rediger relation",
+	"empty": "Ingen relationer tilføjet endnu",
+	"errors": {
+		"nameRequired": "Navn på relationen er påkrævet.",
+		"whatRequired": "Beskrivelse af relationen er påkrævet."
+	},
+	"form": {
+		"name": {
+			"label": "Navn",
+			"placeholder": "Hvem er det?"
+		},
+		"what": {
+			"label": "Hvad",
+			"placeholder": "Hvordan hænger personen sammen med din karakter?"
+		}
+	},
+	"label": "Relationer",
+	"name": "Relationer",
+	"relation": "relation"
+}
