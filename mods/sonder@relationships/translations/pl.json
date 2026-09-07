@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Dodaj",
+		"remove": "Usuń",
+		"save": "Zapisz"
+	},
+	"add": "Dodaj relację",
+	"confirmRemove": "Czy na pewno chcesz usunąć „{value}”?",
+	"description": {
+		"full": "Śledź relacje swojej postaci: kim są te osoby i co je łączy.",
+		"short": "Śledź relacje swojej postaci"
+	},
+	"edit": "Edytuj relację",
+	"empty": "Nie dodano jeszcze żadnych relacji",
+	"errors": {
+		"nameRequired": "Nazwa relacji jest wymagana.",
+		"whatRequired": "Opis relacji jest wymagany."
+	},
+	"form": {
+		"name": {
+			"label": "Imię",
+			"placeholder": "Kim jest ta osoba?"
+		},
+		"what": {
+			"label": "Relacja",
+			"placeholder": "W jaki sposób ta osoba jest związana z twoją postacią?"
+		}
+	},
+	"label": "Relacje",
+	"name": "Relacje",
+	"relation": "relacja"
+}

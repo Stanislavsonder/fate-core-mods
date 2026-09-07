@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Toevoegen",
+		"remove": "Verwijderen",
+		"save": "Opslaan"
+	},
+	"add": "Relatie toevoegen",
+	"confirmRemove": "Weet je zeker dat je \"{value}\" wilt verwijderen?",
+	"description": {
+		"full": "Houd de relaties van je personage bij: wie ze zijn en wat hen verbindt.",
+		"short": "Houd de relaties van je personage bij"
+	},
+	"edit": "Relatie bewerken",
+	"empty": "Nog geen relaties toegevoegd",
+	"errors": {
+		"nameRequired": "Naam van de relatie is verplicht.",
+		"whatRequired": "Omschrijving van de relatie is verplicht."
+	},
+	"form": {
+		"name": {
+			"label": "Naam",
+			"placeholder": "Wie is dit?"
+		},
+		"what": {
+			"label": "Wat",
+			"placeholder": "Hoe staat deze persoon tot je personage?"
+		}
+	},
+	"label": "Relaties",
+	"name": "Relaties",
+	"relation": "relatie"
+}

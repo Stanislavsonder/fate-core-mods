@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "Tambah",
+		"remove": "Hapus",
+		"save": "Simpan"
+	},
+	"add": "Tambah hubungan",
+	"confirmRemove": "Apakah Anda yakin ingin menghapus \"{value}\"?",
+	"description": {
+		"full": "Lacak hubungan karakter Anda: siapa mereka dan apa yang menghubungkan mereka.",
+		"short": "Lacak hubungan karakter Anda"
+	},
+	"edit": "Edit hubungan",
+	"empty": "Belum ada hubungan yang ditambahkan",
+	"errors": {
+		"nameRequired": "Nama wajib diisi.",
+		"whatRequired": "Deskripsi hubungan wajib diisi."
+	},
+	"form": {
+		"name": {
+			"label": "Nama",
+			"placeholder": "Siapa ini?"
+		},
+		"what": {
+			"label": "Hubungan",
+			"placeholder": "Bagaimana orang ini terhubung dengan karakter Anda?"
+		}
+	},
+	"label": "Hubungan",
+	"name": "Hubungan",
+	"relation": "hubungan"
+}

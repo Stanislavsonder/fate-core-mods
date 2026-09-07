@@ -1,0 +1,32 @@
+{
+	"actions": {
+		"add": "追加",
+		"remove": "削除",
+		"save": "保存"
+	},
+	"add": "関係を追加",
+	"confirmRemove": "「{value}」を削除してもよろしいですか？",
+	"description": {
+		"full": "キャラクターの人間関係を記録しましょう。相手が誰で、どうつながっているかを管理できます。",
+		"short": "キャラクターの人間関係を記録します"
+	},
+	"edit": "関係を編集",
+	"empty": "まだ関係が追加されていません",
+	"errors": {
+		"nameRequired": "名前を入力してください。",
+		"whatRequired": "関係の説明を入力してください。"
+	},
+	"form": {
+		"name": {
+			"label": "名前",
+			"placeholder": "誰ですか？"
+		},
+		"what": {
+			"label": "関係",
+			"placeholder": "この人物はキャラクターとどのような関係ですか？"
+		}
+	},
+	"label": "人間関係",
+	"name": "人間関係",
+	"relation": "関係"
+}
