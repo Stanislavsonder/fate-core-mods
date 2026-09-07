@@ -1,0 +1,7 @@
+{
+	"name": "D20 Dice",
+	"description": {
+		"full": "Adds a standard twenty-sided die to the 3D dice roller. Results are summed across multiple dice, with natural twenties and natural ones highlighted.",
+		"short": "A standard twenty-sided die for the 3D dice roller."
+	}
+}

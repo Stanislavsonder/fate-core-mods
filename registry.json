@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-09-06T19:12:29.461Z",
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-07T00:40:41.414Z",
   "blocklist": {},
   "mods": [
     {
@@ -84,7 +84,106 @@
       "strings": {
         "en": {
           "name": "Example Mod",
-          "short": "A worked example demonstrating the external mod bundle format."
+          "short": "A worked example demonstrating the external mod bundle format.",
+          "full": "Ships one sheet section with its own character-data field, a config option, and scoped CSS - the reference mod for Assistant for Fate's Modules 2.0 SDK."
+        }
+      },
+      "releases": {
+        "1.0.0": {
+          "version": "1.0.0",
+          "appVersion": ">=2.0.0",
+          "sdk": "^1.0.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@example/1.0.0/CHANGELOG.md",
+              "sha256": "d6fba28f08ec3411e84f102bac895a080cab1d57dc153f674baa429e8a69a84c",
+              "size": 159
+            },
+            "README.md": {
+              "url": "mods/sonder@example/1.0.0/README.md",
+              "sha256": "b526497647a7780ee386f37795219264b7e3743ff42c358316ed2eb2138346a3",
+              "size": 803
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@example/1.0.0/bundle.mjs",
+              "sha256": "a767746d87582c4d5e312fd34c909a55e1b44d9d9b16a096d724103938f1b2bf",
+              "size": 8156
+            },
+            "manifest.json": {
+              "url": "mods/sonder@example/1.0.0/manifest.json",
+              "sha256": "c27792bde9c22fde73cb56170663b7681376abbd572b93b906eddc6d75fb570f",
+              "size": 722
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@example/1.0.0/translations/en.json",
+              "sha256": "6ffe0c9a539e36f6e833425d208ea107aa5c1ccc8bbdb9cd675e2cfcc953ef93",
+              "size": 524
+            }
+          }
+        },
+        "1.0.1": {
+          "version": "1.0.1",
+          "appVersion": ">=2.0.0",
+          "sdk": "^1.0.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@example/1.0.1/CHANGELOG.md",
+              "sha256": "d8c9c93d85ec6ec97559d219d9fd14810ef4253c828501c7bc077a84a1870d89",
+              "size": 326
+            },
+            "README.md": {
+              "url": "mods/sonder@example/1.0.1/README.md",
+              "sha256": "75e0aa813b579dfa42ce15b5a965b6437c633e8486aff0065197d96feb01cb16",
+              "size": 855
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@example/1.0.1/bundle.mjs",
+              "sha256": "89c432549c53bec4c7eacbc9d497e48f1fbdaf8c351f70804a3845fc2549b405",
+              "size": 8156
+            },
+            "manifest.json": {
+              "url": "mods/sonder@example/1.0.1/manifest.json",
+              "sha256": "19eb9d27d20dcafcc6f9436797570cf24d39ab01810ce49ae05cd72034f34682",
+              "size": 722
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@example/1.0.1/translations/en.json",
+              "sha256": "6ffe0c9a539e36f6e833425d208ea107aa5c1ccc8bbdb9cd675e2cfcc953ef93",
+              "size": 524
+            }
+          }
+        },
+        "1.1.0": {
+          "version": "1.1.0",
+          "appVersion": ">=2.0.0",
+          "sdk": "^2.0.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@example/1.1.0/CHANGELOG.md",
+              "sha256": "2c7a5eaf2150fcc3172bb6a154017985ab24b75df88f77c41bc26531a2892ad6",
+              "size": 595
+            },
+            "README.md": {
+              "url": "mods/sonder@example/1.1.0/README.md",
+              "sha256": "3b52caae6583604098baef5a357f8fa713894b35ebc194519ea3c89b37888b1a",
+              "size": 857
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@example/1.1.0/bundle.mjs",
+              "sha256": "cacb04e0f2dfafa9467e8657a76b1cae60617259409e1cee2922139e19bae49e",
+              "size": 8154
+            },
+            "manifest.json": {
+              "url": "mods/sonder@example/1.1.0/manifest.json",
+              "sha256": "bafdd2257a22758c4e59f6b897bdce9b3776dea1a99311ac445fd02a866731db",
+              "size": 722
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@example/1.1.0/translations/en.json",
+              "sha256": "ae3ae02bb73c5051c4e25af89fd041c4ea4805dfe20dfc575b543647516be3b9",
+              "size": 532
+            }
+          }
         }
       }
     },
@@ -154,7 +253,175 @@
       "strings": {
         "en": {
           "name": "D6 Dice",
-          "short": "A standard six-sided die and a gold material for the 3D dice roller."
+          "short": "A standard six-sided die and a gold material for the 3D dice roller.",
+          "full": "Adds a standard six-sided die to the 3D dice roller, plus a gold dice material usable with any die shape. Opposite faces sum to seven, results are summed across multiple dice, and rolls of all sixes or all ones are highlighted."
+        }
+      },
+      "releases": {
+        "1.0.0": {
+          "version": "1.0.0",
+          "sdk": "^1.1.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@dice-d6/1.0.0/CHANGELOG.md",
+              "sha256": "60976c0ce2ff7a08aacf29c9134dda1192604a0def0228950c061c25b3773c26",
+              "size": 40
+            },
+            "README.md": {
+              "url": "mods/sonder@dice-d6/1.0.0/README.md",
+              "sha256": "bc8d197fc9131246965b151929c6f3a15612031034d54ccfcfb45a94d95f835d",
+              "size": 818
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@dice-d6/1.0.0/bundle.mjs",
+              "sha256": "42fba03436298843ea180a06164e8578556300c2e6009f8df9c561402db3f9cc",
+              "size": 13670
+            },
+            "manifest.json": {
+              "url": "mods/sonder@dice-d6/1.0.0/manifest.json",
+              "sha256": "45e6421e5cf988550a7ed904cb8f3337d6f708ec811b088cb40e01e1da37c1d2",
+              "size": 429
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@dice-d6/1.0.0/translations/en.json",
+              "sha256": "01cb9d36487536eb87667f35989fe1d917208e95d64c7a4500fd2e2c47146301",
+              "size": 367
+            }
+          }
+        },
+        "1.1.0": {
+          "version": "1.1.0",
+          "sdk": "^2.0.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@dice-d6/1.1.0/CHANGELOG.md",
+              "sha256": "60976c0ce2ff7a08aacf29c9134dda1192604a0def0228950c061c25b3773c26",
+              "size": 40
+            },
+            "README.md": {
+              "url": "mods/sonder@dice-d6/1.1.0/README.md",
+              "sha256": "d72ac59f0d3840e758a4ba3ca6aa4731cc733531dee1c2f61cbf0016e34577cd",
+              "size": 812
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@dice-d6/1.1.0/bundle.mjs",
+              "sha256": "6870b58bbfbc44004f89b1c2381c551479e1ed75bafec22a94276f3d5ee6e71a",
+              "size": 13666
+            },
+            "manifest.json": {
+              "url": "mods/sonder@dice-d6/1.1.0/manifest.json",
+              "sha256": "7fa2cc3b1f7e698c74fd140eb8a764f6fa3e78b6623f658c27b4980cf7cd8a6a",
+              "size": 429
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@dice-d6/1.1.0/translations/en.json",
+              "sha256": "01cb9d36487536eb87667f35989fe1d917208e95d64c7a4500fd2e2c47146301",
+              "size": 367
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sonder@dice-d20",
+      "version": "1.0.0",
+      "name": "t.name",
+      "author": {
+        "name": "Stanislav Sonder",
+        "github": "Stanislavsonder"
+      },
+      "description": {
+        "short": "t.description.short",
+        "full": "t.description.full"
+      },
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "dice",
+        "d20"
+      ],
+      "loadPriority": 100,
+      "sdk": "^2.0.0",
+      "entry": "bundle.mjs",
+      "capabilities": [
+        "dice"
+      ],
+      "config": {
+        "groups": [],
+        "options": []
+      },
+      "latestVersion": "1.0.0",
+      "publishedAt": "2026-09-07T00:40:41.413Z",
+      "files": {
+        "bundle.mjs": {
+          "url": "mods/sonder@dice-d20/1.0.0/bundle.mjs",
+          "sha256": "35693393f3230e2181ebcb4b35941d55624feaa4a1a9f8fc0c0fe41218093126",
+          "size": 17854
+        },
+        "manifest.json": {
+          "url": "mods/sonder@dice-d20/1.0.0/manifest.json",
+          "sha256": "5d36fabd748724419da04da6a5bed8036a606e5168532e3e436a1469cb44a499",
+          "size": 438
+        },
+        "translations/en.json": {
+          "url": "mods/sonder@dice-d20/1.0.0/translations/en.json",
+          "sha256": "d6fa40092ac23a71c23157cf4538d06db21d434e4e2414942ae957433bbcbbb7",
+          "size": 273
+        },
+        "README.md": {
+          "url": "mods/sonder@dice-d20/1.0.0/README.md",
+          "sha256": "fe29fbddc523eb7f3e76fc22db218e6d34c60c5ef382163567a76468faa6184a",
+          "size": 833
+        },
+        "CHANGELOG.md": {
+          "url": "mods/sonder@dice-d20/1.0.0/CHANGELOG.md",
+          "sha256": "60976c0ce2ff7a08aacf29c9134dda1192604a0def0228950c061c25b3773c26",
+          "size": 40
+        }
+      },
+      "readmeUrl": "mods/sonder@dice-d20/1.0.0/README.md",
+      "versions": [
+        "1.0.0"
+      ],
+      "releases": {
+        "1.0.0": {
+          "version": "1.0.0",
+          "sdk": "^2.0.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@dice-d20/1.0.0/CHANGELOG.md",
+              "sha256": "60976c0ce2ff7a08aacf29c9134dda1192604a0def0228950c061c25b3773c26",
+              "size": 40
+            },
+            "README.md": {
+              "url": "mods/sonder@dice-d20/1.0.0/README.md",
+              "sha256": "fe29fbddc523eb7f3e76fc22db218e6d34c60c5ef382163567a76468faa6184a",
+              "size": 833
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@dice-d20/1.0.0/bundle.mjs",
+              "sha256": "35693393f3230e2181ebcb4b35941d55624feaa4a1a9f8fc0c0fe41218093126",
+              "size": 17854
+            },
+            "manifest.json": {
+              "url": "mods/sonder@dice-d20/1.0.0/manifest.json",
+              "sha256": "5d36fabd748724419da04da6a5bed8036a606e5168532e3e436a1469cb44a499",
+              "size": 438
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@dice-d20/1.0.0/translations/en.json",
+              "sha256": "d6fa40092ac23a71c23157cf4538d06db21d434e4e2414942ae957433bbcbbb7",
+              "size": 273
+            }
+          }
+        }
+      },
+      "strings": {
+        "en": {
+          "name": "D20 Dice",
+          "short": "A standard twenty-sided die for the 3D dice roller.",
+          "full": "Adds a standard twenty-sided die to the 3D dice roller. Results are summed across multiple dice, with natural twenties and natural ones highlighted."
         }
       }
     }
