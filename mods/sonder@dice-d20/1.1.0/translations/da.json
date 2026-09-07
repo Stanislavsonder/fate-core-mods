@@ -1,0 +1,7 @@
+{
+	"name": "D20-terning",
+	"description": {
+		"full": "Tilføjer en standard tyvekantet terning til 3D-terningkasteren. Resultater summeres over flere terninger, med naturlige tyvere og enere fremhævet.",
+		"short": "En standard tyvekantet terning til 3D-terningkasteren."
+	}
+}

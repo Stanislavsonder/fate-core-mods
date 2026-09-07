@@ -1,0 +1,7 @@
+{
+	"name": "W6-Würfel",
+	"description": {
+		"full": "Fügt einen standardmäßigen sechsseitigen Würfel zum 3D-Würfelroller hinzu, plus ein goldenes Würfelmaterial für jede Würfelform. Gegenüberliegende Seiten ergeben sieben, Ergebnisse werden über mehrere Würfel summiert, und Würfe mit nur Sechsen oder nur Einsen werden hervorgehoben.",
+		"short": "Ein standardmäßiger sechsseitiger Würfel und ein goldenes Material für den 3D-Würfelroller."
+	}
+}

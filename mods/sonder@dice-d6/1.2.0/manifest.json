@@ -1,0 +1,56 @@
+{
+	"id": "sonder@dice-d6",
+	"version": "1.2.0",
+	"name": "t.name",
+	"author": {
+		"name": "Stanislav Sonder",
+		"github": "Stanislavsonder"
+	},
+	"description": {
+		"short": "t.description.short",
+		"full": "t.description.full"
+	},
+	"languages": [
+		"en",
+		"fr",
+		"es",
+		"pt",
+		"it",
+		"de",
+		"nl",
+		"sv",
+		"no",
+		"da",
+		"fi",
+		"ru",
+		"be",
+		"uk",
+		"pl",
+		"cs",
+		"ro",
+		"el",
+		"tr",
+		"he",
+		"ar",
+		"fa",
+		"sw",
+		"zh",
+		"hi",
+		"bn",
+		"ja",
+		"ko",
+		"id",
+		"th"
+	],
+	"tags": ["dice", "d6"],
+	"loadPriority": 100,
+	"sdk": "^2.0.0",
+	"entry": "bundle.mjs",
+	"capabilities": [
+		"dice"
+	],
+	"config": {
+		"groups": [],
+		"options": []
+	}
+}

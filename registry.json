@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-07T21:03:03.077Z",
+  "generatedAt": "2026-09-07T21:13:22.171Z",
   "blocklist": {},
   "mods": [
     {
@@ -189,7 +189,7 @@
     },
     {
       "id": "sonder@dice-d6",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "name": "t.name",
       "author": {
         "name": "Stanislav Sonder",
@@ -200,7 +200,36 @@
         "full": "t.description.full"
       },
       "languages": [
-        "en"
+        "en",
+        "fr",
+        "es",
+        "pt",
+        "it",
+        "de",
+        "nl",
+        "sv",
+        "no",
+        "da",
+        "fi",
+        "ru",
+        "be",
+        "uk",
+        "pl",
+        "cs",
+        "ro",
+        "el",
+        "tr",
+        "he",
+        "ar",
+        "fa",
+        "sw",
+        "zh",
+        "hi",
+        "bn",
+        "ja",
+        "ko",
+        "id",
+        "th"
       ],
       "tags": [
         "dice",
@@ -216,47 +245,186 @@
         "groups": [],
         "options": []
       },
-      "latestVersion": "1.1.0",
-      "publishedAt": "2026-09-06T19:07:32.209Z",
+      "latestVersion": "1.2.0",
+      "publishedAt": "2026-09-07T21:13:22.169Z",
       "files": {
         "bundle.mjs": {
-          "url": "mods/sonder@dice-d6/1.1.0/bundle.mjs",
+          "url": "mods/sonder@dice-d6/1.2.0/bundle.mjs",
           "sha256": "6870b58bbfbc44004f89b1c2381c551479e1ed75bafec22a94276f3d5ee6e71a",
           "size": 13666
         },
         "manifest.json": {
-          "url": "mods/sonder@dice-d6/1.1.0/manifest.json",
-          "sha256": "7fa2cc3b1f7e698c74fd140eb8a764f6fa3e78b6623f658c27b4980cf7cd8a6a",
-          "size": 429
+          "url": "mods/sonder@dice-d6/1.2.0/manifest.json",
+          "sha256": "79fcad30bdf0adf61c594773089c40e9a460977c47048473793fef27d783c9a5",
+          "size": 661
+        },
+        "translations/ar.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/ar.json",
+          "sha256": "41ac31ccfee93a9840029b7981d47605f3e5ee8c280318bf80b5d68ecca31ebc",
+          "size": 621
+        },
+        "translations/be.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/be.json",
+          "sha256": "0f7af94fe60b8536bd97f54eb8aeb112256d2372d1397b27b75bc48499e964b4",
+          "size": 659
+        },
+        "translations/bn.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/bn.json",
+          "sha256": "9c12142373dd6c66c2795b1216281ec66e80001b2cf72605ba2e43ea6e0d7822",
+          "size": 890
+        },
+        "translations/cs.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/cs.json",
+          "sha256": "37d73b1fa6aaa728bd320503e66a65864b286a77baf4fcaf780d4837f07cb570",
+          "size": 430
+        },
+        "translations/da.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/da.json",
+          "sha256": "44ec42aadfb47ce7d8f98f094adeb8995d97959acddf1f5ca7dff387d391e6d1",
+          "size": 409
+        },
+        "translations/de.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/de.json",
+          "sha256": "cf2cad88899ff0671812ea23a3db8aef2b75b706942562586b0aeffc90b7bf0c",
+          "size": 465
+        },
+        "translations/el.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/el.json",
+          "sha256": "5753b57f74154f92bdcbdaa42fe5b1d15245c99bf0998486eaf0772a4f50e662",
+          "size": 737
         },
         "translations/en.json": {
-          "url": "mods/sonder@dice-d6/1.1.0/translations/en.json",
+          "url": "mods/sonder@dice-d6/1.2.0/translations/en.json",
           "sha256": "01cb9d36487536eb87667f35989fe1d917208e95d64c7a4500fd2e2c47146301",
           "size": 367
         },
+        "translations/es.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/es.json",
+          "sha256": "58cb738ca39db66f75dfe54bc3ca81353b5fc942eeafc6aff8e868aea4d636b3",
+          "size": 418
+        },
+        "translations/fa.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/fa.json",
+          "sha256": "8aefd7eaaebdbc94b1a8db5e0e2bb1a7c2a02a6bc81ef849b4d8586725cd84ba",
+          "size": 672
+        },
+        "translations/fi.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/fi.json",
+          "sha256": "81edc11ad18a26e94afa23abf39e716b49f1a161d6ae018ee0876eea573e4d52",
+          "size": 407
+        },
+        "translations/fr.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/fr.json",
+          "sha256": "1d47cf576265c9b9440db96c26eb89ae674450762b52f646564948a1a9dd60d2",
+          "size": 428
+        },
+        "translations/he.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/he.json",
+          "sha256": "46a6c6bdb4bc0038a1b11fae46399b2bd8c553fa19cd316231eefc13d999e818",
+          "size": 607
+        },
+        "translations/hi.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/hi.json",
+          "sha256": "65e3d7ddc46fb0ff0874fb3825943377bdf4ae82747557f4e562c2c588924a4b",
+          "size": 839
+        },
+        "translations/id.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/id.json",
+          "sha256": "531251379ed0cbe6be6a96bf72f57afcc40b01c3fac8bcb475d62a4a46f47d8a",
+          "size": 387
+        },
+        "translations/it.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/it.json",
+          "sha256": "09f93da9a1adfe3e618a931b9fff16024dabde984ad2c5436b61675218dd6d16",
+          "size": 409
+        },
+        "translations/ja.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/ja.json",
+          "sha256": "e3c55ff9e25cc0afa49aa1ef37fc9ddc590c23bea3fb6f945544322a3b4fadc1",
+          "size": 465
+        },
+        "translations/ko.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/ko.json",
+          "sha256": "edee4b7a9004ba45a3dba641ef032d8c0b30d52de06c5b75309be0339ea7a2e7",
+          "size": 430
+        },
+        "translations/nl.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/nl.json",
+          "sha256": "020b4908ef10de6788e2f0ced65213cea9c1ccd04f280d30be945150d9589bb9",
+          "size": 477
+        },
+        "translations/no.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/no.json",
+          "sha256": "cea7d7bdd65b7d66dbad7106f9c41c6b1eb3840cd216c3a68da9aa226f000b97",
+          "size": 408
+        },
+        "translations/pl.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/pl.json",
+          "sha256": "d9b8a0377bbdc41e0b0fd4982911e82ff44f82a036f0b3b92805b26b6618a285",
+          "size": 401
+        },
+        "translations/pt.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/pt.json",
+          "sha256": "3d3dcdfa578001b746c9169f2937e2871f599d99d6c664fe7dae3e8d01c77820",
+          "size": 418
+        },
+        "translations/ro.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/ro.json",
+          "sha256": "6ae4bbb3131477bf2d0dacaf371e05fa2029bc05dd36ba1526b05227bb3c668a",
+          "size": 429
+        },
+        "translations/ru.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/ru.json",
+          "sha256": "dfb9610a48dfb379f4f83c641ca9667d7bf6c6a58045f4a7ea4e334bc5a3d95a",
+          "size": 700
+        },
+        "translations/sv.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/sv.json",
+          "sha256": "e932e038400b74bd4a74bb92f997d59f42c8c911cc5aed0db39aca015cee9c6b",
+          "size": 421
+        },
+        "translations/sw.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/sw.json",
+          "sha256": "471453a81a0b25c0167431808dcfe9f7c0dae508d0b1088da43d6590c0c12aac",
+          "size": 415
+        },
+        "translations/th.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/th.json",
+          "sha256": "584c9e8a56b1654bd49a7e43eb088b4341776521d4300b470c15d8c6f16f5a22",
+          "size": 889
+        },
+        "translations/tr.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/tr.json",
+          "sha256": "cc1d886f9d5306321c3710c91acccb3fe8372942956c312663fe940db7e91ed5",
+          "size": 431
+        },
+        "translations/uk.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/uk.json",
+          "sha256": "6a7a7fe00bf6dd27d124c75282f0600a159c3230a7811b6a69c36babc32a9574",
+          "size": 677
+        },
+        "translations/zh.json": {
+          "url": "mods/sonder@dice-d6/1.2.0/translations/zh.json",
+          "sha256": "8ed64a5f4cab1c7490eff85772a04caed11d0a7d4d18755e6c2715d2f1acb822",
+          "size": 335
+        },
         "README.md": {
-          "url": "mods/sonder@dice-d6/1.1.0/README.md",
+          "url": "mods/sonder@dice-d6/1.2.0/README.md",
           "sha256": "d72ac59f0d3840e758a4ba3ca6aa4731cc733531dee1c2f61cbf0016e34577cd",
           "size": 812
         },
         "CHANGELOG.md": {
-          "url": "mods/sonder@dice-d6/1.1.0/CHANGELOG.md",
-          "sha256": "60976c0ce2ff7a08aacf29c9134dda1192604a0def0228950c061c25b3773c26",
-          "size": 40
+          "url": "mods/sonder@dice-d6/1.2.0/CHANGELOG.md",
+          "sha256": "288e2bea81ac41df2af0656969906a29437244b59088a35c5ce8fe3f734e82dc",
+          "size": 101
         }
       },
-      "readmeUrl": "mods/sonder@dice-d6/1.1.0/README.md",
+      "readmeUrl": "mods/sonder@dice-d6/1.2.0/README.md",
       "versions": [
         "1.0.0",
-        "1.1.0"
+        "1.1.0",
+        "1.2.0"
       ],
-      "strings": {
-        "en": {
-          "name": "D6 Dice",
-          "short": "A standard six-sided die and a gold material for the 3D dice roller.",
-          "full": "Adds a standard six-sided die to the 3D dice roller, plus a gold dice material usable with any die shape. Opposite faces sum to seven, results are summed across multiple dice, and rolls of all sixes or all ones are highlighted."
-        }
-      },
       "releases": {
         "1.0.0": {
           "version": "1.0.0",
@@ -319,12 +487,340 @@
               "size": 367
             }
           }
+        },
+        "1.2.0": {
+          "version": "1.2.0",
+          "sdk": "^2.0.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@dice-d6/1.2.0/CHANGELOG.md",
+              "sha256": "288e2bea81ac41df2af0656969906a29437244b59088a35c5ce8fe3f734e82dc",
+              "size": 101
+            },
+            "README.md": {
+              "url": "mods/sonder@dice-d6/1.2.0/README.md",
+              "sha256": "d72ac59f0d3840e758a4ba3ca6aa4731cc733531dee1c2f61cbf0016e34577cd",
+              "size": 812
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@dice-d6/1.2.0/bundle.mjs",
+              "sha256": "6870b58bbfbc44004f89b1c2381c551479e1ed75bafec22a94276f3d5ee6e71a",
+              "size": 13666
+            },
+            "manifest.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/manifest.json",
+              "sha256": "79fcad30bdf0adf61c594773089c40e9a460977c47048473793fef27d783c9a5",
+              "size": 661
+            },
+            "translations/ar.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/ar.json",
+              "sha256": "41ac31ccfee93a9840029b7981d47605f3e5ee8c280318bf80b5d68ecca31ebc",
+              "size": 621
+            },
+            "translations/be.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/be.json",
+              "sha256": "0f7af94fe60b8536bd97f54eb8aeb112256d2372d1397b27b75bc48499e964b4",
+              "size": 659
+            },
+            "translations/bn.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/bn.json",
+              "sha256": "9c12142373dd6c66c2795b1216281ec66e80001b2cf72605ba2e43ea6e0d7822",
+              "size": 890
+            },
+            "translations/cs.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/cs.json",
+              "sha256": "37d73b1fa6aaa728bd320503e66a65864b286a77baf4fcaf780d4837f07cb570",
+              "size": 430
+            },
+            "translations/da.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/da.json",
+              "sha256": "44ec42aadfb47ce7d8f98f094adeb8995d97959acddf1f5ca7dff387d391e6d1",
+              "size": 409
+            },
+            "translations/de.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/de.json",
+              "sha256": "cf2cad88899ff0671812ea23a3db8aef2b75b706942562586b0aeffc90b7bf0c",
+              "size": 465
+            },
+            "translations/el.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/el.json",
+              "sha256": "5753b57f74154f92bdcbdaa42fe5b1d15245c99bf0998486eaf0772a4f50e662",
+              "size": 737
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/en.json",
+              "sha256": "01cb9d36487536eb87667f35989fe1d917208e95d64c7a4500fd2e2c47146301",
+              "size": 367
+            },
+            "translations/es.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/es.json",
+              "sha256": "58cb738ca39db66f75dfe54bc3ca81353b5fc942eeafc6aff8e868aea4d636b3",
+              "size": 418
+            },
+            "translations/fa.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/fa.json",
+              "sha256": "8aefd7eaaebdbc94b1a8db5e0e2bb1a7c2a02a6bc81ef849b4d8586725cd84ba",
+              "size": 672
+            },
+            "translations/fi.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/fi.json",
+              "sha256": "81edc11ad18a26e94afa23abf39e716b49f1a161d6ae018ee0876eea573e4d52",
+              "size": 407
+            },
+            "translations/fr.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/fr.json",
+              "sha256": "1d47cf576265c9b9440db96c26eb89ae674450762b52f646564948a1a9dd60d2",
+              "size": 428
+            },
+            "translations/he.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/he.json",
+              "sha256": "46a6c6bdb4bc0038a1b11fae46399b2bd8c553fa19cd316231eefc13d999e818",
+              "size": 607
+            },
+            "translations/hi.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/hi.json",
+              "sha256": "65e3d7ddc46fb0ff0874fb3825943377bdf4ae82747557f4e562c2c588924a4b",
+              "size": 839
+            },
+            "translations/id.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/id.json",
+              "sha256": "531251379ed0cbe6be6a96bf72f57afcc40b01c3fac8bcb475d62a4a46f47d8a",
+              "size": 387
+            },
+            "translations/it.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/it.json",
+              "sha256": "09f93da9a1adfe3e618a931b9fff16024dabde984ad2c5436b61675218dd6d16",
+              "size": 409
+            },
+            "translations/ja.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/ja.json",
+              "sha256": "e3c55ff9e25cc0afa49aa1ef37fc9ddc590c23bea3fb6f945544322a3b4fadc1",
+              "size": 465
+            },
+            "translations/ko.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/ko.json",
+              "sha256": "edee4b7a9004ba45a3dba641ef032d8c0b30d52de06c5b75309be0339ea7a2e7",
+              "size": 430
+            },
+            "translations/nl.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/nl.json",
+              "sha256": "020b4908ef10de6788e2f0ced65213cea9c1ccd04f280d30be945150d9589bb9",
+              "size": 477
+            },
+            "translations/no.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/no.json",
+              "sha256": "cea7d7bdd65b7d66dbad7106f9c41c6b1eb3840cd216c3a68da9aa226f000b97",
+              "size": 408
+            },
+            "translations/pl.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/pl.json",
+              "sha256": "d9b8a0377bbdc41e0b0fd4982911e82ff44f82a036f0b3b92805b26b6618a285",
+              "size": 401
+            },
+            "translations/pt.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/pt.json",
+              "sha256": "3d3dcdfa578001b746c9169f2937e2871f599d99d6c664fe7dae3e8d01c77820",
+              "size": 418
+            },
+            "translations/ro.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/ro.json",
+              "sha256": "6ae4bbb3131477bf2d0dacaf371e05fa2029bc05dd36ba1526b05227bb3c668a",
+              "size": 429
+            },
+            "translations/ru.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/ru.json",
+              "sha256": "dfb9610a48dfb379f4f83c641ca9667d7bf6c6a58045f4a7ea4e334bc5a3d95a",
+              "size": 700
+            },
+            "translations/sv.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/sv.json",
+              "sha256": "e932e038400b74bd4a74bb92f997d59f42c8c911cc5aed0db39aca015cee9c6b",
+              "size": 421
+            },
+            "translations/sw.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/sw.json",
+              "sha256": "471453a81a0b25c0167431808dcfe9f7c0dae508d0b1088da43d6590c0c12aac",
+              "size": 415
+            },
+            "translations/th.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/th.json",
+              "sha256": "584c9e8a56b1654bd49a7e43eb088b4341776521d4300b470c15d8c6f16f5a22",
+              "size": 889
+            },
+            "translations/tr.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/tr.json",
+              "sha256": "cc1d886f9d5306321c3710c91acccb3fe8372942956c312663fe940db7e91ed5",
+              "size": 431
+            },
+            "translations/uk.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/uk.json",
+              "sha256": "6a7a7fe00bf6dd27d124c75282f0600a159c3230a7811b6a69c36babc32a9574",
+              "size": 677
+            },
+            "translations/zh.json": {
+              "url": "mods/sonder@dice-d6/1.2.0/translations/zh.json",
+              "sha256": "8ed64a5f4cab1c7490eff85772a04caed11d0a7d4d18755e6c2715d2f1acb822",
+              "size": 335
+            }
+          }
+        }
+      },
+      "strings": {
+        "ar": {
+          "name": "حجر D6",
+          "short": "حجر سداسي الأوجه قياسي ومادة ذهبية لرامي الأحجار ثلاثي الأبعاد.",
+          "full": "يضيف حجرًا سداسي الأوجه قياسيًا إلى رامي الأحجار ثلاثي الأبعاد، بالإضافة إلى مادة ذهبية للأحجار يمكن استخدامها مع أي شكل حجر. الأوجه المتقابلة مجموعها سبعة، وتُجمع النتائج عبر عدة أحجار، وتُبرز الرميات التي تكون كلها ستات أو كلها آحاد."
+        },
+        "be": {
+          "name": "Кубік D6",
+          "short": "Стандартны шасцігранны кубік і залаты матэрыял для 3D-кісткакідаўкі.",
+          "full": "Дадае стандартны шасцігранны кубік у 3D-кісткакідаўку, а таксама залаты матэрыял, які падыходіць для любой формы кубіка. Супрацьлеглыя грані ў суме даюць сем, вынікі сумуюцца па некалькіх кубіках, а кіды толькі шасёрак або толькі адзінак вылучаюцца."
+        },
+        "bn": {
+          "name": "D6 ডাইস",
+          "short": "৩ডি ডাইস রোলারের জন্য একটি স্ট্যান্ডার্ড ছয়-পার্শ্বীয় ডাইস এবং সোনালি উপাদান।",
+          "full": "৩ডি ডাইস রোলারে একটি স্ট্যান্ডার্ড ছয়-পার্শ্বীয় ডাইস যোগ করে, সঙ্গে যেকোনো ডাইস আকারে ব্যবহারযোগ্য সোনালি উপাদান। বিপরীত পৃষ্ঠগুলোর যোগফল সাত, একাধিক ডাইসের ফলাফল যোগ করা হয়, এবং শুধু ছয় বা শুধু একের রোল হাইলাইট করা হয়।"
+        },
+        "cs": {
+          "name": "D6 kostka",
+          "short": "Standardní šestistěnná kostka a zlatý materiál pro 3D házeč kostek.",
+          "full": "Přidává standardní šestistěnnou kostku do 3D házeče kostek a zlatý materiál použitelný s jakýmkoli tvarem kostky. Protilehlé strany dávají dohromady sedm, výsledky se sčítají při více kostkách a hody samých šestek nebo samých jedniček jsou zvýrazněny."
+        },
+        "da": {
+          "name": "D6-terning",
+          "short": "En standard sekshjørnet terning og et guldmateriale til 3D-terningkasteren.",
+          "full": "Tilføjer en standard sekshjørnet terning til 3D-terningkasteren, plus et guldmateriale der kan bruges med alle terningformer. Modstående sider summerer til syv, resultater summeres over flere terninger, og kast med kun seksere eller kun enere fremhæves."
+        },
+        "de": {
+          "name": "W6-Würfel",
+          "short": "Ein standardmäßiger sechsseitiger Würfel und ein goldenes Material für den 3D-Würfelroller.",
+          "full": "Fügt einen standardmäßigen sechsseitigen Würfel zum 3D-Würfelroller hinzu, plus ein goldenes Würfelmaterial für jede Würfelform. Gegenüberliegende Seiten ergeben sieben, Ergebnisse werden über mehrere Würfel summiert, und Würfe mit nur Sechsen oder nur Einsen werden hervorgehoben."
+        },
+        "el": {
+          "name": "Ζάρι D6",
+          "short": "Ένα τυπικό εξάπλευρο ζάρι και ένα χρυσό υλικό για τον 3D ρίχτη ζαριών.",
+          "full": "Προσθέτει ένα τυπικό εξάπλευρο ζάρι στον 3D ρίχτη ζαριών, καθώς και ένα χρυσό υλικό ζαριών που μπορεί να χρησιμοποιηθεί με οποιοδήποτε σχήμα ζαριού. Οι αντίθετες πλευρές αθροίζονται σε επτά, τα αποτελέσματα αθροίζονται σε πολλαπλά ζάρια, και ρίψεις μόνο με εξάρια ή μόνο με ένα επισημαίνονται."
+        },
+        "en": {
+          "name": "D6 Dice",
+          "short": "A standard six-sided die and a gold material for the 3D dice roller.",
+          "full": "Adds a standard six-sided die to the 3D dice roller, plus a gold dice material usable with any die shape. Opposite faces sum to seven, results are summed across multiple dice, and rolls of all sixes or all ones are highlighted."
+        },
+        "es": {
+          "name": "Dado D6",
+          "short": "Un dado de seis caras estándar y un material dorado para el tirador de dados 3D.",
+          "full": "Añade un dado de seis caras estándar al tirador de dados 3D, además de un material dorado utilizable con cualquier forma de dado. Las caras opuestas suman siete, los resultados se suman entre varios dados, y las tiradas de todos seises o todos unos se resaltan."
+        },
+        "fa": {
+          "name": "تاس D6",
+          "short": "یک تاس استاندارد شش‌وجهی و یک متریال طلایی برای پرتاب‌کننده سه‌بعدی تاس.",
+          "full": "یک تاس استاندارد شش‌وجهی به پرتاب‌کننده سه‌بعدی تاس اضافه می‌کند، به‌همراه یک متریال طلایی تاس که با هر شکل تاسی قابل استفاده است. وجه‌های مقابل مجموعاً هفت می‌شوند، نتایج در چند تاس جمع می‌شوند و پرتاب‌های تمام شش‌ها یا تمام یک‌ها برجسته می‌شوند."
+        },
+        "fi": {
+          "name": "D6-noppa",
+          "short": "Tavallinen kuusisivuinen noppa ja kultainen materiaali 3D-noppaheitin.",
+          "full": "Lisää tavallisen kuusisivuisen nopan 3D-noppaheittimeen sekä kultaisen noppamateriaalin, joka toimii kaikilla noppamuodoilla. Vastakkaiset puolet summautuvat seitsemään, tulokset summataan useista noppista, ja kaikki kuutoset tai kaikki ykköset korostetaan."
+        },
+        "fr": {
+          "name": "Dé D6",
+          "short": "Un dé à six faces standard et un matériau doré pour le lanceur de dés 3D.",
+          "full": "Ajoute un dé à six faces standard au lanceur de dés 3D, ainsi qu'un matériau doré utilisable avec toute forme de dé. Les faces opposées totalisent sept, les résultats sont additionnés sur plusieurs dés, et les jets de tous les six ou tous les un sont mis en évidence."
+        },
+        "he": {
+          "name": "קוביית D6",
+          "short": "קוביית שישה צלעות סטנדרטית וחומר זהב לגלגלת הקוביות התלת-מימדית.",
+          "full": "מוסיף קוביית שישה צלעות סטנדרטית לגלגלת הקוביות התלת-מימדית, וכן חומר זהב לקוביות שניתן להשתמש בו עם כל צורת קובייה. צלעות מנוגדות מסתכמות לשבע, התוצאות מסוכמות על פני מספר קוביות, וגלגולים של כל השישיות או כל האחדים מודגשים."
+        },
+        "hi": {
+          "name": "D6 पासा",
+          "short": "3D पासा रोलर के लिए एक मानक छह-पक्षीय पासा और सुनहरी सामग्री।",
+          "full": "3D पासा रोलर में एक मानक छह-पक्षीय पासा जोड़ता है, साथ ही किसी भी पासा आकार के साथ उपयोग होने वाली सुनहरी सामग्री। विपरीत सतहों का योग सात होता है, परिणाम कई पासों में जोड़े जाते हैं, और केवल छक्के या केवल एक के रोल हाइलाइट किए जाते हैं।"
+        },
+        "id": {
+          "name": "Dadu D6",
+          "short": "Dadu enam sisi standar dan material emas untuk penggulir dadu 3D.",
+          "full": "Menambahkan dadu enam sisi standar ke penggulir dadu 3D, plus material emas yang dapat digunakan dengan bentuk dadu apa pun. Sisi yang berlawanan berjumlah tujuh, hasil dijumlahkan dari beberapa dadu, dan lemparan semua enam atau semua satu disorot."
+        },
+        "it": {
+          "name": "Dado D6",
+          "short": "Un dado a sei facce standard e un materiale dorato per il lanciatore di dadi 3D.",
+          "full": "Aggiunge un dado a sei facce standard al lanciatore di dadi 3D, più un materiale dorato utilizzabile con qualsiasi forma di dado. Le facce opposte sommano sette, i risultati vengono sommati su più dadi, e i tiri di tutti sei o tutti uno sono evidenziati."
+        },
+        "ja": {
+          "name": "D6ダイス",
+          "short": "3Dダイスローラー用の標準的な六面体ダイスと金色のマテリアル。",
+          "full": "3Dダイスローラーに標準的な六面体ダイスを追加し、あらゆるダイス形状で使える金色のマテリアルも提供します。向かい合う面の合計は7、複数ダイスの結果は合算され、すべて6またはすべて1の出目は強調表示されます。"
+        },
+        "ko": {
+          "name": "D6 주사위",
+          "short": "3D 주사위 굴리기용 표준 육면체 주사위와 금색 재질.",
+          "full": "3D 주사위 굴리기에 표준 육면체 주사위를 추가하고, 모든 주사위 형태에 사용할 수 있는 금색 재질도 제공합니다. 맞은편 면의 합은 7이며, 여러 주사위의 결과가 합산되고 모두 6 또는 모두 1인 결과가 강조됩니다."
+        },
+        "nl": {
+          "name": "D6-dobbelsteen",
+          "short": "Een standaard zeszijdige dobbelsteen en een gouden materiaal voor de 3D-dobbelsteenroller.",
+          "full": "Voegt een standaard zeszijdige dobbelsteen toe aan de 3D-dobbelsteenroller, plus een gouden dobbelsteenmateriaal dat met elke dobbelsteenvorm werkt. Tegenoverliggende zijden tellen op tot zeven, resultaten worden opgeteld over meerdere dobbelstenen, en worpen met alle zessen of alle enen worden gemarkeerd."
+        },
+        "no": {
+          "name": "D6-terning",
+          "short": "En standard sekskantet terning og et gullmateriale for 3D-terningkasteren.",
+          "full": "Legger til en standard sekskantet terning til 3D-terningkasteren, pluss et gullmateriale som kan brukes med alle terningformer. Motstående sider summerer til syv, resultater summeres over flere terninger, og kast med bare seksere eller bare enere fremheves."
+        },
+        "pl": {
+          "name": "Kość D6",
+          "short": "Standardowa sześcienna kość i złoty materiał do 3D-rzutnika.",
+          "full": "Dodaje standardową sześcienną kość do 3D-rzutnika, a także złoty materiał działający z dowolną formą kości. Przeciwległe ściany dają w sumie siedem, wyniki są sumowane z wielu kości, a rzuty samych szóstek lub samych jedynek są wyróżniane."
+        },
+        "pt": {
+          "name": "Dado D6",
+          "short": "Um dado de seis faces padrão e um material dourado para o rolador de dados 3D.",
+          "full": "Adiciona um dado de seis faces padrão ao rolador de dados 3D, além de um material dourado utilizável com qualquer forma de dado. Faces opostas somam sete, os resultados são somados entre vários dados, e rolagens de todos os seis ou todos os uns são destacadas."
+        },
+        "ro": {
+          "name": "Zar D6",
+          "short": "Un zar standard cu șase fețe și un material auriu pentru aruncătorul de zaruri 3D.",
+          "full": "Adaugă un zar standard cu șase fețe la aruncătorul de zaruri 3D, plus un material auriu utilizabil cu orice formă de zar. Fețele opuse însumează șapte, rezultatele se adună pe mai multe zaruri, iar aruncările cu toate șasele sau toate unele sunt evidențiate."
+        },
+        "ru": {
+          "name": "Кубик D6",
+          "short": "Стандартный шестигранный кубик и золотой материал для 3D-бросателя костей.",
+          "full": "Добавляет стандартный шестигранный кубик в 3D-бросатель костей, а также золотой материал, применимый к любой форме кубика. Противоположные грани в сумме дают семь, результаты суммируются по нескольким кубикам, а броски только шестёрок или только единиц выделяются."
+        },
+        "sv": {
+          "name": "D6-tärning",
+          "short": "En standardsidig sexsidig tärning och ett guldmaterial för 3D-tärningskastaren.",
+          "full": "Lägger till en standardsidig sexsidig tärning till 3D-tärningskastaren, plus ett guldmaterial som fungerar med alla tärningsformer. Motsatta sidor summerar till sju, resultat summeras över flera tärningar, och kast med bara sexor eller bara ettor markeras."
+        },
+        "sw": {
+          "name": "D6 Dice",
+          "short": "Kete ya pande sita ya kawaida na nyenzo ya dhahabu kwa kikokotoo cha kete cha 3D.",
+          "full": "Inaongeza kete ya pande sita ya kawaida kwenye kikokotoo cha kete cha 3D, pamoja na nyenzo ya dhahabu inayotumika na umbo lolote la kete. Pande zinazokabiliana huongeza saba, matokeo huongezwa katika kete nyingi, na kupiga kwa sita zote au moja zote huangaziwa."
+        },
+        "th": {
+          "name": "ลูกเต๋า D6",
+          "short": "ลูกเต๋าหกเหลี่ยมมาตรฐานและวัสดุสีทองสำหรับเครื่องทอยลูกเต๋า 3D",
+          "full": "เพิ่มลูกเต๋าหกเหลี่ยมมาตรฐานไปยังเครื่องทอยลูกเต๋า 3D พร้อมวัสดุสีทองที่ใช้ได้กับรูปลูกเต๋าทุกแบบ หน้าที่ตรงข้ามรวมกันได้เจ็ด ผลลัพธ์จะถูกรวมจากหลายลูกเต๋า และการทอยที่ได้เลขหกทั้งหมดหรือเลขหนึ่งทั้งหมดจะถูกเน้น"
+        },
+        "tr": {
+          "name": "D6 zarı",
+          "short": "3D zar atıcısı için standart altı yüzlü bir zar ve altın bir malzeme.",
+          "full": "3D zar atıcısına standart altı yüzlü bir zar ekler; ayrıca herhangi bir zar şekliyle kullanılabilen altın bir zar malzemesi sunar. Karşılıklı yüzler yedi verir, sonuçlar birden fazla zar üzerinden toplanır ve yalnızca altılar veya yalnızca birler vurgulanır."
+        },
+        "uk": {
+          "name": "Кубик D6",
+          "short": "Стандартний шестигранний кубик і золотий матеріал для 3D-кидалки кісток.",
+          "full": "Додає стандартний шестигранний кубик до 3D-кидалки кісток, а також золотий матеріал, придатний для будь-якої форми кубика. Протилежні грані в сумі дають сім, результати підсумовуються за кількома кубиками, а кидки лише шісток або лише одиниць виділяються."
+        },
+        "zh": {
+          "name": "D6 骰子",
+          "short": "用于 3D 骰子投掷器的标准六面骰和金色材质。",
+          "full": "为 3D 骰子投掷器添加标准六面骰，并提供可用于任意骰子形状的金色材质。相对面之和为七，多个骰子的结果会相加，并突出显示全 6 或全 1 的投掷。"
         }
       }
     },
     {
       "id": "sonder@dice-d20",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "t.name",
       "author": {
         "name": "Stanislav Sonder",
@@ -335,7 +831,36 @@
         "full": "t.description.full"
       },
       "languages": [
-        "en"
+        "en",
+        "fr",
+        "es",
+        "pt",
+        "it",
+        "de",
+        "nl",
+        "sv",
+        "no",
+        "da",
+        "fi",
+        "ru",
+        "be",
+        "uk",
+        "pl",
+        "cs",
+        "ro",
+        "el",
+        "tr",
+        "he",
+        "ar",
+        "fa",
+        "sw",
+        "zh",
+        "hi",
+        "bn",
+        "ja",
+        "ko",
+        "id",
+        "th"
       ],
       "tags": [
         "dice",
@@ -351,38 +876,184 @@
         "groups": [],
         "options": []
       },
-      "latestVersion": "1.0.0",
-      "publishedAt": "2026-09-07T00:40:41.413Z",
+      "latestVersion": "1.1.0",
+      "publishedAt": "2026-09-07T21:13:20.661Z",
       "files": {
         "bundle.mjs": {
-          "url": "mods/sonder@dice-d20/1.0.0/bundle.mjs",
+          "url": "mods/sonder@dice-d20/1.1.0/bundle.mjs",
           "sha256": "35693393f3230e2181ebcb4b35941d55624feaa4a1a9f8fc0c0fe41218093126",
           "size": 17854
         },
         "manifest.json": {
-          "url": "mods/sonder@dice-d20/1.0.0/manifest.json",
-          "sha256": "5d36fabd748724419da04da6a5bed8036a606e5168532e3e436a1469cb44a499",
+          "url": "mods/sonder@dice-d20/1.1.0/manifest.json",
+          "sha256": "40173502164e12e419c5abfc73c2f1b984698195e47b06658a614ac16b64524c",
+          "size": 670
+        },
+        "translations/ar.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/ar.json",
+          "sha256": "ae5e77f1810fcf96dad25a1ba68384c8e07eef5d5430455c7475be67b16894dc",
+          "size": 403
+        },
+        "translations/be.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/be.json",
+          "sha256": "eb5e79deb1716a154bb8f75d8a3562421ecc1ec0d3737410bfb417b114f31eb5",
           "size": 438
         },
+        "translations/bn.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/bn.json",
+          "sha256": "c024b5efa63c8126dadbeb1ac19c95a597203256b90cdf61b263be06db73b7ff",
+          "size": 633
+        },
+        "translations/cs.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/cs.json",
+          "sha256": "b9251f4fafd2abaabe9247595f06d39ec19307716f81bc0ac70c19e679896003",
+          "size": 306
+        },
+        "translations/da.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/da.json",
+          "sha256": "525fbd7c50c059d3c4852864e0863aa9a389e717e55b8161af31388ffc767983",
+          "size": 279
+        },
+        "translations/de.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/de.json",
+          "sha256": "9667c44fee692202fa7281d4ab73ed34d77a810e6074e713a9f081752ef122f9",
+          "size": 336
+        },
+        "translations/el.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/el.json",
+          "sha256": "b8d7bf05f0158618280b11377aba1de86487ea6e6d4d8df5a8b49098099192dc",
+          "size": 462
+        },
         "translations/en.json": {
-          "url": "mods/sonder@dice-d20/1.0.0/translations/en.json",
+          "url": "mods/sonder@dice-d20/1.1.0/translations/en.json",
           "sha256": "d6fa40092ac23a71c23157cf4538d06db21d434e4e2414942ae957433bbcbbb7",
           "size": 273
         },
+        "translations/es.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/es.json",
+          "sha256": "cca89986c01b6182c9e46ee77a71b6ca55d5b12d73f728fe3cf658b3e9245693",
+          "size": 301
+        },
+        "translations/fa.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/fa.json",
+          "sha256": "d37f21896ee34fe05be00b7d2b65aa980392a231780e6666d33f9a0074dcdabc",
+          "size": 441
+        },
+        "translations/fi.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/fi.json",
+          "sha256": "1240ac4fe6812789f7d7a5fb93782049fa942b2b0ac3616adc0b462d9a280238",
+          "size": 287
+        },
+        "translations/fr.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/fr.json",
+          "sha256": "1ba2ec55be215887b7bc490a178352ee0d5732749265bddbce79631776e64116",
+          "size": 342
+        },
+        "translations/he.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/he.json",
+          "sha256": "1247ca2a0729e35f891f9c17ca63189f5613c51f74cbd6bb778495173f6459b3",
+          "size": 433
+        },
+        "translations/hi.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/hi.json",
+          "sha256": "aae717b73d50fa99520c805b566d28e83d3612c9067c115716a9e5df340426b9",
+          "size": 577
+        },
+        "translations/id.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/id.json",
+          "sha256": "6b8abb2d2960f28bf83ff2815b93519bba2342d472798a23cab4ccfe470a0c8d",
+          "size": 272
+        },
+        "translations/it.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/it.json",
+          "sha256": "d3bd5022bf7722752778820980b13406f832203beaf1ae8cf0bb3a78d6a9d671",
+          "size": 294
+        },
+        "translations/ja.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/ja.json",
+          "sha256": "482341ab8aac2fcb852f2c89aa3e180db41be48a55f6ad28eb2993355cf40eb9",
+          "size": 361
+        },
+        "translations/ko.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/ko.json",
+          "sha256": "bc14d809c481a8f162b2972c4275d94336fa2fab4d53c13253a30250db8b5a46",
+          "size": 314
+        },
+        "translations/nl.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/nl.json",
+          "sha256": "03aa43b37f4d2484927f90fa977db4adfa8b8c6a0ad8e0300702e608c894e595",
+          "size": 331
+        },
+        "translations/no.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/no.json",
+          "sha256": "3580b0bec05435dd0b36a207a69f018cdbf385b1a1a1b692d3963359ae69e419",
+          "size": 278
+        },
+        "translations/pl.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/pl.json",
+          "sha256": "da1645c200a05f360ac7da8e399cba919fd885695a442b3d214591ec4e861b71",
+          "size": 283
+        },
+        "translations/pt.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/pt.json",
+          "sha256": "e692c874763efa919615f46dfb657d38caac8a9e07c39281542578c1c3e71b2b",
+          "size": 286
+        },
+        "translations/ro.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/ro.json",
+          "sha256": "ec3f33f2ee0965d65ea7d016c01cc09320a62f7e1fb25d91901f7ae07b0f703c",
+          "size": 319
+        },
+        "translations/ru.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/ru.json",
+          "sha256": "e571749df94005bde0060f32b21f822b55e2e2e043b3a7a615d3633ecd39d0dc",
+          "size": 478
+        },
+        "translations/sv.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/sv.json",
+          "sha256": "6ab22fcbd3afd8f08705683e2d830cf032e2b93a2ae46654058fcfc540edc4ab",
+          "size": 301
+        },
+        "translations/sw.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/sw.json",
+          "sha256": "0335c5ce1e6a05143e198e3005866dc2865be90c0f07fe1ec4881489ba7bbb9d",
+          "size": 296
+        },
+        "translations/th.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/th.json",
+          "sha256": "d8ac1317a5e7bc209127355c2b8932c6e07829201b61abb47d6d97e289701c48",
+          "size": 609
+        },
+        "translations/tr.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/tr.json",
+          "sha256": "d84a712ce5899a7c3b6093f1ae00f805c69d0fa7b65fb6a602bc41abdb8d6e4c",
+          "size": 282
+        },
+        "translations/uk.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/uk.json",
+          "sha256": "bf2ffb9e0ab1ee6f0357e0f877384766979d9a7e67ea59b1f3359338829feb6a",
+          "size": 470
+        },
+        "translations/zh.json": {
+          "url": "mods/sonder@dice-d20/1.1.0/translations/zh.json",
+          "sha256": "ee21eff38ca16f1ea5227c8d4008bf576f1d32c951d0e50d29c6bf9acf235083",
+          "size": 246
+        },
         "README.md": {
-          "url": "mods/sonder@dice-d20/1.0.0/README.md",
+          "url": "mods/sonder@dice-d20/1.1.0/README.md",
           "sha256": "fe29fbddc523eb7f3e76fc22db218e6d34c60c5ef382163567a76468faa6184a",
           "size": 833
         },
         "CHANGELOG.md": {
-          "url": "mods/sonder@dice-d20/1.0.0/CHANGELOG.md",
-          "sha256": "60976c0ce2ff7a08aacf29c9134dda1192604a0def0228950c061c25b3773c26",
-          "size": 40
+          "url": "mods/sonder@dice-d20/1.1.0/CHANGELOG.md",
+          "sha256": "23c18ea8f07bf7e20b1611bb983d92699881cb9b1ebabb389d580303f461e969",
+          "size": 101
         }
       },
-      "readmeUrl": "mods/sonder@dice-d20/1.0.0/README.md",
+      "readmeUrl": "mods/sonder@dice-d20/1.1.0/README.md",
       "versions": [
-        "1.0.0"
+        "1.0.0",
+        "1.1.0"
       ],
       "releases": {
         "1.0.0": {
@@ -415,13 +1086,334 @@
               "size": 273
             }
           }
+        },
+        "1.1.0": {
+          "version": "1.1.0",
+          "sdk": "^2.0.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@dice-d20/1.1.0/CHANGELOG.md",
+              "sha256": "23c18ea8f07bf7e20b1611bb983d92699881cb9b1ebabb389d580303f461e969",
+              "size": 101
+            },
+            "README.md": {
+              "url": "mods/sonder@dice-d20/1.1.0/README.md",
+              "sha256": "fe29fbddc523eb7f3e76fc22db218e6d34c60c5ef382163567a76468faa6184a",
+              "size": 833
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@dice-d20/1.1.0/bundle.mjs",
+              "sha256": "35693393f3230e2181ebcb4b35941d55624feaa4a1a9f8fc0c0fe41218093126",
+              "size": 17854
+            },
+            "manifest.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/manifest.json",
+              "sha256": "40173502164e12e419c5abfc73c2f1b984698195e47b06658a614ac16b64524c",
+              "size": 670
+            },
+            "translations/ar.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/ar.json",
+              "sha256": "ae5e77f1810fcf96dad25a1ba68384c8e07eef5d5430455c7475be67b16894dc",
+              "size": 403
+            },
+            "translations/be.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/be.json",
+              "sha256": "eb5e79deb1716a154bb8f75d8a3562421ecc1ec0d3737410bfb417b114f31eb5",
+              "size": 438
+            },
+            "translations/bn.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/bn.json",
+              "sha256": "c024b5efa63c8126dadbeb1ac19c95a597203256b90cdf61b263be06db73b7ff",
+              "size": 633
+            },
+            "translations/cs.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/cs.json",
+              "sha256": "b9251f4fafd2abaabe9247595f06d39ec19307716f81bc0ac70c19e679896003",
+              "size": 306
+            },
+            "translations/da.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/da.json",
+              "sha256": "525fbd7c50c059d3c4852864e0863aa9a389e717e55b8161af31388ffc767983",
+              "size": 279
+            },
+            "translations/de.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/de.json",
+              "sha256": "9667c44fee692202fa7281d4ab73ed34d77a810e6074e713a9f081752ef122f9",
+              "size": 336
+            },
+            "translations/el.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/el.json",
+              "sha256": "b8d7bf05f0158618280b11377aba1de86487ea6e6d4d8df5a8b49098099192dc",
+              "size": 462
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/en.json",
+              "sha256": "d6fa40092ac23a71c23157cf4538d06db21d434e4e2414942ae957433bbcbbb7",
+              "size": 273
+            },
+            "translations/es.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/es.json",
+              "sha256": "cca89986c01b6182c9e46ee77a71b6ca55d5b12d73f728fe3cf658b3e9245693",
+              "size": 301
+            },
+            "translations/fa.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/fa.json",
+              "sha256": "d37f21896ee34fe05be00b7d2b65aa980392a231780e6666d33f9a0074dcdabc",
+              "size": 441
+            },
+            "translations/fi.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/fi.json",
+              "sha256": "1240ac4fe6812789f7d7a5fb93782049fa942b2b0ac3616adc0b462d9a280238",
+              "size": 287
+            },
+            "translations/fr.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/fr.json",
+              "sha256": "1ba2ec55be215887b7bc490a178352ee0d5732749265bddbce79631776e64116",
+              "size": 342
+            },
+            "translations/he.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/he.json",
+              "sha256": "1247ca2a0729e35f891f9c17ca63189f5613c51f74cbd6bb778495173f6459b3",
+              "size": 433
+            },
+            "translations/hi.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/hi.json",
+              "sha256": "aae717b73d50fa99520c805b566d28e83d3612c9067c115716a9e5df340426b9",
+              "size": 577
+            },
+            "translations/id.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/id.json",
+              "sha256": "6b8abb2d2960f28bf83ff2815b93519bba2342d472798a23cab4ccfe470a0c8d",
+              "size": 272
+            },
+            "translations/it.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/it.json",
+              "sha256": "d3bd5022bf7722752778820980b13406f832203beaf1ae8cf0bb3a78d6a9d671",
+              "size": 294
+            },
+            "translations/ja.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/ja.json",
+              "sha256": "482341ab8aac2fcb852f2c89aa3e180db41be48a55f6ad28eb2993355cf40eb9",
+              "size": 361
+            },
+            "translations/ko.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/ko.json",
+              "sha256": "bc14d809c481a8f162b2972c4275d94336fa2fab4d53c13253a30250db8b5a46",
+              "size": 314
+            },
+            "translations/nl.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/nl.json",
+              "sha256": "03aa43b37f4d2484927f90fa977db4adfa8b8c6a0ad8e0300702e608c894e595",
+              "size": 331
+            },
+            "translations/no.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/no.json",
+              "sha256": "3580b0bec05435dd0b36a207a69f018cdbf385b1a1a1b692d3963359ae69e419",
+              "size": 278
+            },
+            "translations/pl.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/pl.json",
+              "sha256": "da1645c200a05f360ac7da8e399cba919fd885695a442b3d214591ec4e861b71",
+              "size": 283
+            },
+            "translations/pt.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/pt.json",
+              "sha256": "e692c874763efa919615f46dfb657d38caac8a9e07c39281542578c1c3e71b2b",
+              "size": 286
+            },
+            "translations/ro.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/ro.json",
+              "sha256": "ec3f33f2ee0965d65ea7d016c01cc09320a62f7e1fb25d91901f7ae07b0f703c",
+              "size": 319
+            },
+            "translations/ru.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/ru.json",
+              "sha256": "e571749df94005bde0060f32b21f822b55e2e2e043b3a7a615d3633ecd39d0dc",
+              "size": 478
+            },
+            "translations/sv.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/sv.json",
+              "sha256": "6ab22fcbd3afd8f08705683e2d830cf032e2b93a2ae46654058fcfc540edc4ab",
+              "size": 301
+            },
+            "translations/sw.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/sw.json",
+              "sha256": "0335c5ce1e6a05143e198e3005866dc2865be90c0f07fe1ec4881489ba7bbb9d",
+              "size": 296
+            },
+            "translations/th.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/th.json",
+              "sha256": "d8ac1317a5e7bc209127355c2b8932c6e07829201b61abb47d6d97e289701c48",
+              "size": 609
+            },
+            "translations/tr.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/tr.json",
+              "sha256": "d84a712ce5899a7c3b6093f1ae00f805c69d0fa7b65fb6a602bc41abdb8d6e4c",
+              "size": 282
+            },
+            "translations/uk.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/uk.json",
+              "sha256": "bf2ffb9e0ab1ee6f0357e0f877384766979d9a7e67ea59b1f3359338829feb6a",
+              "size": 470
+            },
+            "translations/zh.json": {
+              "url": "mods/sonder@dice-d20/1.1.0/translations/zh.json",
+              "sha256": "ee21eff38ca16f1ea5227c8d4008bf576f1d32c951d0e50d29c6bf9acf235083",
+              "size": 246
+            }
+          }
         }
       },
       "strings": {
+        "ar": {
+          "name": "حجر D20",
+          "short": "حجر عشري الأوجه قياسي لرامي الأحجار ثلاثي الأبعاد.",
+          "full": "يضيف حجرًا عشري الأوجه قياسيًا إلى رامي الأحجار ثلاثي الأبعاد. تُجمع النتائج عبر عدة أحجار، مع إبراز العشرينات والآحاد الطبيعية."
+        },
+        "be": {
+          "name": "Кубік D20",
+          "short": "Стандартны дваццацігранны кубік для 3D-кісткакідаўкі.",
+          "full": "Дадае стандартны дваццацігранны кубік у 3D-кісткакідаўку. Вынікі сумуюцца па некалькіх кубіках, з вылучэннем натуральных дваццатак і адзінак."
+        },
+        "bn": {
+          "name": "D20 ডাইস",
+          "short": "৩ডি ডাইস রোলারের জন্য একটি স্ট্যান্ডার্ড বিশ-পার্শ্বীয় ডাইস।",
+          "full": "৩ডি ডাইস রোলারে একটি স্ট্যান্ডার্ড বিশ-পার্শ্বীয় ডাইস যোগ করে। একাধিক ডাইসের ফলাফল যোগ করা হয়, প্রাকৃতিক বিশ এবং প্রাকৃতিক এক হাইলাইট করা হয়।"
+        },
+        "cs": {
+          "name": "D20 kostka",
+          "short": "Standardní dvacetistěnná kostka pro 3D házeč kostek.",
+          "full": "Přidává standardní dvacetistěnnou kostku do 3D házeče kostek. Výsledky se sčítají při více kostkách, s zvýrazněnými přirozenými dvacítkami a jedničkami."
+        },
+        "da": {
+          "name": "D20-terning",
+          "short": "En standard tyvekantet terning til 3D-terningkasteren.",
+          "full": "Tilføjer en standard tyvekantet terning til 3D-terningkasteren. Resultater summeres over flere terninger, med naturlige tyvere og enere fremhævet."
+        },
+        "de": {
+          "name": "W20-Würfel",
+          "short": "Ein standardmäßiger zwanzigseitiger Würfel für den 3D-Würfelroller.",
+          "full": "Fügt einen standardmäßigen zwanzigseitigen Würfel zum 3D-Würfelroller hinzu. Ergebnisse werden über mehrere Würfel summiert, mit hervorgehobenen natürlichen Zwanzigern und Einsen."
+        },
+        "el": {
+          "name": "Ζάρι D20",
+          "short": "Ένα τυπικό εικοσάπλευρο ζάρι για τον 3D ρίχτη ζαριών.",
+          "full": "Προσθέτει ένα τυπικό εικοσάπλευρο ζάρι στον 3D ρίχτη ζαριών. Τα αποτελέσματα αθροίζονται σε πολλαπλά ζάρια, με φυσικά είκοσα και φυσικά ένα να επισημαίνονται."
+        },
         "en": {
           "name": "D20 Dice",
           "short": "A standard twenty-sided die for the 3D dice roller.",
           "full": "Adds a standard twenty-sided die to the 3D dice roller. Results are summed across multiple dice, with natural twenties and natural ones highlighted."
+        },
+        "es": {
+          "name": "Dado D20",
+          "short": "Un dado de veinte caras estándar para el tirador de dados 3D.",
+          "full": "Añade un dado de veinte caras estándar al tirador de dados 3D. Los resultados se suman entre varios dados, con los veinte naturales y los uno naturales resaltados."
+        },
+        "fa": {
+          "name": "تاس D20",
+          "short": "یک تاس استاندارد بیست‌وجهی برای پرتاب‌کننده سه‌بعدی تاس.",
+          "full": "یک تاس استاندارد بیست‌وجهی به پرتاب‌کننده سه‌بعدی تاس اضافه می‌کند. نتایج در چند تاس جمع می‌شوند و بیست‌ها و یک‌های طبیعی برجسته می‌شوند."
+        },
+        "fi": {
+          "name": "D20-noppa",
+          "short": "Tavallinen kaksikymmentisivuinen noppa 3D-noppaheitin.",
+          "full": "Lisää tavallisen kaksikymmentisivuisen nopan 3D-noppaheittimeen. Tulokset summataan useista noppista, ja luonnolliset kaksikymmenet ja ykköset korostetaan."
+        },
+        "fr": {
+          "name": "Dé D20",
+          "short": "Un dé à vingt faces standard pour le lanceur de dés 3D.",
+          "full": "Ajoute un dé à vingt faces standard au lanceur de dés 3D. Les résultats sont additionnés sur plusieurs dés, avec les réussites critiques (20 naturel) et les échecs critiques (1 naturel) mis en évidence."
+        },
+        "he": {
+          "name": "קוביית D20",
+          "short": "קוביית עשרים צלעות סטנדרטית לגלגלת הקוביות התלת-מימדית.",
+          "full": "מוסיף קוביית עשרים צלעות סטנדרטית לגלגלת הקוביות התלת-מימדית. התוצאות מסוכמות על פני מספר קוביות, עם עשרים טבעיים ואחדים טבעיים מודגשים."
+        },
+        "hi": {
+          "name": "D20 पासा",
+          "short": "3D पासा रोलर के लिए एक मानक बीस-पक्षीय पासा।",
+          "full": "3D पासा रोलर में एक मानक बीस-पक्षीय पासा जोड़ता है। परिणाम कई पासों में जोड़े जाते हैं, जिसमें प्राकृतिक बीस और प्राकृतिक एक को हाइलाइट किया जाता है।"
+        },
+        "id": {
+          "name": "Dadu D20",
+          "short": "Dadu dua puluh sisi standar untuk penggulir dadu 3D.",
+          "full": "Menambahkan dadu dua puluh sisi standar ke penggulir dadu 3D. Hasil dijumlahkan dari beberapa dadu, dengan dua puluh alami dan satu alami disorot."
+        },
+        "it": {
+          "name": "Dado D20",
+          "short": "Un dado a venti facce standard per il lanciatore di dadi 3D.",
+          "full": "Aggiunge un dado a venti facce standard al lanciatore di dadi 3D. I risultati vengono sommati su più dadi, con i venti naturali e gli uno naturali evidenziati."
+        },
+        "ja": {
+          "name": "D20ダイス",
+          "short": "3Dダイスローラー用の標準的な二十面体ダイス。",
+          "full": "3Dダイスローラーに標準的な二十面体ダイスを追加します。複数のダイスの結果は合算され、クリティカル（自然20）とファンブル（自然1）が強調表示されます。"
+        },
+        "ko": {
+          "name": "D20 주사위",
+          "short": "3D 주사위 굴리기용 표준 이십면체 주사위.",
+          "full": "3D 주사위 굴리기에 표준 이십면체 주사위를 추가합니다. 여러 주사위의 결과가 합산되며, 자연스러운 20과 자연스러운 1이 강조됩니다."
+        },
+        "nl": {
+          "name": "D20-dobbelsteen",
+          "short": "Een standaard twintigzijdige dobbelsteen voor de 3D-dobbelsteenroller.",
+          "full": "Voegt een standaard twintigzijdige dobbelsteen toe aan de 3D-dobbelsteenroller. Resultaten worden opgeteld over meerdere dobbelstenen, met natuurlijke twintigen en enen gemarkeerd."
+        },
+        "no": {
+          "name": "D20-terning",
+          "short": "En standard tjuekantet terning for 3D-terningkasteren.",
+          "full": "Legger til en standard tjuekantet terning til 3D-terningkasteren. Resultater summeres over flere terninger, med naturlige tjuere og ener fremhevet."
+        },
+        "pl": {
+          "name": "Kość D20",
+          "short": "Standardowa dwudziestościenna kość do 3D-rzutnika.",
+          "full": "Dodaje standardową dwudziestościenną kość do 3D-rzutnika. Wyniki są sumowane z wielu kości, z wyróżnionymi naturalnymi dwudziestkami i jedynkami."
+        },
+        "pt": {
+          "name": "Dado D20",
+          "short": "Um dado de vinte faces padrão para o rolador de dados 3D.",
+          "full": "Adiciona um dado de vinte faces padrão ao rolador de dados 3D. Os resultados são somados entre vários dados, com vinte natural e um natural destacados."
+        },
+        "ro": {
+          "name": "Zar D20",
+          "short": "Un zar standard cu douăzeci de fețe pentru aruncătorul de zaruri 3D.",
+          "full": "Adaugă un zar standard cu douăzeci de fețe la aruncătorul de zaruri 3D. Rezultatele se însumează pe mai multe zaruri, cu douăzeci naturale și unu natural evidențiate."
+        },
+        "ru": {
+          "name": "Кубик D20",
+          "short": "Стандартный двадцатигранный кубик для 3D-бросателя костей.",
+          "full": "Добавляет стандартный двадцатигранный кубик в 3D-бросатель костей. Результаты суммируются по нескольким кубикам, с выделением натуральных двадцаток и единиц."
+        },
+        "sv": {
+          "name": "D20-tärning",
+          "short": "En standardsidig tjugosidig tärning för 3D-tärningskastaren.",
+          "full": "Lägger till en standardsidig tjugosidig tärning till 3D-tärningskastaren. Resultat summeras över flera tärningar, med naturliga tjugor och ettor markerade."
+        },
+        "sw": {
+          "name": "D20 Dice",
+          "short": "Kete ya pande ishirini ya kawaida kwa kikokotoo cha kete cha 3D.",
+          "full": "Inaongeza kete ya pande ishirini ya kawaida kwenye kikokotoo cha kete cha 3D. Matokeo huongezwa katika kete nyingi, na ishirini na moja za asili zinaangaziwa."
+        },
+        "th": {
+          "name": "ลูกเต๋า D20",
+          "short": "ลูกเต๋าสิบเหลี่ยมมาตรฐานสำหรับเครื่องทอยลูกเต๋า 3D",
+          "full": "เพิ่มลูกเต๋าสิบเหลี่ยมมาตรฐานไปยังเครื่องทอยลูกเต๋า 3D ผลลัพธ์จะถูกรวมจากหลายลูกเต๋า โดยเน้นเลขยี่สิบธรรมชาติและเลขหนึ่งธรรมชาติ"
+        },
+        "tr": {
+          "name": "D20 zarı",
+          "short": "3D zar atıcısı için standart yirmi yüzlü bir zar.",
+          "full": "3D zar atıcısına standart yirmi yüzlü bir zar ekler. Sonuçlar birden fazla zar üzerinden toplanır; doğal yirmiler ve doğal birler vurgulanır."
+        },
+        "uk": {
+          "name": "Кубик D20",
+          "short": "Стандартний двадцятигранний кубик для 3D-кидалки кісток.",
+          "full": "Додає стандартний двадцятигранний кубик до 3D-кидалки кісток. Результати підсумовуються за кількома кубиками, з виділенням натуральних двадцяток і одиниць."
+        },
+        "zh": {
+          "name": "D20 骰子",
+          "short": "用于 3D 骰子投掷器的标准二十面骰。",
+          "full": "为 3D 骰子投掷器添加标准二十面骰。多个骰子的结果会相加，并突出显示自然 20 和自然 1。"
         }
       }
     },

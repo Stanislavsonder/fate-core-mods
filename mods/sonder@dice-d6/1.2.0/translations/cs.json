@@ -1,0 +1,7 @@
+{
+	"name": "D6 kostka",
+	"description": {
+		"full": "Přidává standardní šestistěnnou kostku do 3D házeče kostek a zlatý materiál použitelný s jakýmkoli tvarem kostky. Protilehlé strany dávají dohromady sedm, výsledky se sčítají při více kostkách a hody samých šestek nebo samých jedniček jsou zvýrazněny.",
+		"short": "Standardní šestistěnná kostka a zlatý materiál pro 3D házeč kostek."
+	}
+}

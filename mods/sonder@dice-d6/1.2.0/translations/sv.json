@@ -1,0 +1,7 @@
+{
+	"name": "D6-tärning",
+	"description": {
+		"full": "Lägger till en standardsidig sexsidig tärning till 3D-tärningskastaren, plus ett guldmaterial som fungerar med alla tärningsformer. Motsatta sidor summerar till sju, resultat summeras över flera tärningar, och kast med bara sexor eller bara ettor markeras.",
+		"short": "En standardsidig sexsidig tärning och ett guldmaterial för 3D-tärningskastaren."
+	}
+}

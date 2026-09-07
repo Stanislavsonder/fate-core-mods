@@ -1,0 +1,7 @@
+{
+	"name": "Dadu D6",
+	"description": {
+		"full": "Menambahkan dadu enam sisi standar ke penggulir dadu 3D, plus material emas yang dapat digunakan dengan bentuk dadu apa pun. Sisi yang berlawanan berjumlah tujuh, hasil dijumlahkan dari beberapa dadu, dan lemparan semua enam atau semua satu disorot.",
+		"short": "Dadu enam sisi standar dan material emas untuk penggulir dadu 3D."
+	}
+}

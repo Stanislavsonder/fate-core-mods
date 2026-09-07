@@ -1,0 +1,7 @@
+{
+	"name": "D20-tärning",
+	"description": {
+		"full": "Lägger till en standardsidig tjugosidig tärning till 3D-tärningskastaren. Resultat summeras över flera tärningar, med naturliga tjugor och ettor markerade.",
+		"short": "En standardsidig tjugosidig tärning för 3D-tärningskastaren."
+	}
+}
