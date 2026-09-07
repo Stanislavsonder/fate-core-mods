@@ -175,30 +175,41 @@ async function publishMod(modDir: string, ghPagesDir: string): Promise<void> {
 
 	const existingIndex = index.mods.findIndex(m => m.id === modId)
 	const previousVersions = existingIndex >= 0 ? index.mods[existingIndex].versions : []
+	const isPublished = manifest.published !== false
 
-	const entryData: RegistryModEntry = {
-		...manifest,
-		id: modId,
-		version,
-		latestVersion: version,
-		publishedAt: new Date().toISOString(),
-		files,
-		...(readmeUrl ? { readmeUrl } : {}),
-		versions: [...new Set([...previousVersions, version])].sort((a, b) => semver.compare(a, b)),
-		releases: {
-			...(existingIndex >= 0 ? index.mods[existingIndex].releases : {}),
-			[version]: collectRelease(ghPagesDir, modId, version)
-		},
-		strings
+	if (isPublished) {
+		const entryData: RegistryModEntry = {
+			...manifest,
+			id: modId,
+			version,
+			latestVersion: version,
+			publishedAt: new Date().toISOString(),
+			files,
+			...(readmeUrl ? { readmeUrl } : {}),
+			versions: [...new Set([...previousVersions, version])].sort((a, b) => semver.compare(a, b)),
+			releases: {
+				...(existingIndex >= 0 ? index.mods[existingIndex].releases : {}),
+				[version]: collectRelease(ghPagesDir, modId, version)
+			},
+			strings
+		}
+
+		if (existingIndex >= 0) index.mods[existingIndex] = entryData
+		else index.mods.push(entryData)
+	} else if (existingIndex >= 0) {
+		index.mods.splice(existingIndex, 1)
 	}
-
-	if (existingIndex >= 0) index.mods[existingIndex] = entryData
-	else index.mods.push(entryData)
 
 	index.generatedAt = new Date().toISOString()
 	writeIndex(ghPagesDir, index)
 
-	console.log(`Published ${modId}@${version}.`)
+	if (isPublished) {
+		console.log(`Published ${modId}@${version}.`)
+	} else if (existingIndex >= 0) {
+		console.log(`Published ${modId}@${version} artifacts only and removed it from registry.json (published: false).`)
+	} else {
+		console.log(`Published ${modId}@${version} artifacts only (published: false — not indexed).`)
+	}
 }
 
 async function main(): Promise<void> {
