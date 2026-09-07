@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+Add cover artwork for the Mod Store.
+
 ## 1.2.0
 
 Switch the sheet UI to the shared `SheetSection` component (SDK ^2.1.0), add

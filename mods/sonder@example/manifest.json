@@ -23,6 +23,7 @@
 		"full": "t.description.full",
 		"short": "t.description.short"
 	},
+	"image": "cover.png",
 	"entry": "bundle.mjs",
 	"id": "sonder@example",
 	"languages": [
@@ -62,5 +63,5 @@
 	"published": false,
 	"sdk": "^2.1.0",
 	"tags": ["example"],
-	"version": "1.2.0"
+	"version": "1.2.1"
 }
