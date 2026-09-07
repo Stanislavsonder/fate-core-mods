@@ -14,7 +14,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import semver from 'semver'
-import { sha256, type RegistryIndex, type RegistryModEntry } from './lib/registry.ts'
+import { sha256, type RegistryFileEntry, type RegistryIndex, type RegistryModEntry, type RegistryReleaseEntry } from './lib/registry.ts'
 
 /** "t.foo.bar" -> translations.foo.bar; anything not "t."-prefixed is returned as-is. */
 function resolveI18nString(value: string, translations: Record<string, unknown>): string {
@@ -33,15 +33,71 @@ function loadIndex(ghPagesDir: string): RegistryIndex {
 	if (fs.existsSync(indexPath)) {
 		return JSON.parse(fs.readFileSync(indexPath, 'utf-8')) as RegistryIndex
 	}
-	return { schemaVersion: 1, generatedAt: '', blocklist: {}, mods: [] }
+	return { schemaVersion: 2, generatedAt: '', blocklist: {}, mods: [] }
 }
 
 function writeIndex(ghPagesDir: string, index: RegistryIndex): void {
 	fs.writeFileSync(path.join(ghPagesDir, 'registry.json'), JSON.stringify(index, null, 2))
 }
 
+function collectFiles(directory: string, baseUrl: string, relativeDirectory = ''): Record<string, RegistryFileEntry> {
+	const files: Record<string, RegistryFileEntry> = {}
+	for (const name of fs.readdirSync(path.join(directory, relativeDirectory))) {
+		const relativePath = path.posix.join(relativeDirectory, name)
+		const filePath = path.join(directory, relativePath)
+		if (fs.statSync(filePath).isDirectory()) {
+			Object.assign(files, collectFiles(directory, baseUrl, relativePath))
+			continue
+		}
+		const content = fs.readFileSync(filePath)
+		files[relativePath] = { url: `${baseUrl}/${relativePath}`, sha256: sha256(content), size: content.length }
+	}
+	return files
+}
+
+function collectRelease(ghPagesDir: string, modId: string, version: string): RegistryReleaseEntry {
+	const directory = path.join(ghPagesDir, 'mods', modId, version)
+	const manifest = JSON.parse(fs.readFileSync(path.join(directory, 'manifest.json'), 'utf-8')) as Record<string, unknown>
+	return {
+		version,
+		...(typeof manifest.appVersion === 'string' ? { appVersion: manifest.appVersion } : {}),
+		...(typeof manifest.sdk === 'string' ? { sdk: manifest.sdk } : {}),
+		files: collectFiles(directory, `mods/${modId}/${version}`)
+	}
+}
+
+function collectStrings(directory: string, manifest: Record<string, unknown>): RegistryModEntry['strings'] {
+	const strings: RegistryModEntry['strings'] = {}
+	const translationsDir = path.join(directory, 'translations')
+	if (!fs.existsSync(translationsDir)) {
+		return strings
+	}
+	const description = manifest.description as { short?: string; full?: string } | undefined
+	for (const file of fs.readdirSync(translationsDir).filter(name => name.endsWith('.json'))) {
+		const lang = file.replace(/\.json$/, '')
+		const translations = JSON.parse(fs.readFileSync(path.join(translationsDir, file), 'utf-8')) as Record<string, unknown>
+		strings[lang] = {
+			name: resolveI18nString((manifest.name as string) ?? '', translations),
+			short: resolveI18nString(description?.short ?? '', translations),
+			...(description?.full ? { full: resolveI18nString(description.full, translations) } : {})
+		}
+	}
+	return strings
+}
+
+function upgradeIndex(ghPagesDir: string, index: RegistryIndex): void {
+	index.schemaVersion = 2
+	for (const mod of index.mods) {
+		mod.releases = Object.fromEntries(mod.versions.map(version => [version, collectRelease(ghPagesDir, mod.id, version)]))
+		const latestDirectory = path.join(ghPagesDir, 'mods', mod.id, mod.latestVersion)
+		const latestManifest = JSON.parse(fs.readFileSync(path.join(latestDirectory, 'manifest.json'), 'utf-8')) as Record<string, unknown>
+		mod.strings = collectStrings(latestDirectory, latestManifest)
+	}
+}
+
 async function publishBlocklistOnly(ghPagesDir: string): Promise<void> {
 	const index = loadIndex(ghPagesDir)
+	upgradeIndex(ghPagesDir, index)
 	const blocklistPath = path.join(process.cwd(), 'blocklist.json')
 	index.blocklist = JSON.parse(fs.readFileSync(blocklistPath, 'utf-8')) as Record<string, string[]>
 	index.generatedAt = new Date().toISOString()
@@ -85,20 +141,21 @@ async function publishMod(modDir: string, ghPagesDir: string): Promise<void> {
 	publishFile(bundlePath, entry)
 	publishFile(manifestPath, 'manifest.json')
 
-	const strings: Record<string, { name: string; short: string }> = {}
+	if (typeof manifest.image === 'string') {
+		const imagePath = path.join(process.cwd(), modDir, manifest.image)
+		if (!fs.existsSync(imagePath)) {
+			throw new Error(`${imagePath} is declared by manifest.image but does not exist.`)
+		}
+		publishFile(imagePath, manifest.image)
+	}
+
 	const translationsDir = path.join(process.cwd(), modDir, 'translations')
 	if (fs.existsSync(translationsDir)) {
 		for (const file of fs.readdirSync(translationsDir).filter(f => f.endsWith('.json'))) {
-			const lang = file.replace(/\.json$/, '')
-			const content = publishFile(path.join(translationsDir, file), `translations/${file}`)
-			const translations = JSON.parse(content.toString('utf-8')) as Record<string, unknown>
-			const description = manifest.description as { short?: string } | undefined
-			strings[lang] = {
-				name: resolveI18nString((manifest.name as string) ?? '', translations),
-				short: resolveI18nString(description?.short ?? '', translations)
-			}
+			publishFile(path.join(translationsDir, file), `translations/${file}`)
 		}
 	}
+	const strings = collectStrings(targetDir, manifest)
 
 	let readmeUrl: string | undefined
 	const readmePath = path.join(process.cwd(), modDir, 'README.md')
@@ -112,6 +169,7 @@ async function publishMod(modDir: string, ghPagesDir: string): Promise<void> {
 	}
 
 	const index = loadIndex(ghPagesDir)
+	upgradeIndex(ghPagesDir, index)
 	const blocklistPath = path.join(process.cwd(), 'blocklist.json')
 	index.blocklist = JSON.parse(fs.readFileSync(blocklistPath, 'utf-8')) as Record<string, string[]>
 
@@ -127,6 +185,10 @@ async function publishMod(modDir: string, ghPagesDir: string): Promise<void> {
 		files,
 		...(readmeUrl ? { readmeUrl } : {}),
 		versions: [...new Set([...previousVersions, version])].sort((a, b) => semver.compare(a, b)),
+		releases: {
+			...(existingIndex >= 0 ? index.mods[existingIndex].releases : {}),
+			[version]: collectRelease(ghPagesDir, modId, version)
+		},
 		strings
 	}
 

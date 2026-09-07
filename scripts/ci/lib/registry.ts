@@ -7,6 +7,13 @@ export interface RegistryFileEntry {
 	size: number
 }
 
+export interface RegistryReleaseEntry {
+	version: string
+	appVersion?: string
+	sdk?: string
+	files: Record<string, RegistryFileEntry>
+}
+
 export interface RegistryModEntry {
 	// The mod's full static manifest, embedded verbatim...
 	[manifestField: string]: unknown
@@ -18,10 +25,11 @@ export interface RegistryModEntry {
 	files: Record<string, RegistryFileEntry>
 	readmeUrl?: string
 	versions: string[]
+	releases: Record<string, RegistryReleaseEntry>
 	/** Per-language display strings, extracted at publish time so the Mod
 	 * Store can render browse cards with zero extra requests (Phase 3 doc,
 	 * Step 7's note on why this must be in the index format from the start). */
-	strings: Record<string, { name: string; short: string }>
+	strings: Record<string, { name: string; short: string; full?: string }>
 }
 
 export interface RegistryIndex {

@@ -162,6 +162,9 @@ async function main(): Promise<void> {
 	if (!fs.existsSync(path.join(root, modDir, 'LICENSE'))) {
 		errors.push(`${modDir}/LICENSE is missing.`)
 	}
+	if (typeof manifest.image === 'string' && !fs.existsSync(path.join(root, modDir, manifest.image))) {
+		errors.push(`${modDir}/${manifest.image} is declared by manifest.image but does not exist.`)
+	}
 
 	// --- 4. Version ---
 	const declaredVersion = manifest.version as string | undefined
