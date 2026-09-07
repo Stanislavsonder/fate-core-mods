@@ -1,0 +1,3 @@
+# See the repo-root pnpm-workspace.yaml for why this file exists without a
+# `packages:` glob, and why minimumReleaseAge is 0.
+minimumReleaseAge: 0

@@ -1,0 +1,30 @@
+{
+	"id": "sonder@dice-d20",
+	"version": "1.0.0",
+	"name": "t.name",
+	"author": {
+		"name": "Stanislav Sonder",
+		"github": "Stanislavsonder"
+	},
+	"description": {
+		"short": "t.description.short",
+		"full": "t.description.full"
+	},
+	"languages": [
+		"en"
+	],
+	"tags": [
+		"dice",
+		"d20"
+	],
+	"loadPriority": 100,
+	"sdk": "^2.0.0",
+	"entry": "bundle.mjs",
+	"capabilities": [
+		"dice"
+	],
+	"config": {
+		"groups": [],
+		"options": []
+	}
+}
