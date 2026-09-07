@@ -1,0 +1,7 @@
+{
+	"name": "Dado D6",
+	"description": {
+		"full": "Aggiunge un dado a sei facce standard al lanciatore di dadi 3D, più un materiale dorato utilizzabile con qualsiasi forma di dado. Le facce opposte sommano sette, i risultati vengono sommati su più dadi, e i tiri di tutti sei o tutti uno sono evidenziati.",
+		"short": "Un dado a sei facce standard e un materiale dorato per il lanciatore di dadi 3D."
+	}
+}

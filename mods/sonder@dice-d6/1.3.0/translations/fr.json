@@ -1,0 +1,7 @@
+{
+	"name": "Dé D6",
+	"description": {
+		"full": "Ajoute un dé à six faces standard au lanceur de dés 3D, ainsi qu'un matériau doré utilisable avec toute forme de dé. Les faces opposées totalisent sept, les résultats sont additionnés sur plusieurs dés, et les jets de tous les six ou tous les un sont mis en évidence.",
+		"short": "Un dé à six faces standard et un matériau doré pour le lanceur de dés 3D."
+	}
+}

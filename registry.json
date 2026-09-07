@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-07T22:31:32.592Z",
+  "generatedAt": "2026-09-07T22:52:11.022Z",
   "blocklist": {},
   "mods": [
     {
       "id": "sonder@dice-d6",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "name": "t.name",
       "author": {
         "name": "Stanislav Sonder",
@@ -62,191 +62,192 @@
         "groups": [],
         "options": []
       },
-      "latestVersion": "1.2.1",
-      "publishedAt": "2026-09-07T22:31:29.520Z",
+      "latestVersion": "1.3.0",
+      "publishedAt": "2026-09-07T22:52:11.020Z",
       "files": {
         "bundle.mjs": {
-          "url": "mods/sonder@dice-d6/1.2.1/bundle.mjs",
-          "sha256": "6870b58bbfbc44004f89b1c2381c551479e1ed75bafec22a94276f3d5ee6e71a",
-          "size": 13666
+          "url": "mods/sonder@dice-d6/1.3.0/bundle.mjs",
+          "sha256": "b14f56e8c1de52f109f76fff3f5cf29be8a5ca510c8c4d2d7b7ddb6785049fbc",
+          "size": 16609
         },
         "manifest.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/manifest.json",
-          "sha256": "ab9de3701d81b8fa02d2ca5983e42b761d201fc0a6265b6193eb6a7a2e584bf2",
+          "url": "mods/sonder@dice-d6/1.3.0/manifest.json",
+          "sha256": "8154ed200810e11af63d7c86161a34e6d051668f82cbab1fe3a343aae6bb376c",
           "size": 684
         },
         "cover.jpg": {
-          "url": "mods/sonder@dice-d6/1.2.1/cover.jpg",
+          "url": "mods/sonder@dice-d6/1.3.0/cover.jpg",
           "sha256": "ad83128dabac98bde5d292cbbdcd9208fbd7c218fc8b8b592376a413c815c472",
           "size": 11122
         },
         "translations/ar.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/ar.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/ar.json",
           "sha256": "41ac31ccfee93a9840029b7981d47605f3e5ee8c280318bf80b5d68ecca31ebc",
           "size": 621
         },
         "translations/be.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/be.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/be.json",
           "sha256": "0f7af94fe60b8536bd97f54eb8aeb112256d2372d1397b27b75bc48499e964b4",
           "size": 659
         },
         "translations/bn.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/bn.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/bn.json",
           "sha256": "9c12142373dd6c66c2795b1216281ec66e80001b2cf72605ba2e43ea6e0d7822",
           "size": 890
         },
         "translations/cs.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/cs.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/cs.json",
           "sha256": "37d73b1fa6aaa728bd320503e66a65864b286a77baf4fcaf780d4837f07cb570",
           "size": 430
         },
         "translations/da.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/da.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/da.json",
           "sha256": "44ec42aadfb47ce7d8f98f094adeb8995d97959acddf1f5ca7dff387d391e6d1",
           "size": 409
         },
         "translations/de.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/de.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/de.json",
           "sha256": "cf2cad88899ff0671812ea23a3db8aef2b75b706942562586b0aeffc90b7bf0c",
           "size": 465
         },
         "translations/el.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/el.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/el.json",
           "sha256": "5753b57f74154f92bdcbdaa42fe5b1d15245c99bf0998486eaf0772a4f50e662",
           "size": 737
         },
         "translations/en.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/en.json",
-          "sha256": "01cb9d36487536eb87667f35989fe1d917208e95d64c7a4500fd2e2c47146301",
-          "size": 367
+          "url": "mods/sonder@dice-d6/1.3.0/translations/en.json",
+          "sha256": "ca86d488ad9a8f4b6a29ea71f4ded46f80ffe7f1311b75adaeb6189695df183f",
+          "size": 382
         },
         "translations/es.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/es.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/es.json",
           "sha256": "58cb738ca39db66f75dfe54bc3ca81353b5fc942eeafc6aff8e868aea4d636b3",
           "size": 418
         },
         "translations/fa.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/fa.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/fa.json",
           "sha256": "8aefd7eaaebdbc94b1a8db5e0e2bb1a7c2a02a6bc81ef849b4d8586725cd84ba",
           "size": 672
         },
         "translations/fi.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/fi.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/fi.json",
           "sha256": "81edc11ad18a26e94afa23abf39e716b49f1a161d6ae018ee0876eea573e4d52",
           "size": 407
         },
         "translations/fr.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/fr.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/fr.json",
           "sha256": "1d47cf576265c9b9440db96c26eb89ae674450762b52f646564948a1a9dd60d2",
           "size": 428
         },
         "translations/he.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/he.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/he.json",
           "sha256": "46a6c6bdb4bc0038a1b11fae46399b2bd8c553fa19cd316231eefc13d999e818",
           "size": 607
         },
         "translations/hi.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/hi.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/hi.json",
           "sha256": "65e3d7ddc46fb0ff0874fb3825943377bdf4ae82747557f4e562c2c588924a4b",
           "size": 839
         },
         "translations/id.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/id.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/id.json",
           "sha256": "531251379ed0cbe6be6a96bf72f57afcc40b01c3fac8bcb475d62a4a46f47d8a",
           "size": 387
         },
         "translations/it.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/it.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/it.json",
           "sha256": "09f93da9a1adfe3e618a931b9fff16024dabde984ad2c5436b61675218dd6d16",
           "size": 409
         },
         "translations/ja.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/ja.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/ja.json",
           "sha256": "e3c55ff9e25cc0afa49aa1ef37fc9ddc590c23bea3fb6f945544322a3b4fadc1",
           "size": 465
         },
         "translations/ko.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/ko.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/ko.json",
           "sha256": "edee4b7a9004ba45a3dba641ef032d8c0b30d52de06c5b75309be0339ea7a2e7",
           "size": 430
         },
         "translations/nl.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/nl.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/nl.json",
           "sha256": "020b4908ef10de6788e2f0ced65213cea9c1ccd04f280d30be945150d9589bb9",
           "size": 477
         },
         "translations/no.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/no.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/no.json",
           "sha256": "cea7d7bdd65b7d66dbad7106f9c41c6b1eb3840cd216c3a68da9aa226f000b97",
           "size": 408
         },
         "translations/pl.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/pl.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/pl.json",
           "sha256": "d9b8a0377bbdc41e0b0fd4982911e82ff44f82a036f0b3b92805b26b6618a285",
           "size": 401
         },
         "translations/pt.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/pt.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/pt.json",
           "sha256": "3d3dcdfa578001b746c9169f2937e2871f599d99d6c664fe7dae3e8d01c77820",
           "size": 418
         },
         "translations/ro.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/ro.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/ro.json",
           "sha256": "6ae4bbb3131477bf2d0dacaf371e05fa2029bc05dd36ba1526b05227bb3c668a",
           "size": 429
         },
         "translations/ru.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/ru.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/ru.json",
           "sha256": "dfb9610a48dfb379f4f83c641ca9667d7bf6c6a58045f4a7ea4e334bc5a3d95a",
           "size": 700
         },
         "translations/sv.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/sv.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/sv.json",
           "sha256": "e932e038400b74bd4a74bb92f997d59f42c8c911cc5aed0db39aca015cee9c6b",
           "size": 421
         },
         "translations/sw.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/sw.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/sw.json",
           "sha256": "471453a81a0b25c0167431808dcfe9f7c0dae508d0b1088da43d6590c0c12aac",
           "size": 415
         },
         "translations/th.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/th.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/th.json",
           "sha256": "584c9e8a56b1654bd49a7e43eb088b4341776521d4300b470c15d8c6f16f5a22",
           "size": 889
         },
         "translations/tr.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/tr.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/tr.json",
           "sha256": "cc1d886f9d5306321c3710c91acccb3fe8372942956c312663fe940db7e91ed5",
           "size": 431
         },
         "translations/uk.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/uk.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/uk.json",
           "sha256": "6a7a7fe00bf6dd27d124c75282f0600a159c3230a7811b6a69c36babc32a9574",
           "size": 677
         },
         "translations/zh.json": {
-          "url": "mods/sonder@dice-d6/1.2.1/translations/zh.json",
+          "url": "mods/sonder@dice-d6/1.3.0/translations/zh.json",
           "sha256": "8ed64a5f4cab1c7490eff85772a04caed11d0a7d4d18755e6c2715d2f1acb822",
           "size": 335
         },
         "README.md": {
-          "url": "mods/sonder@dice-d6/1.2.1/README.md",
+          "url": "mods/sonder@dice-d6/1.3.0/README.md",
           "sha256": "d72ac59f0d3840e758a4ba3ca6aa4731cc733531dee1c2f61cbf0016e34577cd",
           "size": 812
         },
         "CHANGELOG.md": {
-          "url": "mods/sonder@dice-d6/1.2.1/CHANGELOG.md",
-          "sha256": "b4448fbb1268666f2bef2ec7a3ebb5c57b47afcd07b5b77d6a6e64dfb1621373",
-          "size": 149
+          "url": "mods/sonder@dice-d6/1.3.0/CHANGELOG.md",
+          "sha256": "3930dc1e45ac802e4d3bf7c09de884a3a8158dfffd476777ed3705c4ab5c9c35",
+          "size": 249
         }
       },
-      "readmeUrl": "mods/sonder@dice-d6/1.2.1/README.md",
+      "readmeUrl": "mods/sonder@dice-d6/1.3.0/README.md",
       "versions": [
         "1.0.0",
         "1.1.0",
         "1.2.0",
-        "1.2.1"
+        "1.2.1",
+        "1.3.0"
       ],
       "releases": {
         "1.0.0": {
@@ -667,6 +668,187 @@
               "size": 335
             }
           }
+        },
+        "1.3.0": {
+          "version": "1.3.0",
+          "sdk": "^2.0.0",
+          "files": {
+            "CHANGELOG.md": {
+              "url": "mods/sonder@dice-d6/1.3.0/CHANGELOG.md",
+              "sha256": "3930dc1e45ac802e4d3bf7c09de884a3a8158dfffd476777ed3705c4ab5c9c35",
+              "size": 249
+            },
+            "README.md": {
+              "url": "mods/sonder@dice-d6/1.3.0/README.md",
+              "sha256": "d72ac59f0d3840e758a4ba3ca6aa4731cc733531dee1c2f61cbf0016e34577cd",
+              "size": 812
+            },
+            "bundle.mjs": {
+              "url": "mods/sonder@dice-d6/1.3.0/bundle.mjs",
+              "sha256": "b14f56e8c1de52f109f76fff3f5cf29be8a5ca510c8c4d2d7b7ddb6785049fbc",
+              "size": 16609
+            },
+            "cover.jpg": {
+              "url": "mods/sonder@dice-d6/1.3.0/cover.jpg",
+              "sha256": "ad83128dabac98bde5d292cbbdcd9208fbd7c218fc8b8b592376a413c815c472",
+              "size": 11122
+            },
+            "manifest.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/manifest.json",
+              "sha256": "8154ed200810e11af63d7c86161a34e6d051668f82cbab1fe3a343aae6bb376c",
+              "size": 684
+            },
+            "translations/ar.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/ar.json",
+              "sha256": "41ac31ccfee93a9840029b7981d47605f3e5ee8c280318bf80b5d68ecca31ebc",
+              "size": 621
+            },
+            "translations/be.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/be.json",
+              "sha256": "0f7af94fe60b8536bd97f54eb8aeb112256d2372d1397b27b75bc48499e964b4",
+              "size": 659
+            },
+            "translations/bn.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/bn.json",
+              "sha256": "9c12142373dd6c66c2795b1216281ec66e80001b2cf72605ba2e43ea6e0d7822",
+              "size": 890
+            },
+            "translations/cs.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/cs.json",
+              "sha256": "37d73b1fa6aaa728bd320503e66a65864b286a77baf4fcaf780d4837f07cb570",
+              "size": 430
+            },
+            "translations/da.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/da.json",
+              "sha256": "44ec42aadfb47ce7d8f98f094adeb8995d97959acddf1f5ca7dff387d391e6d1",
+              "size": 409
+            },
+            "translations/de.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/de.json",
+              "sha256": "cf2cad88899ff0671812ea23a3db8aef2b75b706942562586b0aeffc90b7bf0c",
+              "size": 465
+            },
+            "translations/el.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/el.json",
+              "sha256": "5753b57f74154f92bdcbdaa42fe5b1d15245c99bf0998486eaf0772a4f50e662",
+              "size": 737
+            },
+            "translations/en.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/en.json",
+              "sha256": "ca86d488ad9a8f4b6a29ea71f4ded46f80ffe7f1311b75adaeb6189695df183f",
+              "size": 382
+            },
+            "translations/es.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/es.json",
+              "sha256": "58cb738ca39db66f75dfe54bc3ca81353b5fc942eeafc6aff8e868aea4d636b3",
+              "size": 418
+            },
+            "translations/fa.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/fa.json",
+              "sha256": "8aefd7eaaebdbc94b1a8db5e0e2bb1a7c2a02a6bc81ef849b4d8586725cd84ba",
+              "size": 672
+            },
+            "translations/fi.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/fi.json",
+              "sha256": "81edc11ad18a26e94afa23abf39e716b49f1a161d6ae018ee0876eea573e4d52",
+              "size": 407
+            },
+            "translations/fr.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/fr.json",
+              "sha256": "1d47cf576265c9b9440db96c26eb89ae674450762b52f646564948a1a9dd60d2",
+              "size": 428
+            },
+            "translations/he.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/he.json",
+              "sha256": "46a6c6bdb4bc0038a1b11fae46399b2bd8c553fa19cd316231eefc13d999e818",
+              "size": 607
+            },
+            "translations/hi.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/hi.json",
+              "sha256": "65e3d7ddc46fb0ff0874fb3825943377bdf4ae82747557f4e562c2c588924a4b",
+              "size": 839
+            },
+            "translations/id.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/id.json",
+              "sha256": "531251379ed0cbe6be6a96bf72f57afcc40b01c3fac8bcb475d62a4a46f47d8a",
+              "size": 387
+            },
+            "translations/it.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/it.json",
+              "sha256": "09f93da9a1adfe3e618a931b9fff16024dabde984ad2c5436b61675218dd6d16",
+              "size": 409
+            },
+            "translations/ja.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/ja.json",
+              "sha256": "e3c55ff9e25cc0afa49aa1ef37fc9ddc590c23bea3fb6f945544322a3b4fadc1",
+              "size": 465
+            },
+            "translations/ko.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/ko.json",
+              "sha256": "edee4b7a9004ba45a3dba641ef032d8c0b30d52de06c5b75309be0339ea7a2e7",
+              "size": 430
+            },
+            "translations/nl.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/nl.json",
+              "sha256": "020b4908ef10de6788e2f0ced65213cea9c1ccd04f280d30be945150d9589bb9",
+              "size": 477
+            },
+            "translations/no.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/no.json",
+              "sha256": "cea7d7bdd65b7d66dbad7106f9c41c6b1eb3840cd216c3a68da9aa226f000b97",
+              "size": 408
+            },
+            "translations/pl.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/pl.json",
+              "sha256": "d9b8a0377bbdc41e0b0fd4982911e82ff44f82a036f0b3b92805b26b6618a285",
+              "size": 401
+            },
+            "translations/pt.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/pt.json",
+              "sha256": "3d3dcdfa578001b746c9169f2937e2871f599d99d6c664fe7dae3e8d01c77820",
+              "size": 418
+            },
+            "translations/ro.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/ro.json",
+              "sha256": "6ae4bbb3131477bf2d0dacaf371e05fa2029bc05dd36ba1526b05227bb3c668a",
+              "size": 429
+            },
+            "translations/ru.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/ru.json",
+              "sha256": "dfb9610a48dfb379f4f83c641ca9667d7bf6c6a58045f4a7ea4e334bc5a3d95a",
+              "size": 700
+            },
+            "translations/sv.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/sv.json",
+              "sha256": "e932e038400b74bd4a74bb92f997d59f42c8c911cc5aed0db39aca015cee9c6b",
+              "size": 421
+            },
+            "translations/sw.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/sw.json",
+              "sha256": "471453a81a0b25c0167431808dcfe9f7c0dae508d0b1088da43d6590c0c12aac",
+              "size": 415
+            },
+            "translations/th.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/th.json",
+              "sha256": "584c9e8a56b1654bd49a7e43eb088b4341776521d4300b470c15d8c6f16f5a22",
+              "size": 889
+            },
+            "translations/tr.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/tr.json",
+              "sha256": "cc1d886f9d5306321c3710c91acccb3fe8372942956c312663fe940db7e91ed5",
+              "size": 431
+            },
+            "translations/uk.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/uk.json",
+              "sha256": "6a7a7fe00bf6dd27d124c75282f0600a159c3230a7811b6a69c36babc32a9574",
+              "size": 677
+            },
+            "translations/zh.json": {
+              "url": "mods/sonder@dice-d6/1.3.0/translations/zh.json",
+              "sha256": "8ed64a5f4cab1c7490eff85772a04caed11d0a7d4d18755e6c2715d2f1acb822",
+              "size": 335
+            }
+          }
         }
       },
       "strings": {
@@ -707,8 +889,8 @@
         },
         "en": {
           "name": "D6 Dice",
-          "short": "A standard six-sided die and a gold material for the 3D dice roller.",
-          "full": "Adds a standard six-sided die to the 3D dice roller, plus a gold dice material usable with any die shape. Opposite faces sum to seven, results are summed across multiple dice, and rolls of all sixes or all ones are highlighted."
+          "short": "A classic pip D6 and a gold material for the 3D dice roller.",
+          "full": "Adds a standard six-sided die with classic pip faces to the 3D dice roller, plus a gold dice material usable with any die shape. Opposite faces sum to seven, results are summed across multiple dice, and rolls of all sixes or all ones are highlighted."
         },
         "es": {
           "name": "Dado D6",

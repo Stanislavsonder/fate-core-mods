@@ -1,0 +1,7 @@
+{
+	"name": "D6-terning",
+	"description": {
+		"full": "Legger til en standard sekskantet terning til 3D-terningkasteren, pluss et gullmateriale som kan brukes med alle terningformer. Motstående sider summerer til syv, resultater summeres over flere terninger, og kast med bare seksere eller bare enere fremheves.",
+		"short": "En standard sekskantet terning og et gullmateriale for 3D-terningkasteren."
+	}
+}
