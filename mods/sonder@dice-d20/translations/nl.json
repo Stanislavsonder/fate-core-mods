@@ -1,0 +1,7 @@
+{
+	"name": "D20-dobbelsteen",
+	"description": {
+		"full": "Voegt een standaard twintigzijdige dobbelsteen toe aan de 3D-dobbelsteenroller. Resultaten worden opgeteld over meerdere dobbelstenen, met natuurlijke twintigen en enen gemarkeerd.",
+		"short": "Een standaard twintigzijdige dobbelsteen voor de 3D-dobbelsteenroller."
+	}
+}

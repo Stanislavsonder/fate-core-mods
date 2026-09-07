@@ -1,0 +1,7 @@
+{
+	"name": "Dado D20",
+	"description": {
+		"full": "Adiciona um dado de vinte faces padrão ao rolador de dados 3D. Os resultados são somados entre vários dados, com vinte natural e um natural destacados.",
+		"short": "Um dado de vinte faces padrão para o rolador de dados 3D."
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"name": "D20 kostka",
+	"description": {
+		"full": "Přidává standardní dvacetistěnnou kostku do 3D házeče kostek. Výsledky se sčítají při více kostkách, s zvýrazněnými přirozenými dvacítkami a jedničkami.",
+		"short": "Standardní dvacetistěnná kostka pro 3D házeč kostek."
+	}
+}

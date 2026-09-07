@@ -1,0 +1,7 @@
+{
+	"name": "Kość D20",
+	"description": {
+		"full": "Dodaje standardową dwudziestościenną kość do 3D-rzutnika. Wyniki są sumowane z wielu kości, z wyróżnionymi naturalnymi dwudziestkami i jedynkami.",
+		"short": "Standardowa dwudziestościenna kość do 3D-rzutnika."
+	}
+}

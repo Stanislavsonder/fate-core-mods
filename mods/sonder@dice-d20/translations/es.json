@@ -1,0 +1,7 @@
+{
+	"name": "Dado D20",
+	"description": {
+		"full": "Añade un dado de veinte caras estándar al tirador de dados 3D. Los resultados se suman entre varios dados, con los veinte naturales y los uno naturales resaltados.",
+		"short": "Un dado de veinte caras estándar para el tirador de dados 3D."
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"name": "Dé D20",
+	"description": {
+		"full": "Ajoute un dé à vingt faces standard au lanceur de dés 3D. Les résultats sont additionnés sur plusieurs dés, avec les réussites critiques (20 naturel) et les échecs critiques (1 naturel) mis en évidence.",
+		"short": "Un dé à vingt faces standard pour le lanceur de dés 3D."
+	}
+}
