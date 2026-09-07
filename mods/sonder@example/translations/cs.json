@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Max. délka poznámky",
+			"tooltip": "Maximální počet znaků v poli poznámky."
+		}
+	},
+	"description": {
+		"full": "Obsahuje sekci listu s vlastním polem dat postavy, konfigurační volbou a omezeným CSS — referenční mod pro SDK Modules 2.0 Assistant for Fate.",
+		"short": "Kompletní ukázka formátu externího mod bundle."
+	},
+	"maxLengthNote": "Až {value} znaků",
+	"name": "Ukázkový mod",
+	"noteLabel": "Poznámka",
+	"title": "Ukázková sekce"
+}

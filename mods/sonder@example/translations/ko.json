@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "메모 최대 길이",
+			"tooltip": "메모 필드에 허용되는 최대 문자 수."
+		}
+	},
+	"description": {
+		"full": "자체 캐릭터 데이터 필드, 설정 옵션, 스코프 CSS를 갖춘 시트 섹션을 제공합니다. Assistant for Fate Modules 2.0 SDK의 참조 모드입니다.",
+		"short": "외부 모드 번들 형식의 완성된 예제입니다."
+	},
+	"maxLengthNote": "최대 {value}자",
+	"name": "예제 모드",
+	"noteLabel": "메모",
+	"title": "예제 섹션"
+}

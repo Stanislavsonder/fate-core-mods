@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Max längd på anteckning",
+			"tooltip": "Maximalt antal tecken i anteckningsfältet."
+		}
+	},
+	"description": {
+		"full": "Innehåller ett arkavsnitt med eget karaktärsdatafält, ett konfigurationsalternativ och scoped CSS — referensmodden för Assistant for Fates Modules 2.0 SDK.",
+		"short": "Ett genomarbetat exempel på det externa mod-bundleformatet."
+	},
+	"maxLengthNote": "Upp till {value} tecken",
+	"name": "Exempelmod",
+	"noteLabel": "Anteckning",
+	"title": "Exempelavsnitt"
+}

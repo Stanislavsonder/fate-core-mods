@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Urefu wa juu wa kumbukumbu",
+			"tooltip": "Idadi ya juu ya herufi zinazoruhusiwa katika sehemu ya kumbukumbu."
+		}
+	},
+	"description": {
+		"full": "Huleta sehemu moja ya karatasi yenye sehemu yake ya data ya mhusika, chaguo la usanidi, na CSS iliyopangwa — modi ya marejeleo kwa SDK ya Modules 2.0 ya Assistant for Fate.",
+		"short": "Mfano kamili wa umbo la kifurushi cha modi ya nje."
+	},
+	"maxLengthNote": "Hadi herufi {value}",
+	"name": "Modi ya mfano",
+	"noteLabel": "Kumbukumbu",
+	"title": "Sehemu ya mfano"
+}

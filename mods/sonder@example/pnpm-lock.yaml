@@ -9,12 +9,12 @@ importers:
   .:
     dependencies:
       '@fate-app/mod-types':
-        specifier: ^2.0.0
-        version: 2.0.0(vue@3.5.40)
+        specifier: ^2.1.0
+        version: 2.1.0(vue@3.5.40)
     devDependencies:
       '@fate-app/mod-build':
-        specifier: ^2.0.0
-        version: 2.0.0(@vitejs/plugin-vue@6.0.8(vite@8.1.5)(vue@3.5.40))(vite@8.1.5)(vue@3.5.40)
+        specifier: ^2.1.0
+        version: 2.1.0(@vitejs/plugin-vue@6.0.8(vite@8.1.5)(vue@3.5.40))(vite@8.1.5)(vue@3.5.40)
       '@ionic/vue':
         specifier: 8.8.15
         version: 8.8.15(@stencil/core@4.43.5)(vue@3.5.40)
@@ -62,8 +62,8 @@ packages:
   '@emnapi/wasi-threads@1.2.2':
     resolution: {integrity: sha512-c95qOXkHdydNKhscBTebqEC1CVAZpyqOfVfBzQ1qgzyl3gfeldUjIggDbIZgDKsHLgnsM+igH7TJ/eAasaVuMA==}
 
-  '@fate-app/mod-build@2.0.0':
-    resolution: {integrity: sha512-8iqDnzn65L7efJOyobkRTc1QQKG4M3f80Dn5ryBI/IDvoAj8/kPGvpukSATTeO1pqvd5yQzO+Ha5LXZybIEYLg==}
+  '@fate-app/mod-build@2.1.0':
+    resolution: {integrity: sha512-Y12J5Um16M96BcX5PgIFDYmEhzUvL1SBIyeP+Kxl7e8Tk++MZIUKUnqg20TqyjBuCxZ+SXkKesJlbu8I7BsWbA==}
     hasBin: true
     peerDependencies:
       '@vitejs/plugin-vue': ^6.0.0
@@ -83,8 +83,8 @@ packages:
       three:
         optional: true
 
-  '@fate-app/mod-types@2.0.0':
-    resolution: {integrity: sha512-+1toeDwXvIFa2kdWIGFLSQMS4N80k0VVGC+1D8rxY6bTWn+iTpQCVHqTi0Oq+cdw9eR2jwO52HTsyfuAj89GQg==}
+  '@fate-app/mod-types@2.1.0':
+    resolution: {integrity: sha512-Si+T2LSkEE+0tbbvCq6dpYvZ0Q/TTTDiGBqI65DxcuvqIZd36A/lL3UZRJzZVX73/00LmmCh2J/NVGQnEnH0hQ==}
     peerDependencies:
       cannon-es: ^0.20.0
       three: ^0.185.0
@@ -562,15 +562,15 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@fate-app/mod-build@2.0.0(@vitejs/plugin-vue@6.0.8(vite@8.1.5)(vue@3.5.40))(vite@8.1.5)(vue@3.5.40)':
+  '@fate-app/mod-build@2.1.0(@vitejs/plugin-vue@6.0.8(vite@8.1.5)(vue@3.5.40))(vite@8.1.5)(vue@3.5.40)':
     dependencies:
-      '@fate-app/mod-types': 2.0.0(vue@3.5.40)
+      '@fate-app/mod-types': 2.1.0(vue@3.5.40)
       '@vitejs/plugin-vue': 6.0.8(vite@8.1.5)(vue@3.5.40)
       vite: 8.1.5
       vite-plugin-css-injected-by-js: 3.5.2(vite@8.1.5)
       vue: 3.5.40
 
-  '@fate-app/mod-types@2.0.0(vue@3.5.40)':
+  '@fate-app/mod-types@2.1.0(vue@3.5.40)':
     dependencies:
       vue: 3.5.40
 

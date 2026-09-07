@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Longueur max. de la note",
+			"tooltip": "Nombre maximal de caractères autorisés dans le champ de note."
+		}
+	},
+	"description": {
+		"full": "Fournit une section de fiche avec son propre champ de données de personnage, une option de configuration et du CSS limité — le mod de référence pour le SDK Modules 2.0 d'Assistant for Fate.",
+		"short": "Un exemple complet du format de bundle de mod externe."
+	},
+	"maxLengthNote": "Jusqu'à {value} caractères",
+	"name": "Mod exemple",
+	"noteLabel": "Note",
+	"title": "Section exemple"
+}

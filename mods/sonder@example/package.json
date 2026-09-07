@@ -7,10 +7,10 @@
 		"dev": "node node_modules/@fate-app/mod-build/dist/devCli.js"
 	},
 	"dependencies": {
-		"@fate-app/mod-types": "^2.0.0"
+		"@fate-app/mod-types": "^2.1.0"
 	},
 	"devDependencies": {
-		"@fate-app/mod-build": "^2.0.0",
+		"@fate-app/mod-build": "^2.1.0",
 		"@ionic/vue": "8.8.15",
 		"@vitejs/plugin-vue": "6.0.8",
 		"ionicons": "8.0.13",

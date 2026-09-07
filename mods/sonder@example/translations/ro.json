@@ -1,0 +1,16 @@
+{
+	"config": {
+		"maxNoteLength": {
+			"name": "Lungime maximă notă",
+			"tooltip": "Numărul maxim de caractere permis în câmpul de notă."
+		}
+	},
+	"description": {
+		"full": "Include o secțiune de fișă cu propriul câmp de date al personajului, o opțiune de configurare și CSS cu scop limitat — modul de referință pentru SDK-ul Modules 2.0 Assistant for Fate.",
+		"short": "Un exemplu complet al formatului de bundle de mod extern."
+	},
+	"maxLengthNote": "Până la {value} caractere",
+	"name": "Mod exemplu",
+	"noteLabel": "Notă",
+	"title": "Secțiune exemplu"
+}

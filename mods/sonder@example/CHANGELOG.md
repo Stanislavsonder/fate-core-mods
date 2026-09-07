@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0
+
+Switch the sheet UI to the shared `SheetSection` component (SDK ^2.1.0), add
+translations for all supported app languages, and mark the mod unpublished so it
+stays out of the Mod Store while remaining available for dev mode and URL installs.
+
 ## 1.1.0
 
 Rebuilt against the renamed mod SDK: dependencies moved to
